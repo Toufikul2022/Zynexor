@@ -12,13 +12,13 @@
 <link rel="stylesheet" href="site.css">
 </head>
 <body data-page="blog" class="page-light">
-<main class="wrap" style="padding-top:140px;padding-bottom:100px">
-  <h1 class="h-l center rise">Zynexor Blog</h1>
+<main class="blog-main">
+  <h1 class="blog-title rise">Zynexor Blog</h1>
   <div class="filters" id="filters" role="group" aria-label="Filter articles">
-    <button class="on" data-f="All">All</button><button data-f="Branding">Branding</button><button data-f="Design">Design</button><button data-f="Social media">Social media</button><button data-f="Success story">Success story</button>
+    <button class="on" data-f="All" aria-pressed="true">All</button><button data-f="Branding" aria-pressed="false">Branding</button><button data-f="Design" aria-pressed="false">Design</button><button data-f="Social media" aria-pressed="false">Social media</button><button data-f="Success story" aria-pressed="false">Success story</button>
   </div>
   <div class="featured" id="featured"></div>
-  <h2 class="h-s center" style="margin-top:80px">More articles</h2>
+  <h2 class="more-h">More articles</h2>
   <div class="agrid" id="agrid"></div>
 </main>
 <div id="foot"></div>
@@ -26,18 +26,21 @@
 <script>
 (function(){
   var A=ZX.ARTICLES,W=ZX.W;
-  function small(a){return '<a class="bcard-l" href="article.html#'+a.id+'"><div><span class="meta">'+a.cat+' · '+a.read+'</span><h3>'+a.t+'</h3></div>'+ZX.vid(a.img)+'</a>'}
-  function big(a){return '<a class="bcard-big" href="article.html#'+a.id+'"><span class="meta" style="font-size:11px;color:#6b6b6b">'+a.cat+' · '+a.read+'</span><h3>'+a.t+'</h3>'+ZX.vid(a.img)+'</a>'}
-  function tile(a){return '<a href="article.html#'+a.id+'">'+ZX.vid(a.img)+'<span class="meta">'+a.cat+' · '+a.read+'</span><h3>'+a.t+'</h3></a>'}
+  var ORDER=['brand-system','trust-for-ai','live-shopping-app','website-that-sells','scroll-stopping-posts','one-crm'];
+  A=ORDER.map(function(id){return A.filter(function(a){return a.id===id})[0]}).filter(Boolean);
+  function meta(a,sep){return '<span class="meta">'+a.read+' <i>'+sep+'</i> '+a.cat+'</span>'}
+  function small(a){return '<a class="bcard-l" href="article.html#'+a.id+'"><div class="tx">'+meta(a,'•')+'<h3>'+a.t+'</h3></div><div class="th">'+ZX.vid(a.img)+'</div></a>'}
+  function big(a){return '<a class="bcard-big" href="article.html#'+a.id+'">'+meta(a,'•')+'<h3>'+a.t+'</h3><div class="frame">'+ZX.vid(a.img)+'</div></a>'}
+  function tile(a){return '<a class="atile" href="article.html#'+a.id+'"><div class="th">'+ZX.vid(a.img)+'</div>'+meta(a,'|')+'<h3>'+a.t+'</h3></a>'}
   function render(f){
     var list=f==='All'?A:A.filter(function(a){return a.cat===f});
-    var feat=list.slice(0,3);
-    document.getElementById('featured').innerHTML=feat.length?'<div class="stack">'+feat.slice(1).map(small).join('')+'</div>'+big(feat[0]):'';
-    document.getElementById('featured').style.display=feat.length>1?'':'block';
-    var rest=f==='All'?A.slice(3):list;
-    document.getElementById('agrid').innerHTML=rest.map(tile).join('');
+    var fe=document.getElementById('featured'),g=document.getElementById('agrid');
+    if(list.length>=3){fe.innerHTML='<div class="stack">'+small(list[0])+small(list[1])+'</div>'+big(list[2]);fe.classList.remove('one')}
+    else{fe.innerHTML=list.length?big(list[0])+(list[1]?'<div class="stack">'+small(list[1])+'</div>':''):'';fe.classList.toggle('one',list.length===1)}
+    var rest=f==='All'?list.slice(3):[];g.innerHTML=rest.map(tile).join('');
+    document.querySelector('.more-h').hidden=!rest.length;
   }
-  document.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});render(b.getAttribute('data-f'))});
+  document.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});render(b.getAttribute('data-f'))});
   render('All');
 })();
 </script>
