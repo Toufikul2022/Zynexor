@@ -230,6 +230,15 @@
     onScreen(cal,function(v){if(v&&!ct&&!reduce)ct=setInterval(hop,900);else if(!v&&ct){clearInterval(ct);ct=null}});
   }
 
+  /* client tiles: play the project video on hover and tilt toward the cursor */
+  document.querySelectorAll('.cl').forEach(function(t){
+    var v=t.querySelector('.cl-v');if(v)v.muted=true;
+    t.addEventListener('mouseenter',function(){if(v&&!reduce){v.preload='auto';var p=v.play();if(p&&p.catch)p.catch(function(){})}});
+    t.addEventListener('mouseleave',function(){if(v)v.pause();t.style.removeProperty('--rx');t.style.removeProperty('--ry')});
+    t.addEventListener('mousemove',function(e){if(reduce)return;var r=t.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      t.style.setProperty('--ry',(x*8).toFixed(2)+'deg');t.style.setProperty('--rx',(-y*8).toFixed(2)+'deg')});
+  });
+
   /* stats: cards slide/tilt in from below, sit flat mid-screen, and tilt out at the top */
   var scs=document.querySelectorAll('.sc');
   if(scs.length&&!reduce){
