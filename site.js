@@ -175,7 +175,7 @@
   lb.addEventListener('touchend',function(e){if(sx==null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(idx+(d<0?1:-1));sx=null});
 
   /* headings: wrap each word so it can lift and light up on hover */
-  document.querySelectorAll('.h-xl,.h-l,.h-m,.h-s,.hero h1,.st-item h3,.bx-card h3,.cta h2,.article h1').forEach(function(h){
+  document.querySelectorAll('.h-xl,.h-l,.h-m,.h-s,.sv-h,.sv-title span,.hero h1,.st-item h3,.bx-card h3,.cta h2,.article h1').forEach(function(h){
     if(h.classList.contains('hx'))return;h.classList.add('hx');
     var walk=document.createTreeWalker(h,NodeFilter.SHOW_TEXT,null),nodes=[],n;while(n=walk.nextNode())nodes.push(n);
     nodes.forEach(function(t){if(!t.nodeValue.trim())return;var f=document.createDocumentFragment();
@@ -340,6 +340,57 @@
     var fws=document.querySelectorAll('.fw[data-depth]');
     addEventListener('mousemove',function(e){if(scrollY>innerHeight)return;var dx=e.clientX/innerWidth-.5,dy=e.clientY/innerHeight-.5;
       fws.forEach(function(f){var d=+f.getAttribute('data-depth');f.style.setProperty('--mx',(-dx*d).toFixed(1)+'px');f.style.setProperty('--my',(-dy*d).toFixed(1)+'px')})});
+  }
+
+  /* ================= services page ================= */
+  var cv=document.getElementById('stars');
+  if(cv){
+    var cx=cv.getContext('2d'),S=[],dpr=Math.min(2,window.devicePixelRatio||1),mx=0,my=0,sraf=null,heroVis=true;
+    function sizeStars(){var r=cv.getBoundingClientRect();cv.width=r.width*dpr;cv.height=r.height*dpr;S=[];var n=Math.round(r.width*r.height/9000);
+      for(var i=0;i<n;i++)S.push({x:Math.random(),y:Math.random(),r:Math.random()*1.3+.3,p:Math.random()*6.28,s:.5+Math.random()*1.5,d:Math.random()*14+2})}
+    function draw(t){cx.clearRect(0,0,cv.width,cv.height);
+      S.forEach(function(s){var a=.25+.55*(0.5+0.5*Math.sin(s.p+t*0.001*s.s));cx.globalAlpha=a;cx.fillStyle='#fff';cx.beginPath();
+        cx.arc((s.x*cv.width)+mx*s.d*dpr,(s.y*cv.height)+my*s.d*dpr,s.r*dpr,0,6.283);cx.fill()});
+      cx.globalAlpha=1;sraf=heroVis&&!reduce?requestAnimationFrame(draw):null}
+    sizeStars();draw(0);addEventListener('resize',function(){sizeStars();if(!sraf)draw(0)});
+    cv.parentNode.addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+    onScreen(cv,function(v){heroVis=v;if(v&&!sraf&&!reduce)sraf=requestAnimationFrame(draw)});
+    var ow=document.getElementById('orbitWord'),words=['Ideation','Strategy','Design','Build','Launch','Growth'],wi=0;
+    if(ow&&!reduce)setInterval(function(){ow.classList.add('swap');setTimeout(function(){wi=(wi+1)%words.length;ow.textContent=words[wi];ow.classList.remove('swap')},350)},2600);
+  }
+  document.querySelectorAll('.sv-vis').forEach(function(v){onScreen(v,function(on){if(on){v.classList.add('in-view');
+    v.querySelectorAll('[data-count]').forEach(function(el){if(el._done)return;el._done=1;var to=+el.getAttribute('data-count'),t0=performance.now();
+      (function tick(t){var p=Math.min(1,(t-t0)/1400);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)})(t0)})}})});
+  /* weekly visitor pills keep breathing */
+  var wk=document.querySelectorAll('.wd-week .pills i');
+  if(wk.length&&!reduce)setInterval(function(){wk.forEach(function(i){i.style.setProperty('--h',(30+Math.round(Math.random()*62))+'%')})},2200);
+
+  /* development: tech pills switch the editor preview and type a snippet */
+  var dd=document.getElementById('devData'),pills=document.querySelectorAll('.dv-pill');
+  if(dd&&pills.length){
+    var DATA=JSON.parse(dd.textContent),stageV=[].slice.call(document.querySelectorAll('.dv-item')),code=document.getElementById('dvCode'),cur=0,typer=null,auto=null;
+    function hl(s){var esc=function(x){return x.replace(/&/g,'&amp;').replace(/</g,'&lt;')};var out='',re=/(\/\/[^\n]*)|("[^"\n]*"?)|\b(import|from|export|default|function|return|const|foreach|as|GET|Route|if)\b/g,last=0,m;
+      while((m=re.exec(s))){out+=esc(s.slice(last,m.index));out+='<span class="'+(m[1]?'c':m[2]?'s':'k')+'">'+esc(m[0])+'</span>';last=re.lastIndex}return out+esc(s.slice(last))}
+    function type(txt){clearInterval(typer);var n=0;code.innerHTML='';if(reduce){code.innerHTML=hl(txt);return}
+      typer=setInterval(function(){n+=2;code.innerHTML=hl(txt.slice(0,n));if(n>=txt.length)clearInterval(typer)},28)}
+    function pick(i){cur=i;pills.forEach(function(p,k){p.classList.toggle('on',k===i);p.setAttribute('aria-selected',k===i)});
+      stageV.forEach(function(v,k){if(k===i){v.preload='auto';v.muted=true;var pp=v.play();if(pp&&pp.catch)pp.catch(function(){});v.classList.add('on')}else{v.classList.remove('on');v.pause()}});type(DATA[i].code)}
+    pills.forEach(function(p,k){p.addEventListener('click',function(){pick(k);clearInterval(auto);auto=null})});
+    onScreen(code.parentNode,function(v){if(v&&!auto&&!reduce){pick(cur);auto=setInterval(function(){pick((cur+1)%pills.length)},3600)}else if(!v&&auto){clearInterval(auto);auto=null}});
+    pick(0);
+  }
+
+  /* marketing assets: a fanned deck that deals the next card to the front */
+  var deckEl=document.getElementById('deck');
+  if(deckEl){
+    var cards=[].slice.call(deckEl.children),front=0,dt=null;
+    function layout(){var n=cards.length;cards.forEach(function(c,k){var pos=(k-front+n)%n,v=c.querySelector('video');
+      var visible=pos<3;c.style.setProperty('--x',[100,52,0,0,0,0][pos]);c.style.setProperty('--ry',['-8deg','-18deg','-24deg','-24deg','-24deg','-24deg'][pos]);
+      c.style.setProperty('--s',[1,.86,.74,.7,.7,.7][pos]);c.style.setProperty('--z',10-pos);c.style.setProperty('--o',visible?1:0);c.style.setProperty('--b',[1,.75,.55,.5,.5,.5][pos]);
+      if(v){v.muted=true;if(pos===0){v.preload='auto';var pp=v.play();if(pp&&pp.catch)pp.catch(function(){})}else v.pause()}})}
+    layout();
+    deckEl.addEventListener('click',function(){front=(front+1)%cards.length;layout()});
+    onScreen(deckEl,function(v){if(v&&!dt&&!reduce)dt=setInterval(function(){front=(front+1)%cards.length;layout()},2400);else if(!v&&dt){clearInterval(dt);dt=null}});
   }
 
   /* FAQ: wrap questions so they can fill white from left to right as they scroll in */

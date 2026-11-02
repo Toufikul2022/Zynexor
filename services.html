@@ -13,56 +13,75 @@
 </head>
 <body data-page="services">
 <main>
-  <section class="wrap center" style="padding-block:150px 40px">
-    <h1 class="h-xl rise">Services</h1>
-    <p class="sub">Capabilities</p>
+  <section class="sv-hero" aria-label="Services">
+    <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+    <svg class="orbits" viewBox="0 0 1900 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M640 -40 C760 120 840 240 900 400"/><path d="M720 -60 C840 80 930 220 1000 330"/></svg>
+    <div class="orbit-arm" aria-hidden="true">
+      <span class="beam"></span><span class="node"></span>
+      <span class="olabel"><b id="orbitWord">Ideation</b></span>
+    </div>
+    <h1 class="sv-title"><span>Services</span></h1>
   </section>
-
-  <section class="cap-sec wrap" id="branding">
-    <div class="center"><h2 class="h-l">Branding</h2><p class="sub">A powerful tool to set your company's positioning and a visual language to follow across every touchpoint.</p></div>
-    <div class="cap-grid">
-      <div class="collage"><video src="assets/video/socialboost-landing.mp4" poster="assets/work/socialboost-landing.jpg" width="1240" height="782" muted loop playsinline preload="none" data-auto aria-label="SocialBoost AI brand"></video><video src="assets/video/sabbir-home.mp4" poster="assets/work/sabbir-home.jpg" width="1240" height="554" muted loop playsinline preload="none" data-auto aria-label="Sabbir LIVE brand"></video><video src="assets/video/styleb-home.mp4" poster="assets/work/styleb-home.jpg" width="476" height="896" muted loop playsinline preload="none" data-auto aria-label="Style.Bd brand"></video></div>
-      <div class="cap-lists">
-        <div><h4>Brand strategy</h4><ul><li>Brand naming</li><li>Mission &amp; values</li><li>Positioning</li><li>Vision</li><li>Personas</li></ul></div>
-        <div><h4>Brand visual</h4><ul><li>Moodboard</li><li>Creative concept</li><li>Brand guidelines</li><li>Logotype</li><li>Pitch decks</li></ul></div>
-        <button class="btn btn-accent" data-contact>Discuss branding</button>
+  <section class="sv-sec" id="branding">
+    <div class="sv-head"><h2 class="sv-h">Branding</h2><p class="sub">A powerful tool to set your company's positioning and establish a visual language to follow across every touchpoint.</p></div>
+    <div class="sv-grid">
+      <div class="sv-vis br-vis" aria-hidden="true">
+        <div class="br-tiles">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <img class="br-logo" src="assets/brand/zynexor-logo.png" alt="">
+          <span class="pill p1"></span><span class="pill p2"></span><span class="pill p3"></span><span class="pill p4"></span><span class="pill p5"></span><span class="pill p6"></span>
+        </div>
+        <div class="br-row">
+          <div class="br-sw"><span style="--c:#ffffff;--t:#111"><em>#FFFFFF</em></span><span style="--c:#c4f113;--t:#0b0d05"><em>#C4F113</em></span><span style="--c:#2f6bff"><em>#2F6BFF</em></span><span style="--c:#f5c533;--t:#111"><em>#F5C533</em></span><span style="--c:#1c1c1c"><em>#0B0D05</em></span></div>
+          <div class="br-grid"><svg viewBox="0 0 220 220"><g class="gl"><path d="M110 20V200M20 110H200"/><circle cx="110" cy="110" r="70"/><circle cx="110" cy="110" r="40"/></g><path class="zmark" d="M62 70H150Q158 70 152 78L76 150Q70 156 78 156H160"/><circle class="pt" cx="62" cy="70" r="4"/><circle class="pt" cx="160" cy="156" r="4"/><circle class="pt" cx="110" cy="110" r="3"/></svg></div>
+        </div>
       </div>
+      <div class="sv-side"><div class="sv-lists"><div><h4>Brand Strategy</h4><ul><li>Brand Naming</li><li>Mission &amp; Values</li><li>Positioning</li><li>Vision</li><li>Personas</li></ul></div><div><h4>Brand Visual</h4><ul><li>Moodboard</li><li>Creative Concept</li><li>Graphic Charter</li><li>Logotype</li><li>Brand Guidelines</li></ul></div></div><button class="btn sv-btn" data-case="socialboost">View details</button></div>
     </div>
   </section>
-
-  <section class="cap-sec wrap" id="assets">
-    <div class="center"><h2 class="h-l">Assets</h2><p class="sub">Strategy is half of a campaign's success. The other half depends on how well it is executed.</p></div>
-    <div class="cap-grid">
-      <div class="collage"><video src="assets/video/funpark-tuesday.mp4" poster="assets/work/funpark-tuesday.jpg" width="720" height="900" muted loop playsinline preload="none" data-auto aria-label="Funpark Tuesday post"></video><video src="assets/video/funpark-bounce.mp4" poster="assets/work/funpark-bounce.jpg" width="720" height="900" muted loop playsinline preload="none" data-auto aria-label="Funpark Bounce Mode post"></video><video src="assets/video/funpark-christmas.mp4" poster="assets/work/funpark-christmas.jpg" width="720" height="900" muted loop playsinline preload="none" data-auto aria-label="Funpark Christmas post"></video></div>
-      <div class="cap-lists">
-        <div><h4>Social media</h4><ul><li>Campaign concepts</li><li>Post design</li><li>Reels &amp; short video</li><li>Seasonal content</li><li>Ad creatives</li></ul></div>
-        <div><h4>Illustrations</h4><ul><li>Infographics</li><li>Roadmaps &amp; mind maps</li><li>Illustration 2D</li><li>Icons</li></ul></div>
-        <button class="btn btn-accent" data-case="funpark">View details</button>
+  <section class="sv-sec" id="design">
+    <div class="sv-head"><h2 class="sv-h">Digital Design</h2><p class="sub">A process of assumption and validation that takes into account every variable, each one custom to your business and waiting to be uncovered.</p></div>
+    <div class="sv-grid">
+      <div class="sv-vis dd-vis" aria-hidden="true">
+        <div class="dd-c1">
+          <div class="wd wd-blue wd-donut"><span class="wt">Website visitors</span><div class="donut2"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" class="tr"/><circle cx="50" cy="50" r="38" class="ar" pathLength="100"/></svg><b><span data-count="6">0</span>k</b></div>
+            <ul><li><i style="background:#c4f113"></i>Direct<span>43%</span></li><li><i style="background:#fff"></i>Organic<span>27%</span></li><li><i style="background:#f5c533"></i>Paid<span>16%</span></li><li><i style="background:#ff6b9a"></i>Social<span>14%</span></li></ul></div>
+          <div class="wd wd-lead"><span class="wt">Lead conversion rate</span><svg viewBox="0 0 160 60"><path class="ln" d="M4 50C20 50 22 34 34 34S44 14 56 14 70 34 80 30 92 22 104 26 116 42 128 36 140 44 156 46"/></svg><div class="ax"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span></div></div>
+          <div class="wd wd-search"><span>Search</span><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg></div>
+        </div>
+        <div class="dd-c2">
+          <div class="wd wd-ctr"><span class="wt">CTR based on traffic sources</span><div class="bars"><div class="bar" style="--h:48%"><i></i><em>Social</em></div><div class="bar hot" style="--h:72%"><i></i><em>Organic</em></div><div class="bar" style="--h:42%"><i></i><em>Referral</em></div><div class="bar hot" style="--h:96%"><i></i><em>Display</em></div><div class="bar" style="--h:66%"><i></i><em>Paid</em></div><span class="tip">66.56 %</span></div></div>
+          <div class="wd wd-blue wd-week"><span class="wt">Weekly visitors</span><div class="pills"><i style="--h:62%"><b></b></i><i style="--h:38%"><b></b></i><i style="--h:82%"><b></b></i><i style="--h:70%"><b></b></i><i style="--h:56%"><b></b></i><i style="--h:64%"><b></b></i></div><div class="ax"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div></div>
+        </div>
+        <div class="dd-c3">
+          <div class="wd wd-video"><div class="sw sw-dd" data-switch="1800"><video class="sw-item on" src="assets/video/crm-reports.mp4" poster="assets/work/crm-reports.jpg" width="1240" height="730" muted loop playsinline preload="metadata" aria-hidden="true"></video><video class="sw-item" src="assets/video/trustlayer-analytics.mp4" poster="assets/work/trustlayer-analytics.jpg" width="1240" height="762" muted loop playsinline preload="none" aria-hidden="true"></video><video class="sw-item" src="assets/video/trustlayer-dashboard.mp4" poster="assets/work/trustlayer-dashboard.jpg" width="1240" height="770" muted loop playsinline preload="none" aria-hidden="true"></video><video class="sw-item" src="assets/video/socialboost-generator.mp4" poster="assets/work/socialboost-generator.jpg" width="1240" height="802" muted loop playsinline preload="none" aria-hidden="true"></video><video class="sw-item" src="assets/video/crm-meetings.mp4" poster="assets/work/crm-meetings.jpg" width="1240" height="720" muted loop playsinline preload="none" aria-hidden="true"></video></div></div>
+          <div class="wd wd-mini"><span class="wt"><i>▮▮</i>ROI</span><b><span data-count="312">0</span>%</b><small>Return on investment</small><em class="up">+20%</em></div>
+          <div class="wd wd-mini"><span class="wt"><i>●</i>Leads</span><b><span data-count="360">0</span></b><small>21 000 visits total</small><em class="dn">−20%</em></div>
+        </div>
       </div>
+      <div class="sv-side"><div class="sv-lists"><div><h4>Platforms</h4><ul><li>UX Audit</li><li>Wireframes</li><li>User Flows</li><li>Prototyping</li></ul></div><div><h4>Websites</h4><ul><li>Interactive Experiences</li><li>Design System</li><li>Wireframes</li><li>Art Direction</li><li>Responsive</li><li>UI Kit</li></ul></div><div><h4>Mobile apps</h4><ul><li>Research</li><li>UX Design</li><li>Prototyping</li><li>Design System</li><li>Visual Design</li></ul></div></div><button class="btn sv-btn" data-case="trustlayer">View details</button></div>
     </div>
   </section>
-
-  <section class="cap-sec wrap" id="design">
-    <div class="center"><h2 class="h-l">Design</h2><p class="sub">Websites, web apps and mobile apps designed around how your customers and team really work.</p></div>
-    <div class="cap-grid">
-      <div class="collage"><video src="assets/video/trustlayer-dashboard.mp4" poster="assets/work/trustlayer-dashboard.jpg" width="1240" height="770" muted loop playsinline preload="none" data-auto aria-label="TrustLayer AI dashboard"></video><video src="assets/video/amc-about.mp4" poster="assets/work/amc-about.jpg" width="1166" height="842" muted loop playsinline preload="none" data-auto aria-label="A&amp;M Immigration website"></video><video src="assets/video/styleb-feed.mp4" poster="assets/work/styleb-feed.jpg" width="352" height="660" muted loop playsinline preload="none" data-auto aria-label="Style.Bd app"></video></div>
-      <div class="cap-lists">
-        <div><h4>Web</h4><ul><li>UX research</li><li>Websites &amp; landing pages</li><li>Web apps &amp; SaaS</li><li>Dashboards &amp; CRM</li><li>Design systems</li></ul></div>
-        <div><h4>Mobile</h4><ul><li>iOS &amp; Android apps</li><li>E-commerce flows</li><li>Prototyping</li><li>Usability testing</li></ul></div>
-        <button class="btn btn-accent" data-case="trustlayer">View details</button>
+  <section class="sv-sec" id="development">
+    <div class="sv-head"><h2 class="sv-h">Development</h2><p class="sub">Efficiency and scalability: the two filters every decision passes through, from programming language and framework to each library, line of code and server.</p></div>
+    <div class="sv-grid">
+      <div class="sv-vis dv-vis">
+        <div class="dv-pills" role="tablist" aria-label="Technologies"><button role="tab" type="button" class="dv-pill on" style="--pc:#fff" data-i="0">Webflow</button><button role="tab" type="button" class="dv-pill" style="--pc:#5aa9ff" data-i="1">React</button><button role="tab" type="button" class="dv-pill" style="--pc:#ff6bb5" data-i="2">WordPress</button><button role="tab" type="button" class="dv-pill" style="--pc:#3ec97a" data-i="3">API</button><button role="tab" type="button" class="dv-pill" style="--pc:#f5c533" data-i="4">Laravel</button><button role="tab" type="button" class="dv-pill" style="--pc:#bdbdbd" data-i="5">Next.js</button></div>
+        <div class="dv-editor" aria-hidden="true">
+          <div class="dv-side"><i>＋</i><i class="wf">W</i><i>☰</i><i>▢</i></div>
+          <div class="dv-main"><div class="dv-tabs"><span>Home</span><span class="on">Designing</span></div><div class="dv-stage"><video class="dv-item on" src="assets/video/sabbir-home.mp4" poster="assets/work/sabbir-home.jpg" width="1240" height="554" muted loop playsinline preload="metadata" aria-hidden="true"></video><video class="dv-item" src="assets/video/socialboost-generator.mp4" poster="assets/work/socialboost-generator.jpg" width="1240" height="802" muted loop playsinline preload="none" aria-hidden="true"></video><video class="dv-item" src="assets/video/amc-about.mp4" poster="assets/work/amc-about.jpg" width="1166" height="842" muted loop playsinline preload="none" aria-hidden="true"></video><video class="dv-item" src="assets/video/crm-reports.mp4" poster="assets/work/crm-reports.jpg" width="1240" height="730" muted loop playsinline preload="none" aria-hidden="true"></video><video class="dv-item" src="assets/video/trustlayer-dashboard.mp4" poster="assets/work/trustlayer-dashboard.jpg" width="1240" height="770" muted loop playsinline preload="none" aria-hidden="true"></video><video class="dv-item" src="assets/video/socialboost-landing.mp4" poster="assets/work/socialboost-landing.jpg" width="1240" height="782" muted loop playsinline preload="none" aria-hidden="true"></video></div></div>
+          <pre class="dv-code" id="dvCode"></pre>
+        </div>
       </div>
+      <div class="sv-side"><div class="sv-lists"><div><h4>Full Stack</h4><ul><li>Integration</li><li>Front-end</li><li>Back-end</li><li>Hosting &amp; Maintenance</li></ul></div><div><h4>CMS</h4><ul><li>Webflow</li><li>WordPress</li><li>Headless CMS</li></ul></div></div><button class="btn sv-btn" data-case="crm">View details</button></div>
     </div>
+    <script type="application/json" id="devData">[{"t": "Webflow", "c": "#fff", "code": "// Webflow interactions\nconst hero = webflow.select(\"#hero\");\nhero.on(\"scroll\", fadeInUp);"}, {"t": "React", "c": "#5aa9ff", "code": "import * as React from \"react\";\nimport { useState } from \"react\";\n\nexport function Generator() {\n  const [post, setPost] = useState(\"\");"}, {"t": "WordPress", "c": "#ff6bb5", "code": "<?php\n// Draw tables for PNP streams\n$draws = get_posts([\"post_type\" => \"draw\"]);\nforeach ($draws as $d) { render($d); }"}, {"t": "API", "c": "#3ec97a", "code": "GET /api/reports?range=monthly\n{\n  \"leads\": 360,\n  \"conversion\": 0.31\n}"}, {"t": "Laravel", "c": "#f5c533", "code": "Route::get(\"/registry\", [ToolController::class, \"index\"]);\n\n// Track AI incidents\nIncident::create($request->validated());"}, {"t": "Next.js", "c": "#bdbdbd", "code": "export default function Page() {\n  return <Hero title=\"Create Scroll-Stopping\" />;\n}"}]</script>
   </section>
-
-  <section class="cap-sec wrap" id="development">
-    <div class="center"><h2 class="h-l">Development</h2><p class="sub">Efficiency and scalability guide every technical decision: language, framework, libraries and each line of code.</p></div>
-    <div class="cap-grid">
-      <div class="collage"><video src="assets/video/crm-meetings.mp4" poster="assets/work/crm-meetings.jpg" width="1240" height="720" muted loop playsinline preload="none" data-auto aria-label="CRM meetings screen"></video><video src="assets/video/crm-reports.mp4" poster="assets/work/crm-reports.jpg" width="1240" height="730" muted loop playsinline preload="none" data-auto aria-label="CRM reports screen"></video><video src="assets/video/socialboost-generator.mp4" poster="assets/work/socialboost-generator.jpg" width="1240" height="802" muted loop playsinline preload="none" data-auto aria-label="SocialBoost generator"></video></div>
-      <div class="cap-lists">
-        <div><h4>Full stack</h4><ul><li>Front-end</li><li>Back-end</li><li>Integrations &amp; APIs</li><li>Hosting &amp; maintenance</li></ul></div>
-        <div><h4>CMS</h4><ul><li>WordPress</li><li>Webflow</li><li>Headless CMS</li><li>SEO setup</li></ul></div>
-        <button class="btn btn-accent" data-case="crm">View details</button>
-      </div>
+  <section class="sv-sec" id="assets">
+    <div class="sv-head"><h2 class="sv-h">Marketing<br>Assets</h2><p class="sub">Marketing strategy is responsible for half of a campaign's success. The other half relies entirely on how well it is executed.</p></div>
+    <div class="sv-grid">
+      <div class="sv-vis mk-vis" aria-hidden="true"><div class="deck" id="deck"><div class="dk"><video class="" src="assets/video/funpark-bounce.mp4" poster="assets/work/funpark-bounce.jpg" width="720" height="900" muted loop playsinline preload="metadata" aria-hidden="true"></video></div><div class="dk"><video class="" src="assets/video/funpark-allinone.mp4" poster="assets/work/funpark-allinone.jpg" width="720" height="900" muted loop playsinline preload="metadata" aria-hidden="true"></video></div><div class="dk"><video class="" src="assets/video/funpark-tuesday.mp4" poster="assets/work/funpark-tuesday.jpg" width="720" height="900" muted loop playsinline preload="metadata" aria-hidden="true"></video></div><div class="dk"><video class="" src="assets/video/funpark-christmas.mp4" poster="assets/work/funpark-christmas.jpg" width="720" height="900" muted loop playsinline preload="none" aria-hidden="true"></video></div><div class="dk"><video class="" src="assets/video/funpark-newyear.mp4" poster="assets/work/funpark-newyear.jpg" width="720" height="900" muted loop playsinline preload="none" aria-hidden="true"></video></div><div class="dk"><video class="" src="assets/video/funpark-discount.mp4" poster="assets/work/funpark-discount.jpg" width="720" height="900" muted loop playsinline preload="none" aria-hidden="true"></video></div></div></div>
+      <div class="sv-side"><div class="sv-lists"><div><h4>Motion videos</h4><ul><li>Animated Logos</li><li>Product Illustrations</li><li>Launch Videos</li><li>Social Reels</li><li>Visual Effects</li></ul></div><div><h4>Illustrations</h4><ul><li>Illustration 2D</li><li>Infographics</li><li>Roadmaps</li></ul></div></div><button class="btn sv-btn" data-case="funpark">View details</button></div>
     </div>
   </section>
 
