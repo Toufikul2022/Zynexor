@@ -3,6 +3,7 @@
   var EMAIL='hello@zynexor.com';           // TODO: replace with your real address
   var FORM_ENDPOINT='';                     // TODO: paste a Formspree (or similar) URL to receive messages
   var SOCIAL={instagram:'#',behance:'#',linkedin:'#',facebook:'#',x:'#'}; // TODO: your profile links
+  var LOCATION='Worldwide · Remote';        // TODO: your city and country, e.g. 'Dhaka - Bangladesh'
   var W='assets/work/', V='assets/video/';
   var page=document.body.getAttribute('data-page')||'home';
   var light=document.body.classList.contains('page-light');
@@ -91,20 +92,27 @@
   var cols='<div><h4>Cases</h4><ul>'+['A&amp;M Immigration','TrustLayer AI','SocialBoost AI','Style.Bd','Sabbir LIVE','Funpark'].map(function(c){return '<li><a href="cases.html">'+c+'</a></li>'}).join('')+'</ul></div>'+
     '<div><h4>Services</h4><ul><li><a href="services.html">Complex solution</a></li><li><a href="services.html#branding">Branding</a></li><li><a href="services.html#design">Design</a></li><li><a href="services.html#development">Development</a></li></ul></div>'+
     '<div><h4>About us</h4><ul><li><a href="index.html#about">Numbers</a></li><li><a href="index.html#stages">How we work</a></li><li><a href="blog.html">Blog</a></li><li><a href="index.html#clients">Clients</a></li></ul></div>';
-  var soc='<div class="socials"><a href="'+SOCIAL.instagram+'" aria-label="Instagram" target="_blank" rel="noopener">IG</a><a href="'+SOCIAL.behance+'" aria-label="Behance" target="_blank" rel="noopener">Bē</a><a href="'+SOCIAL.facebook+'" aria-label="Facebook" target="_blank" rel="noopener">f</a><a href="'+SOCIAL.x+'" aria-label="X" target="_blank" rel="noopener">X</a><a href="'+SOCIAL.linkedin+'" aria-label="LinkedIn" target="_blank" rel="noopener">in</a></div>';
+  var soc='<div class="socials">'+'<a href="'+SOCIAL.facebook+'" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>'+'<a href="'+SOCIAL.behance+'" aria-label="Behance" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h6.2c2 0 3.3 1 3.3 2.7 0 1.2-.7 2-1.6 2.3 1.3.3 2.1 1.3 2.1 2.7C12 15.8 10.5 17 8.3 17H2zm3 2.3v2.4h2.6c.8 0 1.3-.5 1.3-1.2S8.4 8.3 7.6 8.3zm0 4.5v2.8h3c.9 0 1.5-.6 1.5-1.4s-.6-1.4-1.5-1.4zM15 6.5h5.5V8H15zM17.8 9.4c2.6 0 4 1.8 3.9 4.6h-6c.1 1.3.9 2 2.1 2 .8 0 1.4-.3 1.7-.9h2.1c-.5 1.8-2 2.8-3.9 2.8-2.6 0-4.2-1.7-4.2-4.3 0-2.5 1.7-4.2 4.3-4.2zm-2 3.4h3.9c-.1-1.1-.8-1.8-1.9-1.8s-1.8.7-2 1.8z" fill="currentColor"/></svg></a>'+'<a href="'+SOCIAL.instagram+'" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="16.8" cy="7.2" r="1.3" fill="currentColor"/></svg></a>'+'<a href="'+SOCIAL.x+'" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4.6l3.9 5.3L17 4h2.6l-5.9 6.9L20.5 20h-4.6l-4.2-5.7L6.7 20H4.1l6.3-7.3z" fill="currentColor"/></svg></a>'+'<a href="'+SOCIAL.linkedin+'" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="9" width="3.6" height="11" fill="currentColor"/><circle cx="5.8" cy="5.6" r="2.1" fill="currentColor"/><path d="M10 9h3.4v1.6c.6-1 1.9-1.9 3.6-1.9 3 0 4 1.9 4 4.9V20h-3.6v-5.6c0-1.4-.3-2.6-1.8-2.6s-2 1.1-2 2.6V20H10z" fill="currentColor"/></svg></a>'+'</div>';
   var foot=document.getElementById('foot');
   if(foot){
     if(light){
       foot.innerHTML='<div class="wrap"><div class="foot-light"><span>© '+new Date().getFullYear()+' Zynexor. All rights reserved.</span><a href="index.html">Back to zynexor home →</a></div></div>';
     }else{
-      foot.innerHTML='<section class="wrap" style="padding-top:40px"><div class="cta">'+
-        '<div><h2>Innovate<br>with us</h2><p>Our creative solutions help businesses launch faster, look credible and grow their reach.</p>'+
-        '<div class="btns"><button class="btn btn-accent" data-contact>Write us</button><button class="btn btn-grey" data-contact>Book a call</button></div></div>'+
-        '<div class="cta-art">'+vid('crm-reports','','Dashboard designed by Zynexor')+
-        '<div class="chip" style="left:4%;top:8%">Designed by Zynexor<b>CRM reports</b></div><div class="chip" style="left:14%;bottom:6%">Shipped<b>7+ products</b></div></div></div></section>'+
+      foot.innerHTML='<section class="wrap cta-wrap"><div class="cta" id="ctaCard">'+
+        '<div class="cta-copy"><h2>Innovate<br>with us</h2><p>Our creative solutions help businesses launch faster, look credible and expand their reach.</p>'+
+        '<div class="btns"><button class="btn btn-write" data-contact>Write us</button><button class="btn btn-book" data-contact>Book a call</button></div></div>'+
+        '<div class="cta-art" aria-hidden="true"><div class="dev">'+
+          '<div class="dl"><i></i><i></i></div>'+
+          '<div class="w-rev"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 12l9 5 9-5M3 16l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><i class="ln"></i><b>$ 264,2K</b></div></div>'+
+          '<div class="w-vis"><i class="ln"></i><i class="bar"><em></em></i><b>56K<sup>▲ 14%</sup></b></div>'+
+          '<div class="w-stat"><span>Visit statistics</span><svg viewBox="0 0 280 110"><g class="g"><path d="M8 0V100M45 0V100M82 0V100M119 0V100M156 0V100M193 0V100M230 0V100M267 0V100"/></g><polyline points="8,92 45,84 64,58 98,58 119,30 156,44 193,28 230,30 267,14"/><g class="d"><circle cx="45" cy="84" r="4"/><circle cx="64" cy="58" r="4"/><circle cx="98" cy="58" r="4"/><circle cx="119" cy="30" r="4"/><circle cx="156" cy="44" r="4"/><circle cx="193" cy="28" r="4"/><circle cx="230" cy="30" r="4"/><circle cx="267" cy="14" r="4"/></g></svg><div class="mo"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span></div>'+
+            '<div class="rate"><span>Rate<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.6"/></svg></span><b>+ 58%</b></div></div>'+
+          '<div class="w-roi"><span><i>▮▮</i>ROI</span><svg viewBox="0 0 60 24"><path d="M2 20c6-2 6-12 12-10s4 10 10 8 6-14 12-12 4 10 10 8 6-8 12-8" fill="none" stroke="#fff" stroke-width="1.4"/></svg><b>312%</b><small>Return on investment</small><em>+ 20,1%</em></div>'+
+          '<div class="mo2"><span>Mar</span><span>Apr</span></div>'+
+        '</div></div></div></section>'+
         '<footer class="foot"><div class="wrap"><div class="foot-top">'+cols+
         '<div class="foot-mail"><a class="big" href="mailto:'+EMAIL+'">'+EMAIL+'</a>'+soc+'</div></div>'+
-        '<div class="foot-bot"><span>Copyright © '+new Date().getFullYear()+' Zynexor. All rights reserved.</span><span>Brand · Web · Product · Social</span></div></div></footer>';
+        '<div class="foot-bot"><span>Copyright © '+new Date().getFullYear()+' Zynexor. All rights reserved.</span><span>'+LOCATION+'</span></div></div></footer>';
     }
   }
 
