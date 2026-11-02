@@ -285,15 +285,34 @@
     addEventListener('scroll',stages,{passive:true});addEventListener('resize',stages);stages();
   }
 
-  /* projects table: floating preview follows the cursor */
-  var pv=document.getElementById('pPreview');
-  if(pv){var pimg=pv.querySelector('video');pimg.muted=true;
-    document.querySelectorAll('.prow').forEach(function(r){
-      r.addEventListener('mouseenter',function(){var n=r.getAttribute('data-img');pimg.poster=W+n+'.jpg';pimg.src=V+n+'.mp4';var pp=pimg.play();if(pp&&pp.catch)pp.catch(function(){});pv.classList.add('on')});
-      r.addEventListener('mouseleave',function(){pv.classList.remove('on');pimg.pause()});
-      r.addEventListener('mousemove',function(e){pv.style.left=(e.clientX+130)+'px';pv.style.top=e.clientY+'px'});
+  /* projects table: portrait preview glides beside the hovered row; soft chime per row */
+  var pv=document.getElementById('pPreview'),ptab=document.querySelector('.ptable');
+  if(pv&&ptab){
+    var pimg=pv.querySelector('video');pimg.muted=true;
+    var ty=0,cy=0,lastY=0,raf=null;
+    function loop(){cy+=(ty-cy)*0.18;var vel=ty-cy;pv.style.setProperty('--py',cy.toFixed(1)+'px');pv.style.setProperty('--pr',Math.max(-8,Math.min(8,vel*0.15)).toFixed(2)+'deg');raf=Math.abs(ty-cy)>0.3?requestAnimationFrame(loop):null}
+    ptab.addEventListener('mousemove',function(e){var r=ptab.getBoundingClientRect();ty=e.clientY-r.top;pv.style.setProperty('--px',(r.width*0.8)+'px');if(!raf)raf=requestAnimationFrame(loop)});
+    document.querySelectorAll('.prow').forEach(function(r,i){
+      r.addEventListener('mouseenter',function(){var n=r.getAttribute('data-img');if(pimg.getAttribute('data-n')!==n){pimg.setAttribute('data-n',n);pimg.poster=W+n+'.jpg';pimg.src=V+n+'.mp4'}var pp=pimg.play();if(pp&&pp.catch)pp.catch(function(){});pv.classList.add('on');chime(i)});
     });
+    ptab.addEventListener('mouseleave',function(){pv.classList.remove('on');pimg.pause()});
   }
+
+  /* hover sound: a short synthesized two-partial chime (no audio files). Browsers only allow audio after the visitor clicks or taps once. */
+  var AC=null,soundOn=true,unlocked=false;
+  try{soundOn=localStorage.getItem('zx-sound')!=='off'}catch(e){}
+  function unlock(){if(unlocked)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();unlocked=true}catch(e){}}
+  ['pointerdown','keydown','touchstart'].forEach(function(ev){addEventListener(ev,unlock,{passive:true})});
+  var SCALE=[659.25,739.99,880,987.77,1108.73,1318.51,1479.98,1760];   /* E major pentatonic, bright and soft */
+  function chime(i){
+    if(!soundOn||!unlocked||!AC||AC.state!=='running')return;
+    var t=AC.currentTime,f=SCALE[i%SCALE.length],out=AC.createGain();out.gain.setValueAtTime(0.0001,t);out.connect(AC.destination);
+    out.gain.exponentialRampToValueAtTime(0.09,t+0.012);out.gain.exponentialRampToValueAtTime(0.0001,t+0.55);
+    [[1,'sine',1],[2.01,'sine',0.25],[3.0,'triangle',0.08]].forEach(function(p){var o=AC.createOscillator(),g=AC.createGain();o.type=p[1];o.frequency.setValueAtTime(f*p[0],t);g.gain.value=p[2];o.connect(g);g.connect(out);o.start(t);o.stop(t+0.6)});
+  }
+  var sb=document.getElementById('sndBtn');
+  function paintSnd(){if(!sb)return;sb.setAttribute('aria-pressed',soundOn?'true':'false');sb.querySelector('.lbl').textContent=soundOn?'Sound on':'Sound off'}
+  if(sb){paintSnd();sb.addEventListener('click',function(){soundOn=!soundOn;try{localStorage.setItem('zx-sound',soundOn?'on':'off')}catch(e){}paintSnd();unlock();if(soundOn)setTimeout(function(){chime(2)},30)})}
 
   /* autoplay videos only while on screen (saves data and battery); posters show when paused */
   function playable(v){v.muted=true;v.setAttribute('muted','');v.playsInline=true}
