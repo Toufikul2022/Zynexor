@@ -197,7 +197,7 @@
     var ws=words.map(function(w){var s=document.createElement('span');s.className='sw-word';s.setAttribute('aria-hidden','true');s.textContent=w+' ';el.appendChild(s);return s});
     scrubs.push({el:el,ws:ws});
   });
-  function scrub(){scrubs.forEach(function(o){var r=o.el.getBoundingClientRect(),vh=innerHeight;var p=(vh*0.85-r.top)/(r.height+vh*0.35);p=Math.max(0,Math.min(1,p));var n=Math.round(p*o.ws.length);o.ws.forEach(function(w,i){w.classList.toggle('on',i<n)})})}
+  function scrub(){scrubs.forEach(function(o){var r=o.el.getBoundingClientRect(),vh=innerHeight;var inH=innerWidth>860&&o.el.closest('.hz-track');var p=inH?(innerWidth*0.95-r.left)/(innerWidth*0.75):(vh*0.85-r.top)/(r.height+vh*0.35);p=Math.max(0,Math.min(1,p));var n=Math.round(p*o.ws.length);o.ws.forEach(function(w,i){w.classList.toggle('on',i<n)})})}
   if(scrubs.length){addEventListener('scroll',scrub,{passive:true});addEventListener('resize',scrub);scrub()}
 
   /* bento: fast switching between project videos, shuffling brand tiles, live widgets */
@@ -438,21 +438,25 @@
   }
 
   /* about: pin the story and scroll it sideways */
-  var hz=document.getElementById('history');
+  var hz=document.getElementById('aboutRide')||document.getElementById('history');
   if(hz){
     var track=document.getElementById('hzTrack'),bar=document.getElementById('hzBar'),panels=[].slice.call(track.children);
     function hzSize(){if(innerWidth<=860){hz.style.removeProperty('--hz-h');return}var extra=track.scrollWidth-innerWidth;hz.style.setProperty('--hz-h',(extra+innerHeight)+'px')}
     function hzMove(){if(innerWidth<=860)return;var r=hz.getBoundingClientRect(),extra=track.scrollWidth-innerWidth,p=Math.max(0,Math.min(1,-r.top/(hz.offsetHeight-innerHeight)));
       var x=-p*extra;track.style.setProperty('--hx',x.toFixed(1)+'px');bar.style.setProperty('--hp',(p*100).toFixed(1)+'%');
-      panels.forEach(function(pn,i){var off=(pn.offsetLeft+x)/innerWidth;var l=pn.querySelector('.hz-left');if(l)l.style.setProperty('--tx',(off*-120).toFixed(1)+'px');
+      panels.forEach(function(pn,i){var off=(pn.offsetLeft+x)/innerWidth;var l=pn.querySelector('.hz-left')||pn.querySelector('.hz-in');if(l)l.style.setProperty('--tx',(off*-120).toFixed(1)+'px');
         pn.querySelectorAll('.hz-card').forEach(function(cd){cd.style.setProperty('--cs',(1-Math.min(.12,Math.abs(off)*.12)).toFixed(3))})})}
+    var hzScroll=hzMove;hzMove=function(){hzScroll();if(typeof scrub==='function')scrub();if(typeof tlp==='function')tlp()};
+    function hzJump(){var id=location.hash.slice(1),t=id&&document.getElementById(id);if(!t||innerWidth<=860||!track.contains(t))return;var pn=t.closest('.hz-panel');
+      requestAnimationFrame(function(){scrollTo(0,hz.getBoundingClientRect().top+scrollY+pn.offsetLeft)})}
+    addEventListener('hashchange',hzJump);addEventListener('load',hzJump);
     hzSize();hzMove();addEventListener('resize',function(){hzSize();hzMove()});addEventListener('scroll',hzMove,{passive:true});addEventListener('load',function(){hzSize();hzMove()});
   }
 
   /* how-we-work timeline: the line fills and steps light up as you scroll */
   var tl=document.getElementById('abTl');
   if(tl){var line=document.getElementById('abLine'),steps=[].slice.call(tl.querySelectorAll('.ab-step'));
-    function tlp(){var r=tl.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*0.75-r.top)/(r.height+innerHeight*0.15)));if(reduce)p=1;
+    function tlp(){var r=tl.getBoundingClientRect(),inH=innerWidth>860&&tl.closest('.hz-track'),p=Math.max(0,Math.min(1,inH?(innerWidth*0.9-r.left)/(r.width*0.9):(innerHeight*0.75-r.top)/(r.height+innerHeight*0.15)));if(reduce)p=1;
       line.style.setProperty('--p',(p*100).toFixed(1)+'%');steps.forEach(function(s,i){s.classList.toggle('on',p>=i/steps.length+0.02||p===1)})}
     addEventListener('scroll',tlp,{passive:true});addEventListener('resize',tlp);tlp()}
 
