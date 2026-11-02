@@ -349,6 +349,28 @@
   watch(document);
   if('MutationObserver' in window)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){if(n.matches&&n.matches('video[data-auto]'))watch(n.parentNode);else watch(n)}})})}).observe(document.body,{childList:true,subtree:true});
 
+  /* about intro: device opens tilted, zooms in to fill the screen, then zooms out and closes */
+  var abDev=document.getElementById('abDevice'),abSt=document.getElementById('abZoom');
+  if(abDev&&abSt){
+    var abV=document.getElementById('abIntro'),abP=document.getElementById('abPlay'),abSw=document.getElementById('abSw');
+    function abZoom(){
+      if(reduce||innerWidth<=860){abDev.style.setProperty('--tilt','0deg');abDev.style.setProperty('--sc','1');return}
+      var s=abSt.getBoundingClientRect(),run=abSt.offsetHeight-innerHeight;
+      var pre=Math.max(0,Math.min(1,1-s.top/(innerHeight*.8)));
+      var p=Math.max(0,Math.min(1,-s.top/run)),z=Math.sin(Math.PI*p),z2=z*z*(3-2*z);
+      var maxS=Math.max(1.3,Math.min(2.1,innerWidth/(abDev.offsetWidth||920)*1.15));
+      var sc=.72+.22*pre+(maxS-.94)*z2;if(p>.5)sc-=(.2*Math.max(0,(p-.75)*4))*(1-z2);
+      var tl=p<.5?(24-6*pre)*(1-z2):-14*(1-z2)*Math.min(1,(p-.5)*4);
+      var op=p>.5?1-.6*Math.max(0,(p-.8)*5):.35+.65*pre;
+      abDev.style.setProperty('--sc',sc.toFixed(3));abDev.style.setProperty('--tilt',tl.toFixed(2)+'deg');abDev.style.setProperty('--z',z2.toFixed(3));abDev.style.setProperty('--op',op.toFixed(3));
+    }
+    addEventListener('scroll',abZoom,{passive:true});addEventListener('resize',abZoom);abZoom();
+    abV.muted=true;
+    onScreen(abSw,function(v){if(v&&!reduce){var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})}else abV.pause()});
+    abP.addEventListener('click',function(){abSw.classList.add('watching');abV.loop=false;abV.currentTime=0;abV.muted=false;abV.controls=true;var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})});
+    abV.addEventListener('ended',function(){abSw.classList.remove('watching');abV.muted=true;abV.controls=false;abV.loop=true;abV.currentTime=0;abV.play()});
+  }
+
   /* hero device: intro video + project videos switch; "Watch our intro" plays it with sound */
   var hsw=document.getElementById('heroSw');
   if(hsw){
