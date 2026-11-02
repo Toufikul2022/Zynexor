@@ -349,6 +349,27 @@
   watch(document);
   if('MutationObserver' in window)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){if(n.matches&&n.matches('video[data-auto]'))watch(n.parentNode);else watch(n)}})})}).observe(document.body,{childList:true,subtree:true});
 
+  /* hero device: intro video + project videos switch; "Watch our intro" plays it with sound */
+  var hsw=document.getElementById('heroSw');
+  if(hsw){
+    var hItems=[].slice.call(hsw.querySelectorAll('.hs-item')),hDots=[].slice.call(hsw.querySelectorAll('.hs-dots i')),hLab=document.getElementById('hsLabel'),
+        hPlay=document.getElementById('introPlay'),intro=hItems[0],hi=0,ht=null,hVis=false,watching=false;
+    hItems.forEach(function(v){v.muted=true});
+    function hp(v){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+    function hShow(i){var prev=hItems[hi];hi=i;var v=hItems[i];
+      hItems.forEach(function(x,k){x.classList.toggle('on',k===i)});hDots.forEach(function(d,k){d.classList.toggle('on',k===i)});
+      hLab.textContent=v.getAttribute('data-label');v.preload='auto';hp(v);
+      if(prev!==v)setTimeout(function(){if(!prev.classList.contains('on'))prev.pause()},600);
+      var nx=hItems[(i+1)%hItems.length];if(nx.preload==='none')nx.preload='auto'}
+    function hSched(){clearTimeout(ht);if(watching||!hVis||reduce)return;ht=setTimeout(function(){hShow((hi+1)%hItems.length);hSched()},+hItems[hi].getAttribute('data-hold')||2600)}
+    intro.addEventListener('ended',function(){if(watching){stopWatch()}else{intro.currentTime=0;hp(intro)}});
+    function stopWatch(){watching=false;hsw.classList.remove('watching');intro.muted=true;intro.controls=false;hShow(1);hSched()}
+    hPlay.addEventListener('click',function(e){e.stopPropagation();watching=true;clearTimeout(ht);hsw.classList.add('watching');hShow(0);
+      intro.currentTime=0;intro.muted=false;intro.controls=true;hp(intro)});
+    onScreen(hsw,function(v){hVis=v;if(v){hp(hItems[hi]);hSched()}else{clearTimeout(ht);hItems[hi].pause()}});
+    hShow(0);
+  }
+
   /* hero: device flattens as you scroll; widgets drift with the mouse */
   var dev=document.getElementById('heroDevice');
   if(dev&&!reduce){
