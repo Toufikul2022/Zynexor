@@ -323,8 +323,15 @@
 <script src="site.js"></script>
 <script>
 (function(){
-  var A=ZX.ARTICLES.slice(0,3),g=document.getElementById('newsGrid');
-  g.innerHTML=A.map(function(a){return '<a class="ncard" href="article.html#'+a.id+'"><div class="im">'+ZX.vid(a.img)+'</div><span class="meta">'+a.cat+' · '+a.read+'</span><h3>'+a.t+'</h3></a>'}).join('');
+  var by={};ZX.ARTICLES.forEach(function(a){by[a.id]=a});
+  var A1=by['website-that-sells'],A2=by['brand-system'],A3=by['trust-for-ai'],g=document.getElementById('newsGrid');
+  var leaves='<i class="lf lf-w"></i><i class="lf lf-o"></i><i class="lf lf-b"></i><i class="lf lf-y"></i>';
+  var mosaic=['amc-services','socialboost-landing','styleb-home','sabbir-home',null,'trustlayer-landing','funpark-tuesday','crm-reports','socialboost-generator'];
+  g.innerHTML=
+    '<a class="ncard n-feat" href="article.html#'+A1.id+'"><div class="im">'+leaves+
+      '<div class="stage"><div class="panel"></div><div class="laptop"><div class="scr">'+ZX.vid('amc-about')+'</div><div class="base"></div></div></div></div><h3>'+A1.t+'</h3></a>'+
+    '<a class="ncard n-mosaic" href="article.html#'+A2.id+'"><div class="im"><div class="mz">'+mosaic.map(function(n){return n?'<span>'+ZX.vid(n)+'</span>':'<span class="bb"><img src="assets/brand/zynexor-icon.png" alt=""><b>Brandbook</b></span>'}).join('')+'</div></div><h3>'+A2.t+'</h3></a>'+
+    '<a class="ncard n-dash" href="article.html#'+A3.id+'"><div class="im"><div class="frame">'+ZX.vid('trustlayer-dashboard')+'</div></div><h3>'+A3.t+'</h3></a>';
 })();
 </script>
 </body>
