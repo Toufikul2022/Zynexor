@@ -393,6 +393,15 @@
     onScreen(deckEl,function(v){if(v&&!dt&&!reduce)dt=setInterval(function(){front=(front+1)%cards.length;layout()},2400);else if(!v&&dt){clearInterval(dt);dt=null}});
   }
 
+  /* approach cards: each stacked card shrinks and dims as the next one slides over it */
+  var acs=[].slice.call(document.querySelectorAll('#approach .acard'));
+  if(acs.length&&!reduce){
+    function stack(){acs.forEach(function(c,i){var nx=acs[i+1];if(!nx){c.style.setProperty('--sc',1);c.style.setProperty('--br',1);return}
+      var a=c.getBoundingClientRect(),b=nx.getBoundingClientRect(),p=Math.max(0,Math.min(1,(a.bottom-b.top)/a.height));
+      c.style.setProperty('--sc',(1-p*0.06).toFixed(3));c.style.setProperty('--br',(1-p*0.45).toFixed(3))})}
+    addEventListener('scroll',stack,{passive:true});addEventListener('resize',stack);stack();
+  }
+
   /* FAQ: wrap questions so they can fill white from left to right as they scroll in */
   var qs=[];
   document.querySelectorAll('.faq summary').forEach(function(s){if(s.querySelector('.q'))return;var sp=document.createElement('span');sp.className='q';while(s.firstChild)sp.appendChild(s.firstChild);s.appendChild(sp);qs.push(sp)});
