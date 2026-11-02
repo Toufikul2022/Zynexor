@@ -1061,3 +1061,31 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
 .ab-zoom{height:260vh;margin-top:0}
 .ab-zoom .device{opacity:var(--op,1)}
 @media (max-width:860px){.ab-zoom{height:auto;margin-top:30px}}
+
+/* hero widgets: live "video" motion */
+.fw-installs i{transition:height .9s cubic-bezier(.2,.8,.2,1),background .5s,border-color .5s}
+.fw-installs i b{transition:opacity .4s}
+.fw-installs i:not(.g):not(.y) b{opacity:0}
+.fw-circle{isolation:isolate}
+.fw-circle .rp{position:absolute;inset:0;border-radius:50%;border:2px solid rgba(47,107,255,.7);z-index:-1;animation:ripple 2.8s ease-out infinite}
+.fw-circle .r2{animation-delay:1.4s}
+@keyframes ripple{from{transform:scale(1);opacity:.8}to{transform:scale(1.55);opacity:0}}
+.fw-circle strong,.fw-circle span{transition:opacity .35s,transform .35s}
+.fw-circle.swap strong,.fw-circle.swap span{opacity:0;transform:translateY(8px)}
+.fw-bars .rocket{animation:hover 2.2s ease-in-out infinite}
+.fw-bars .rocket em{font-style:normal;display:block;transform:rotate(0)}
+.fw-bars .rocket .flame{position:absolute;left:4px;bottom:-4px;width:10px;height:16px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 50% 30%,#fff,#ffcf27 40%,#ff5a2a 80%);transform:rotate(45deg);transform-origin:top;animation:flame .18s ease-in-out infinite alternate;filter:blur(.5px);z-index:-1}
+@keyframes hover{50%{transform:translate(4px,-6px)}}
+@keyframes flame{to{height:22px;opacity:.75}}
+.mini-bars i{transition:height .7s cubic-bezier(.2,.8,.2,1),background .4s}
+.fw-bars .bubble{transition:transform .3s}
+.fw-bars .bubble.pop{transform:translateX(-50%) scale(1.18)}
+.pulse-ic .hb{stroke-dasharray:100;stroke-dashoffset:100;animation:beat 1.8s ease-in-out infinite}
+@keyframes beat{0%{stroke-dashoffset:100}55%{stroke-dashoffset:0}80%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.fw-line polyline{stroke-dasharray:none;stroke-dashoffset:0;animation:none}
+.fw-line .result strong{transition:opacity .3s,transform .3s;display:inline-block}
+.fw-line .result strong.swap{opacity:0;transform:translateY(6px)}
+.fw-line .scan{stroke:rgba(242,201,76,.35);stroke-width:1.5}
+.fw-arrow path{stroke-dasharray:140;animation:arrowd 3.2s ease-in-out infinite}
+@keyframes arrowd{0%{stroke-dashoffset:140}50%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.fw *{animation:none!important}}

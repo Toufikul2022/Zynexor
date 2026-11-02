@@ -22,20 +22,20 @@
     </div>
 
     <!-- floating widgets (decorative) -->
-    <div class="fw fw-pulse" data-depth="18" aria-hidden="true"><span class="pulse-ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span></div>
+    <div class="fw fw-pulse" data-depth="18" aria-hidden="true"><span class="pulse-ic"><svg viewBox="0 0 24 24"><path class="hb" pathLength="100" d="M3 12h4l2-5 4 10 2-5h6"/></svg></span></div>
     <div class="fw fw-bars" data-depth="26" aria-hidden="true">
-      <span class="bubble">7+</span>
-      <span class="rocket">🚀</span>
-      <div class="mini-bars"><i style="height:30%"></i><i style="height:55%"></i><i style="height:42%"></i><i class="hot" style="height:68%"></i><i style="height:60%"></i><i style="height:80%"></i></div>
+      <span class="bubble" id="fwBubble">7+</span>
+      <span class="rocket"><em>🚀</em><i class="flame"></i></span>
+      <div class="mini-bars" id="fwMini"><i style="height:30%"></i><i style="height:55%"></i><i style="height:42%"></i><i class="hot" style="height:68%"></i><i style="height:60%"></i><i style="height:80%"></i></div>
     </div>
     <svg class="fw fw-arrow" data-depth="10" viewBox="0 0 80 60" aria-hidden="true"><path d="M74 54C62 26 40 12 8 14M8 14l12-9M8 14l11 10"/></svg>
-    <div class="fw fw-line" data-depth="34" aria-hidden="true">
+    <div class="fw fw-line" id="fwLine" data-depth="34" aria-hidden="true">
       <span class="fw-t">Widget control</span>
       <svg viewBox="0 0 280 110" preserveAspectRatio="none"><g class="grid"><path d="M10 0V110M60 0V110M110 0V110M160 0V110M210 0V110M260 0V110"/></g><polyline points="10,100 50,92 80,64 110,64 140,40 170,56 200,36 230,38 270,22"/><g class="dots"><circle cx="50" cy="92" r="3.5"/><circle cx="80" cy="64" r="3.5"/><circle cx="110" cy="64" r="3.5"/><circle cx="140" cy="40" r="3.5"/><circle cx="170" cy="56" r="3.5"/><circle cx="200" cy="36" r="3.5"/><circle cx="230" cy="38" r="3.5"/></g></svg>
       <div class="months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span></div>
-      <div class="result"><span>Result <b>◎</b></span><strong>Growth</strong></div>
+      <div class="result"><span>Result <b>◎</b></span><strong id="fwRes">Growth</strong></div>
     </div>
-    <div class="fw fw-installs" data-depth="22" aria-hidden="true">
+    <div class="fw fw-installs" id="fwLaunch" data-depth="22" aria-hidden="true">
       <span class="fw-t">Launches</span>
       <div class="cols">
         <div><i class="t" style="height:62%"></i><i class="h"></i><em>Mon</em></div>
@@ -47,7 +47,7 @@
         <div><i class="t" style="height:56%"></i><i class="h"></i><em>Sun</em></div>
       </div>
     </div>
-    <div class="fw fw-circle" data-depth="30" aria-hidden="true"><strong>6</strong><span>Industries<br>served</span></div>
+    <div class="fw fw-circle" id="fwCircle" data-depth="30" aria-hidden="true"><i class="rp"></i><i class="rp r2"></i><strong>6</strong><span>Industries<br>served</span></div>
 
     <!-- dashboard device -->
     <div class="zoom-stage" id="zoomStage"><div class="zoom-sticky">

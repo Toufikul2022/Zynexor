@@ -371,6 +371,33 @@
     abV.addEventListener('ended',function(){abSw.classList.remove('watching');abV.muted=true;abV.controls=false;abV.loop=true;abV.currentTime=0;abV.play()});
   }
 
+  /* hero widgets: keep the floating cards moving like a live dashboard */
+  var fwL=document.getElementById('fwLaunch');
+  if(fwL&&!reduce){
+    var heroVisible=true;onScreen(fwL.closest('.hero'),function(v){heroVisible=v});
+    function rnd(a,b){return a+Math.random()*(b-a)}
+    /* launches: bars breathe, highlight hops */
+    var cols=[].slice.call(fwL.querySelectorAll('.cols>div')),hot=4;
+    setInterval(function(){if(!heroVisible)return;var nh=(hot+1+Math.floor(Math.random()*(cols.length-1)))%cols.length;
+      cols.forEach(function(c,k){var t=c.querySelector('.t'),h=c.querySelector('.h');
+        if(k===nh){t.classList.add('g');h.classList.add('y');if(!t.querySelector('b'))t.innerHTML='<b>Web</b>';if(!h.querySelector('b'))h.innerHTML='<b>App</b>';t.style.height=rnd(62,74)+'%';h.style.height=rnd(28,34)+'%'}
+        else{t.classList.remove('g');h.classList.remove('y');t.style.height=rnd(30,64)+'%';h.style.height=rnd(14,30)+'%'}});hot=nh},1600);
+    /* circle: cycle real facts */
+    var circ=document.getElementById('fwCircle'),facts=[['6','Industries<br>served'],['3','Countries,<br>one team'],['7+','Brands<br>launched']],fi=0;
+    setInterval(function(){if(!heroVisible)return;circ.classList.add('swap');setTimeout(function(){fi=(fi+1)%facts.length;circ.querySelector('strong').textContent=facts[fi][0];circ.querySelector('span').innerHTML=facts[fi][1];circ.classList.remove('swap')},350)},3000);
+    /* mini bars + bubble */
+    var mini=[].slice.call(document.querySelectorAll('#fwMini i')),bub=document.getElementById('fwBubble'),mh=3;
+    setInterval(function(){if(!heroVisible)return;mh=(mh+1)%mini.length;mini.forEach(function(b,k){b.classList.toggle('hot',k===mh);b.style.height=(k===mh?rnd(66,86):rnd(22,62))+'%'});bub.classList.add('pop');setTimeout(function(){bub.classList.remove('pop')},300)},1100);
+    /* line chart: morph to a new rising trend */
+    var fl=document.getElementById('fwLine'),poly=fl.querySelector('polyline'),dots=[].slice.call(fl.querySelectorAll('.dots circle')),res=document.getElementById('fwRes'),
+        XS=[10,50,80,110,140,170,200,230,270],cur=poly.getAttribute('points').split(' ').map(function(p){return +p.split(',')[1]}),words=['Growth','Leads','Sales','Reach','Traffic'],wi=0;
+    function target(){var y=rnd(88,100),a=[y];for(var i=1;i<XS.length;i++){y=Math.max(14,Math.min(100,y-rnd(-10,18)));a.push(y)}return a}
+    function morph(to){var from=cur.slice(),t0=performance.now();(function f(t){var k=Math.min(1,(t-t0)/900),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
+      cur=from.map(function(v,i){return v+(to[i]-v)*e});poly.setAttribute('points',XS.map(function(x,i){return x+','+cur[i].toFixed(1)}).join(' '));
+      dots.forEach(function(d,i){d.setAttribute('cy',cur[i+1].toFixed(1))});if(k<1)requestAnimationFrame(f)})(t0)}
+    setInterval(function(){if(!heroVisible)return;morph(target());res.classList.add('swap');setTimeout(function(){wi=(wi+1)%words.length;res.textContent=words[wi];res.classList.remove('swap')},300)},2600);
+  }
+
   /* hero device: intro video + project videos switch; "Watch our intro" plays it with sound */
   var hsw=document.getElementById('heroSw');
   if(hsw){
