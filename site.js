@@ -332,6 +332,12 @@
       fws.forEach(function(f){var d=+f.getAttribute('data-depth');f.style.setProperty('--mx',(-dx*d).toFixed(1)+'px');f.style.setProperty('--my',(-dy*d).toFixed(1)+'px')})});
   }
 
+  /* FAQ: wrap questions so they can fill white from left to right as they scroll in */
+  var qs=[];
+  document.querySelectorAll('.faq summary').forEach(function(s){if(s.querySelector('.q'))return;var sp=document.createElement('span');sp.className='q';while(s.firstChild)sp.appendChild(s.firstChild);s.appendChild(sp);qs.push(sp)});
+  function faqReveal(){var vh=innerHeight;qs.forEach(function(q){var r=q.getBoundingClientRect(),p=(vh*0.98-r.top)/(vh*0.32);p=Math.max(0,Math.min(1,p));q.style.setProperty('--rv',(reduce?100:Math.round(p*100))+'%')})}
+  if(qs.length){addEventListener('scroll',faqReveal,{passive:true});addEventListener('resize',faqReveal);faqReveal()}
+
   /* FAQ: keep one open */
   document.querySelectorAll('.faq').forEach(function(f){var ds=f.querySelectorAll('details');ds.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)ds.forEach(function(o){if(o!==d)o.open=false})})})});
 })();
