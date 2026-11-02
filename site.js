@@ -183,6 +183,53 @@
   function scrub(){scrubs.forEach(function(o){var r=o.el.getBoundingClientRect(),vh=innerHeight;var p=(vh*0.85-r.top)/(r.height+vh*0.35);p=Math.max(0,Math.min(1,p));var n=Math.round(p*o.ws.length);o.ws.forEach(function(w,i){w.classList.toggle('on',i<n)})})}
   if(scrubs.length){addEventListener('scroll',scrub,{passive:true});addEventListener('resize',scrub);scrub()}
 
+  /* bento: fast switching between project videos, shuffling brand tiles, live widgets */
+  function onScreen(el,cb){if(!('IntersectionObserver' in window)){cb(true);return}new IntersectionObserver(function(es){es.forEach(function(e){cb(e.isIntersecting)})},{rootMargin:'100px 0px'}).observe(el)}
+  var URLS={'socialboost-landing':'SocialBoost AI','amc-about':'A&M Immigration Law','sabbir-home':'Sabbir LIVE','trustlayer-landing':'TrustLayer AI','amc-services':'A&M Immigration · Services'};
+  document.querySelectorAll('[data-switch]').forEach(function(box){
+    var items=[].slice.call(box.querySelectorAll('.sw-item')),i=0,timer=null,ms=+box.getAttribute('data-switch')||1700,url=box.parentNode.querySelector('.url');
+    items.forEach(function(v){v.muted=true});
+    function play(v){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+    function step(){
+      var cur=items[i];i=(i+1)%items.length;var nx=items[i];
+      nx.preload='auto';try{nx.currentTime=0}catch(e){}play(nx);
+      cur.classList.remove('on');cur.classList.add('out');nx.classList.remove('out');nx.classList.add('on');
+      setTimeout(function(){cur.classList.remove('out');cur.pause()},450);
+      if(url){var k=(nx.getAttribute('src')||'').split('/').pop().replace('.mp4','');if(URLS[k])url.textContent=URLS[k]}
+      items[(i+1)%items.length].preload='auto';
+    }
+    onScreen(box,function(vis){if(vis&&!timer){if(!reduce){play(items[i]);timer=setInterval(step,ms)}}else if(!vis&&timer){clearInterval(timer);timer=null;items[i].pause()}});
+  });
+
+  var tilesBox=document.getElementById('bxTiles');
+  if(tilesBox){
+    var G=['M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z','M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10z','M4 4h16v6h-6v10H4z','M12 2l10 10-10 10L2 12z','M3 12a9 9 0 0 1 18 0h-6a3 3 0 0 0-6 0z','M6 3h6a7 7 0 0 1 0 14H10v4H6zm4 4v6h2a3 3 0 0 0 0-6z','M2 6l5-3 5 6 5-6 5 3-6 7 6 7-5 3-5-6-5 6-5-3 6-7z','M12 3l3 5 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1z','M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 3.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z','M12 2c5 4 5 16 0 20-5-4-5-16 0-20zM2 12c4-5 16-5 20 0-4 5-16 5-20 0z'];
+    var T=[].slice.call(tilesBox.children);
+    function svg(k){return '<svg viewBox="0 0 24 24"><path d="'+G[k]+'"/></svg>'}
+    T.forEach(function(t,k){t.innerHTML=svg(k%G.length)});
+    T[0].classList.add('a');T[7].classList.add('g');
+    var tt=null,tick=0;
+    function shuffle(){
+      tick++;
+      var t=T[Math.floor(Math.random()*T.length)];t.classList.add('flip');
+      setTimeout(function(){t.innerHTML=svg(Math.floor(Math.random()*G.length));t.classList.remove('flip')},180);
+      if(tick%5===0){var a=T.filter(function(x){return!x.classList.contains('g')});var na=a[Math.floor(Math.random()*a.length)];T.forEach(function(x){x.classList.remove('a')});na.classList.add('a')}
+      if(tick%7===0){var b=T.filter(function(x){return!x.classList.contains('a')});var nb=b[Math.floor(Math.random()*b.length)];T.forEach(function(x){x.classList.remove('g')});nb.classList.add('g')}
+    }
+    onScreen(tilesBox,function(v){if(v&&!tt&&!reduce)tt=setInterval(shuffle,320);else if(!v&&tt){clearInterval(tt);tt=null}});
+  }
+
+  var cal=document.querySelector('.wg-cal');
+  if(cal){
+    var ds=[].slice.call(cal.querySelectorAll('.d[data-d]')),ring=document.getElementById('goalRing'),gn=document.getElementById('goalN'),roi=document.getElementById('roiN'),ct=null,ci=3;
+    ds[8].classList.add('ev');ds[17].classList.add('ev');ds[24].classList.add('ev');
+    function hop(){ds.forEach(function(d){d.classList.remove('sel')});ci=(ci+1+Math.floor(Math.random()*3))%ds.length;ds[ci].classList.add('sel');
+      var n=8+Math.floor(Math.random()*8);gn.textContent=n;var pc=Math.round(n/15*100);ring.style.background='conic-gradient(var(--accent) '+pc+'%,#333 0)';ring.firstChild.textContent=pc+'%';
+      roi.textContent='+'+(8+Math.floor(Math.random()*14))+'%'}
+    ds[ci].classList.add('sel');
+    onScreen(cal,function(v){if(v&&!ct&&!reduce)ct=setInterval(hop,900);else if(!v&&ct){clearInterval(ct);ct=null}});
+  }
+
   /* stats: cards slide/tilt in from below, sit flat mid-screen, and tilt out at the top */
   var scs=document.querySelectorAll('.sc');
   if(scs.length&&!reduce){
