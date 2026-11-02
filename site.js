@@ -437,6 +437,17 @@
     onScreen(gc,function(v){gvis=v;if(v&&!graf)graf=requestAnimationFrame(gdraw)});
   }
 
+  /* about: sections open (curtain widens, content rises in order) and close (shrink, dim) with scroll */
+  var blks=[].slice.call(document.querySelectorAll('.ab-blk'));
+  if(blks.length&&!reduce){
+    blks.forEach(function(b){[].forEach.call(b.children,function(c,i){c.style.setProperty('--i',Math.min(i,4))})});
+    function abv(){var vh=innerHeight;blks.forEach(function(b,k){var r=b.getBoundingClientRect();
+      var e=k===0?1:Math.max(0,Math.min(1,(vh-r.top)/(vh*0.6)));
+      var x=Math.max(0,Math.min(1,(vh*0.45-r.bottom)/(vh*0.45)));
+      b.style.setProperty('--e',e.toFixed(3));b.style.setProperty('--x',x.toFixed(3))})}
+    addEventListener('scroll',abv,{passive:true});addEventListener('resize',abv);abv();
+  }
+
   /* about: pin the story and scroll it sideways */
   var hz=document.getElementById('aboutRide')||document.getElementById('history');
   if(hz){

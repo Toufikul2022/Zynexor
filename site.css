@@ -995,3 +995,20 @@ body{font-weight:500}
   .hz-about .p-hero{padding-top:120px}
   .hz-about .ab-nums{grid-template-columns:1fr}
 }
+
+/* about: vertical sections open like a curtain and close as they leave */
+.ab-v{padding-block:clamp(14px,1.6vw,26px)!important;overflow-x:clip}
+.ab-v.is-first{padding-top:0!important}
+.ab-blk{--e:1;--x:0;position:relative;border-radius:clamp(28px,3vw,48px);background:radial-gradient(120% 80% at 50% 0%,#151515,#0a0a0a 70%);border:1px solid #1c1c1c;
+  padding:clamp(60px,7vw,120px) clamp(20px,4vw,70px);
+  clip-path:inset(calc(var(--x)*6%) calc((1 - var(--e))*18%) calc((1 - var(--e))*14%) calc((1 - var(--e))*18%) round clamp(28px,3vw,48px));
+  transform:translateY(calc((1 - var(--e))*70px)) scale(calc(1 - var(--x)*.1));transform-origin:50% 0;
+  filter:brightness(calc(1 - var(--x)*.55));will-change:transform,clip-path}
+.ab-blk>*{opacity:clamp(0,calc(var(--e)*2.2 - var(--i,0)*.35),1);transform:translateY(calc(max(0,1 - var(--e)*1.6 + var(--i,0)*.18)*40px))}
+.is-first .ab-blk{padding-top:clamp(140px,11vw,190px);padding-inline:0;background:radial-gradient(70% 60% at 50% 0%,#1a1a1a,#000 70%);border-color:transparent;border-radius:0 0 clamp(28px,3vw,48px) clamp(28px,3vw,48px)}
+.ab-blk.ab-nums{display:grid;padding:clamp(24px,2.4vw,40px)}
+.ab-v#numbers{padding-bottom:clamp(14px,1.6vw,26px)}
+.ab-v .ab-team-grid,.ab-v .ab-tl{margin-top:0}
+.ab-v#process .ab-tl{margin-top:clamp(50px,5vw,90px)}
+.ab-v .ab-mission{padding:0}
+@media (prefers-reduced-motion:reduce){.ab-blk{clip-path:none!important;transform:none!important;filter:none!important}.ab-blk>*{opacity:1!important;transform:none!important}}
