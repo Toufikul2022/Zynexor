@@ -87,7 +87,7 @@ h1,h2,h3,h4{margin:0;font-weight:500;letter-spacing:-.02em;line-height:1.05;text
 @media (max-width:640px){.float-cta{padding:12px 16px;font-size:14px}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;overflow:hidden;padding-top:150px;text-align:center;isolation:isolate}
+.hero{position:relative;overflow:clip;padding-top:150px;text-align:center;isolation:isolate}
 .beam{position:absolute;left:50%;top:0;width:min(560px,70vw);height:560px;transform:translateX(-50%);z-index:-1;pointer-events:none;
   background:conic-gradient(from 180deg at 50% 0%,transparent 158deg,rgba(255,255,255,.22) 172deg,rgba(255,255,255,.34) 180deg,rgba(255,255,255,.22) 188deg,transparent 202deg);
   -webkit-mask-image:linear-gradient(#000 20%,transparent 92%);mask-image:linear-gradient(#000 20%,transparent 92%);filter:blur(18px);animation:beam 6s ease-in-out infinite alternate}
@@ -137,7 +137,7 @@ h1,h2,h3,h4{margin:0;font-weight:500;letter-spacing:-.02em;line-height:1.05;text
 .fw-circle span{font-size:13px;color:#dfe8ff;line-height:1.5}
 /* device */
 .device-wrap{margin-top:80px;perspective:1600px;display:flex;justify-content:center}
-.device{width:min(920px,100%);border-radius:28px;padding:12px;background:linear-gradient(180deg,#3a3a3a,#1a1a1a 30%,#0d0d0d);border:1px solid #444;box-shadow:0 -10px 60px rgba(255,255,255,.04),0 60px 120px rgba(0,0,0,.8);transform-origin:50% 0;transform:rotateX(var(--tilt,18deg)) scale(var(--sc,.96));transition:transform .15s linear}
+.device{will-change:transform;width:min(920px,100%);border-radius:28px;padding:12px;background:linear-gradient(180deg,#3a3a3a,#1a1a1a 30%,#0d0d0d);border:1px solid #444;box-shadow:0 -10px 60px rgba(255,255,255,.04),0 60px 120px rgba(0,0,0,.8);transform-origin:50% 35%;transform:rotateX(var(--tilt,18deg)) scale(var(--sc,.96));transition:transform .08s linear}
 .device video{width:100%;border-radius:18px;background:#0b0b14}
 .hero .spaced{margin:56px auto 0}
 @media (max-width:1500px){.fw-installs{right:1%;top:360px;scale:.78;transform-origin:top right}.fw-pulse{left:6%}.fw-bars{left:2%}.fw-arrow{left:9%}.fw-line{left:3%;scale:.9;transform-origin:left top}.fw-circle{right:4%;width:170px;height:170px;top:660px}}
@@ -1023,3 +1023,12 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
 .cal-frame iframe{width:100%;height:100%;border:0;display:block}
 .cal-alt{font-size:13px;color:#9d9d9d;text-decoration:underline;text-underline-offset:3px;justify-self:start}
 .cal-alt:hover{color:var(--accent)}
+
+/* hero device: pinned zoom in, then zoom out */
+.zoom-stage{position:relative;height:230vh;margin-top:20px}
+.zoom-sticky{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center}
+.zoom-stage .device-wrap{margin-top:0;width:100%}
+.zoom-stage .device{box-shadow:0 -10px 60px rgba(255,255,255,.04),0 60px 120px rgba(0,0,0,.8),0 0 calc(var(--z,0)*140px) rgba(124,92,255,calc(var(--z,0)*.25))}
+.hero .fw{opacity:calc(1 - var(--zf,0));transition:opacity .2s}
+.zoom-stage+.spaced{margin-top:0}
+@media (max-width:860px){.zoom-stage{height:auto;margin-top:40px}.zoom-sticky{position:relative;height:auto}}

@@ -352,7 +352,19 @@
   /* hero: device flattens as you scroll; widgets drift with the mouse */
   var dev=document.getElementById('heroDevice');
   if(dev&&!reduce){
-    function tilt(){var r=dev.getBoundingClientRect(),p=Math.max(0,Math.min(1,1-(r.top-innerHeight*.15)/(innerHeight*.75)));dev.style.setProperty('--tilt',(18*(1-p)).toFixed(2)+'deg');dev.style.setProperty('--sc',(.96+.04*p).toFixed(3))}
+    var stage=document.getElementById('zoomStage'),heroEl=dev.closest('.hero');
+    function tilt(){
+      if(innerWidth<=860||!stage){var r=dev.getBoundingClientRect(),q=Math.max(0,Math.min(1,1-(r.top-innerHeight*.15)/(innerHeight*.75)));dev.style.setProperty('--tilt',(18*(1-q)).toFixed(2)+'deg');dev.style.setProperty('--sc',(.96+.04*q).toFixed(3));return}
+      var s=stage.getBoundingClientRect(),run=stage.offsetHeight-innerHeight;
+      var pre=Math.max(0,Math.min(1,1-s.top/(innerHeight*.6)));            /* approach: flatten a little before pinning */
+      var p=Math.max(0,Math.min(1,-s.top/run));                            /* 0..1 while pinned */
+      var z=Math.sin(Math.PI*p),z2=z*z*(3-2*z);                             /* zoom curve: in, hold, out */
+      var maxS=Math.max(1.35,Math.min(2.1,innerWidth/(dev.offsetWidth||920)*1.15));
+      var sc=.94+.04*pre+(maxS-.98)*z2;
+      var tl=p<.5?18*(1-pre)*(1-z2):-10*(1-z2)*Math.min(1,(p-.5)*4);
+      dev.style.setProperty('--sc',sc.toFixed(3));dev.style.setProperty('--tilt',tl.toFixed(2)+'deg');dev.style.setProperty('--z',z2.toFixed(3));
+      if(heroEl)heroEl.style.setProperty('--zf',Math.min(1,z2*1.6).toFixed(3));
+    }
     addEventListener('scroll',tilt,{passive:true});addEventListener('resize',tilt);tilt();
     var fws=document.querySelectorAll('.fw[data-depth]');
     addEventListener('mousemove',function(e){if(scrollY>innerHeight)return;var dx=e.clientX/innerWidth-.5,dy=e.clientY/innerHeight-.5;
