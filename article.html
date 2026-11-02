@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zynexor Article</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/png" href="assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-page="blog" class="page-light">
+<main class="wrap" style="padding-top:130px;padding-bottom:100px">
+  <article class="article" id="art"></article>
+</main>
+<div id="foot"></div>
+<script src="site.js"></script>
+<script>
+(function(){
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function render(){
+    var id=(location.hash||'').slice(1),A=ZX.ARTICLES,a=A.filter(function(x){return x.id===id})[0]||A[0];
+    document.title=a.t+' · Zynexor';
+    document.getElementById('art').innerHTML='<a class="back" href="blog.html">← All articles</a><p class="mute" style="margin-top:28px;font-size:13px">'+a.cat+' · '+a.read+'</p><h1>'+esc(a.t)+'</h1>'+
+      ZX.vid(a.img,'cover')+
+      '<div class="body">'+a.body.map(function(p){return p.indexOf('## ')===0?'<h2>'+esc(p.slice(3))+'</h2>':'<p>'+esc(p)+'</p>'}).join('')+'</div>'+
+      '<p style="margin-top:40px"><button class="btn btn-accent" data-contact>Talk to us about your project ↗</button></p>';
+    scrollTo(0,0);
+  }
+  addEventListener('hashchange',render);render();
+})();
+</script>
+</body>
+</html>
