@@ -1012,3 +1012,13 @@ body{font-weight:500}
 .ab-v#process .ab-tl{margin-top:clamp(50px,5vw,90px)}
 .ab-v .ab-mission{padding:0}
 @media (prefers-reduced-motion:reduce){.ab-blk{clip-path:none!important;transform:none!important;filter:none!important}.ab-blk>*{opacity:1!important;transform:none!important}}
+
+/* Calendly booking popup */
+dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
+.cal-in{gap:12px;padding:24px}
+.cal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.cal-head .x{margin:0}
+.cal-frame{height:min(700px,calc(100vh - 220px));border-radius:14px;overflow:hidden;background:#111}
+.cal-frame iframe{width:100%;height:100%;border:0;display:block}
+.cal-alt{font-size:13px;color:#9d9d9d;text-decoration:underline;text-underline-offset:3px;justify-self:start}
+.cal-alt:hover{color:var(--accent)}

@@ -1,7 +1,8 @@
 /* Zynexor shared behaviour: chrome (nav, CTA, footer, modals), scroll effects, galleries, blog data. */
 (function(){
-  var EMAIL='hello@zynexor.com';           // TODO: replace with your real address
-  var FORM_ENDPOINT='';                     // TODO: paste a Formspree (or similar) URL to receive messages
+  var EMAIL='infozynexor@gmail.com';        // contact address shown across the site
+  var FORM_ENDPOINT='https://formsubmit.co/ajax/infozynexor@gmail.com'; // contact form messages are emailed here (FormSubmit)
+  var CALENDLY='https://calendly.com/zynexor/30min';                      // Book a call scheduler
   var SOCIAL={instagram:'#',behance:'#',linkedin:'#',facebook:'#',x:'#'}; // TODO: your profile links
   var LOCATION='Worldwide · Remote';        // TODO: your city and country, e.g. 'Dhaka - Bangladesh'
   var W='assets/work/', V='assets/video/';
@@ -81,12 +82,12 @@
   var navHTML='<nav class="pill-nav" id="pillNav" aria-label="Main">'+
     '<a class="logo" href="index.html" aria-label="Zynexor home"><img src="assets/brand/zynexor-icon.png" alt="Zynexor"></a>'+
     '<div class="pill-links">'+links.map(function(l){return '<a href="'+l[0]+'"'+(page===l[2]?' aria-current="page"':'')+'>'+l[1]+'</a>'}).join('')+'</div>'+
-    '<button class="p-book" data-contact>Book a call</button>'+
+    '<button class="p-book" data-book>Book a call</button>'+
     '<button class="p-contact" data-contact>Contact</button>'+
     '<button class="p-menu" id="pMenu" aria-label="Open menu"><span></span><span></span></button></nav>'+
     '<div class="m-menu" id="mMenu"><button class="close" id="mClose" aria-label="Close menu">✕</button>'+
     links.map(function(l){return '<a href="'+l[0]+'">'+l[1]+'</a>'}).join('')+'</div>'+
-    '<button class="float-cta" data-contact>Book a call <span aria-hidden="true">↗</span></button>';
+    '<button class="float-cta" data-book>Book a call <span aria-hidden="true">↗</span></button>';
   document.body.insertAdjacentHTML('afterbegin',navHTML);
 
   var cols='<div><h4>Cases</h4><ul>'+['A&amp;M Immigration','TrustLayer AI','SocialBoost AI','Style.Bd','Sabbir LIVE','Funpark'].map(function(c){return '<li><a href="cases.html">'+c+'</a></li>'}).join('')+'</ul></div>'+
@@ -100,7 +101,7 @@
     }else{
       foot.innerHTML='<section class="wrap cta-wrap"><div class="cta" id="ctaCard">'+
         '<div class="cta-copy"><h2>Innovate<br>with us</h2><p>Our creative solutions help businesses launch faster, look credible and expand their reach.</p>'+
-        '<div class="btns"><button class="btn btn-write" data-contact>Write us</button><button class="btn btn-book" data-contact>Book a call</button></div></div>'+
+        '<div class="btns"><button class="btn btn-write" data-contact>Write us</button><button class="btn btn-book" data-book>Book a call</button></div></div>'+
         '<div class="cta-art" aria-hidden="true"><div class="dev">'+
           '<div class="dl"><i></i><i></i></div>'+
           '<div class="w-rev"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 12l9 5 9-5M3 16l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><i class="ln"></i><b>$ 264,2K</b></div></div>'+
@@ -123,11 +124,25 @@
     '<div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>'+
     '<div class="fld"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>'+
     '<div class="fld"><label for="c-msg">Project</label><textarea id="c-msg" name="message" required></textarea></div>'+
+    '<input type="hidden" name="_subject" value="New message from the Zynexor website"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">'+
+    '<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">'+
     '<button class="btn btn-accent" type="submit">Send message ↗</button>'+
     '<div class="mail-row">Or email <code id="cMail">'+EMAIL+'</code><button type="button" id="cCopy">Copy</button></div>'+
     '<p class="note" id="cNote" role="status"></p></form></dialog>'+
+    '<dialog class="modal cal-modal" id="calModal" aria-label="Book a call with Zynexor"><div class="modal-in cal-in">'+
+    '<div class="cal-head"><div><h2>Book a call</h2><p class="mute" style="font-size:14px">Pick a time for a free 30-minute intro call.</p></div><button type="button" class="x" id="calClose" aria-label="Close">✕</button></div>'+
+    '<div class="cal-frame"><iframe id="calFrame" title="Zynexor booking calendar" loading="lazy"></iframe></div>'+
+    '<a class="cal-alt" href="'+CALENDLY+'" target="_blank" rel="noopener">Calendar not loading? Open it in a new tab ↗</a></div></dialog>'+
     '<dialog class="lb" id="lb" aria-label="Case gallery"><div class="lb-in"><div class="lb-head"><div><h3 id="lbT"></h3><span id="lbC"></span></div><button class="lb-b" id="lbX" aria-label="Close gallery">✕</button></div>'+
     '<div class="lb-stage"><video id="lbI" muted loop playsinline autoplay></video><button class="lb-b lb-prev" id="lbP" aria-label="Previous">←</button><button class="lb-b lb-next" id="lbN" aria-label="Next">→</button></div><div class="lb-th" id="lbTh"></div></div></dialog>');
+
+  /* book a call: Calendly in a popup, with a new-tab fallback */
+  var calM=document.getElementById('calModal'),calF=document.getElementById('calFrame');
+  document.addEventListener('click',function(e){var t=e.target.closest('[data-book]');if(!t)return;e.preventDefault();
+    if(!calF.src)calF.src=CALENDLY+'?hide_gdpr_banner=1&background_color=111111&text_color=ffffff&primary_color=c4f113&embed_type=Inline&embed_domain='+encodeURIComponent(location.hostname||'zynexor');
+    calM.showModal?calM.showModal():calM.setAttribute('open','')});
+  document.getElementById('calClose').addEventListener('click',function(){calM.close()});
+  calM.addEventListener('click',function(e){if(e.target===calM)calM.close()});
 
   /* nav: expanded at top and when scrolling up; compact when scrolling down */
   var nav=document.getElementById('pillNav'),lastY=scrollY;
@@ -153,8 +168,11 @@
     if(!cf.checkValidity()){note.textContent='Please fill in your name, a valid email and a short message.';return}
     if(!FORM_ENDPOINT){note.textContent='The form is not connected yet. Please email '+EMAIL+'.';return}
     note.textContent='Sending…';
+    var btn=cf.querySelector('[type=submit]');btn.disabled=true;
     fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(cf),headers:{Accept:'application/json'}})
-      .then(function(r){if(!r.ok)throw 0;cf.reset();note.textContent='Thanks! We received your message.'})
+      .then(function(r){return r.json().catch(function(){return {}}).then(function(d){if(!r.ok||d.success===false||d.success==='false')throw 0})})
+      .then(function(){cf.reset();note.textContent='Thanks! Your message has been sent. We reply within one business day.'})
+      .finally(function(){btn.disabled=false})
       .catch(function(){note.textContent='Sending failed. Please email '+EMAIL+' instead.'});
   });
 

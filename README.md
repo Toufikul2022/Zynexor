@@ -19,8 +19,9 @@ Portfolio visuals are looping MP4 videos in `assets/video/`, with still posters 
 
 Edit the settings at the top of `site.js`:
 
-- `EMAIL`: the contact address shown across the site
-- `FORM_ENDPOINT`: a form service URL (for example Formspree) so the contact form sends messages
+- `EMAIL`: the contact address shown across the site (currently infozynexor@gmail.com)
+- `FORM_ENDPOINT`: where contact-form messages go (FormSubmit, delivering to infozynexor@gmail.com)
+- `CALENDLY`: the booking link opened by every "Book a call" button
 - `SOCIAL`: links to your Instagram, Behance, Facebook, X and LinkedIn profiles
 
 ## Run locally
