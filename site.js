@@ -183,6 +183,26 @@
   function scrub(){scrubs.forEach(function(o){var r=o.el.getBoundingClientRect(),vh=innerHeight;var p=(vh*0.85-r.top)/(r.height+vh*0.35);p=Math.max(0,Math.min(1,p));var n=Math.round(p*o.ws.length);o.ws.forEach(function(w,i){w.classList.toggle('on',i<n)})})}
   if(scrubs.length){addEventListener('scroll',scrub,{passive:true});addEventListener('resize',scrub);scrub()}
 
+  /* stats: cards slide/tilt in from below, sit flat mid-screen, and tilt out at the top */
+  var scs=document.querySelectorAll('.sc');
+  if(scs.length&&!reduce){
+    function stats(){
+      var vh=innerHeight;
+      scs.forEach(function(el){
+        var r=el.getBoundingClientRect(),c=r.top+r.height/2;
+        var t=Math.max(-1,Math.min(1,(c-vh*0.5)/(vh*0.75)));     // -1 leaving top, 0 centre, +1 entering bottom
+        var dir=+el.getAttribute('data-dir')||1,base=parseFloat(getComputedStyle(el).getPropertyValue('--base'))||0;
+        var e=t*Math.abs(t);                                        // ease: calm in the middle, faster at the edges
+        el.style.setProperty('--sx',(dir*e*90).toFixed(1)+'px');
+        el.style.setProperty('--sy',(e*120).toFixed(1)+'px');
+        el.style.setProperty('--sr',(base*Math.max(0,t)*2+dir*e*9).toFixed(2)+'deg');
+        el.style.setProperty('--ss',(1-Math.abs(e)*0.14).toFixed(3));
+        el.style.setProperty('--so',(1-Math.max(0,Math.abs(t)-0.55)*1.6).toFixed(3));
+      });
+    }
+    addEventListener('scroll',stats,{passive:true});addEventListener('resize',stats);stats();
+  }
+
   /* stages: rotate the device wheel with scroll progress; fade text by distance from the middle */
   var split=document.getElementById('stSplit'),wheel=document.getElementById('stWheel');
   if(split&&wheel){
