@@ -437,6 +437,18 @@
     onScreen(gc,function(v){gvis=v;if(v&&!graf)graf=requestAnimationFrame(gdraw)});
   }
 
+  /* about: pin the story and scroll it sideways */
+  var hz=document.getElementById('history');
+  if(hz){
+    var track=document.getElementById('hzTrack'),bar=document.getElementById('hzBar'),panels=[].slice.call(track.children);
+    function hzSize(){if(innerWidth<=860){hz.style.removeProperty('--hz-h');return}var extra=track.scrollWidth-innerWidth;hz.style.setProperty('--hz-h',(extra+innerHeight)+'px')}
+    function hzMove(){if(innerWidth<=860)return;var r=hz.getBoundingClientRect(),extra=track.scrollWidth-innerWidth,p=Math.max(0,Math.min(1,-r.top/(hz.offsetHeight-innerHeight)));
+      var x=-p*extra;track.style.setProperty('--hx',x.toFixed(1)+'px');bar.style.setProperty('--hp',(p*100).toFixed(1)+'%');
+      panels.forEach(function(pn,i){var off=(pn.offsetLeft+x)/innerWidth;var l=pn.querySelector('.hz-left');if(l)l.style.setProperty('--tx',(off*-120).toFixed(1)+'px');
+        pn.querySelectorAll('.hz-card').forEach(function(cd){cd.style.setProperty('--cs',(1-Math.min(.12,Math.abs(off)*.12)).toFixed(3))})})}
+    hzSize();hzMove();addEventListener('resize',function(){hzSize();hzMove()});addEventListener('scroll',hzMove,{passive:true});addEventListener('load',function(){hzSize();hzMove()});
+  }
+
   /* how-we-work timeline: the line fills and steps light up as you scroll */
   var tl=document.getElementById('abTl');
   if(tl){var line=document.getElementById('abLine'),steps=[].slice.call(tl.querySelectorAll('.ab-step'));
