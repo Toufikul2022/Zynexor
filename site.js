@@ -166,6 +166,15 @@
   var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
   lb.addEventListener('touchend',function(e){if(sx==null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(idx+(d<0?1:-1));sx=null});
 
+  /* headings: wrap each word so it can lift and light up on hover */
+  document.querySelectorAll('.h-xl,.h-l,.h-m,.h-s,.hero h1,.st-item h3,.bx-card h3,.cta h2,.article h1').forEach(function(h){
+    if(h.classList.contains('hx'))return;h.classList.add('hx');
+    var walk=document.createTreeWalker(h,NodeFilter.SHOW_TEXT,null),nodes=[],n;while(n=walk.nextNode())nodes.push(n);
+    nodes.forEach(function(t){if(!t.nodeValue.trim())return;var f=document.createDocumentFragment();
+      t.nodeValue.split(/(\s+)/).forEach(function(part){if(!part)return;if(/^\s+$/.test(part)){f.appendChild(document.createTextNode(part))}else{var s=document.createElement('span');s.className='hw';s.textContent=part;f.appendChild(s)}});
+      t.parentNode.replaceChild(f,t)});
+  });
+
   /* letter-spaced line: characters brighten one by one */
   document.querySelectorAll('.spaced').forEach(function(el){
     if(reduce)return;var txt=el.textContent;el.setAttribute('aria-label',txt);el.textContent='';
