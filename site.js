@@ -148,7 +148,6 @@
   var nav=document.getElementById('pillNav'),lastY=scrollY;
   function navState(){var y=scrollY;if(y<80||y<lastY-4)nav.classList.add('open');else if(y>lastY+4)nav.classList.remove('open');lastY=y}
   addEventListener('scroll',navState,{passive:true});navState();
-  nav.addEventListener('mouseenter',function(){nav.classList.add('open')});
   var mm=document.getElementById('mMenu');
   document.getElementById('pMenu').addEventListener('click',function(){mm.classList.add('show')});
   document.getElementById('mClose').addEventListener('click',function(){mm.classList.remove('show')});
