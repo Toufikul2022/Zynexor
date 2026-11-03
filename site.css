@@ -1089,3 +1089,59 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
 .fw-arrow path{stroke-dasharray:140;animation:arrowd 3.2s ease-in-out infinite}
 @keyframes arrowd{0%{stroke-dashoffset:140}50%,100%{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){.fw *{animation:none!important}}
+
+/* ================= phones: same look and motion as desktop, scaled ================= */
+@media (max-width:860px){
+  /* hero: floating widgets around the device + pinned zoom */
+  .hero .fw{display:block}
+  .fw-pulse,.fw-arrow{display:none!important}
+  .fw-bars{left:2%;top:var(--fwy1,440px);scale:.52;transform:none;transform-origin:left top;z-index:5}
+  .fw-installs{right:1%;left:auto;top:var(--fwy1,440px);scale:.5;transform:none;transform-origin:right top;z-index:5}
+  .fw-line{left:1%;top:var(--fwy2,700px);scale:.5;transform:none;transform-origin:left top;z-index:5}
+  .fw-circle{right:3%;top:var(--fwy2,700px);width:92px;height:92px;gap:2px;z-index:5}
+  .fw-circle strong{font-size:22px}.fw-circle span{font-size:9px}
+  .zoom-stage{height:210vh;margin-top:30px}
+  .zoom-sticky{position:sticky;height:100vh;align-items:flex-start;padding-top:20vh}
+  .ab-zoom{height:210vh}
+  /* stats: two staggered columns like desktop */
+  .stats2{grid-template-columns:1fr 1fr;gap:10px}
+  .stats2 .col{gap:10px}.stats2 .col-r{padding-top:46px}
+  .sc{min-height:190px;padding:16px 14px;border-radius:18px;gap:8px}
+  .sc b{font-size:46px}
+  .sc p{font-size:11px;line-height:1.3}
+  .sc-pill{top:8px;right:8px;font-size:9px;gap:6px;padding:3px 9px 3px 3px}
+  .sc-pill i{width:20px;height:20px;font-size:10px;box-shadow:none}
+  .sc-faces{left:12px;top:12px;padding:2px 6px 2px 2px}
+  .sc-faces i{width:20px;height:20px;font-size:9px;margin-left:-6px;border-width:1px}
+  .sc-faces i.r{margin-right:6px}
+  .sc-ring .sc-row{gap:6px}.ring{width:52px}.sc-ring p{margin-top:12px}
+  .sc-chip{right:-6px;top:12px;padding:3px 8px 3px 3px;gap:5px}
+  .sc-chip i{width:30px;height:30px;font-size:14px}
+  .sc-chip svg{width:32px;height:12px}.sc-chip em{font-size:8px}
+  /* stages: the rotating device wheel pinned on top, text scrolls beneath */
+  .st-split{grid-template-columns:1fr}
+  .st-right{display:block;order:-1;position:sticky;top:0;height:46vh;z-index:2;align-self:start;border-radius:0 0 26px 26px;overflow:hidden}
+  .st-sticky{position:relative;height:100%}
+  .st-wheel{--R:720px;--step:40deg;left:calc(8% + var(--R))}
+  .st-dev{width:300px;top:-98px;padding:6px;border-radius:20px}
+  .st-dev video{border-radius:14px}
+  .st-ghost{width:330px;height:220px;top:-110px;border-radius:24px}
+  .st-item{min-height:62vh;padding:40px 16px;opacity:1;gap:14px;border-top:0}
+  .st-m{display:none!important}
+  /* about: horizontal 2023–2026 ride on phones too */
+  .hz{height:var(--hz-h,600vh)!important}
+  .hz-sticky{position:sticky;height:100vh;overflow:hidden}
+  .hz-track{flex-direction:row;width:max-content;transform:translate3d(var(--hx,0px),0,0)!important}
+  .hz-panel{width:100vw;height:100%;padding:0;overflow:hidden}
+  .hz-intro,.hz-outro{padding:0 16px}
+  .hz-big{font-size:46px}
+  .hz-y{flex-direction:column;align-items:stretch;padding:0}
+  .hz-left{position:absolute;left:16px;right:16px;top:92px;width:auto;height:auto;gap:14px;transform:translateX(var(--tx,0px))!important}
+  .hz-left.above{flex-direction:column-reverse;justify-content:flex-end}
+  .hz-year{font-size:92px}
+  .hz-txt{gap:8px}.hz-txt p{font-size:14px}
+  .hz-media{display:grid;position:absolute;left:16px;right:-22vw;top:auto;bottom:-2vh;width:auto;height:44vh;grid-template-columns:1fr .32fr;gap:8px}
+  .hz-col{gap:8px}.hz-card{border-radius:16px}
+  .hz-ghost,.hz-media::after{display:block}
+  .hz-progress{display:block;left:16px;right:16px;bottom:14px}
+}

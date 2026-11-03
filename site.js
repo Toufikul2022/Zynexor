@@ -300,8 +300,7 @@
   if(split&&wheel){
     var sItems=split.querySelectorAll('.st-item');
     function stages(){
-      if(innerWidth<=860)return;
-      var vh=innerHeight,c=vh/2,p=0;
+      var vh=innerHeight,c=innerWidth<=860?vh*.74:vh/2,p=0;
       sItems.forEach(function(it,i){var r=it.getBoundingClientRect(),mid=r.top+r.height/2,d=(mid-c)/r.height;
         it.style.opacity=(1-Math.min(1,Math.abs(d))*0.8).toFixed(3);
         if(d<=0)p=Math.max(p,i-d);});
@@ -354,11 +353,11 @@
   if(abDev&&abSt){
     var abV=document.getElementById('abIntro'),abP=document.getElementById('abPlay'),abSw=document.getElementById('abSw');
     function abZoom(){
-      if(reduce||innerWidth<=860){abDev.style.setProperty('--tilt','0deg');abDev.style.setProperty('--sc','1');return}
+      if(reduce){abDev.style.setProperty('--tilt','0deg');abDev.style.setProperty('--sc','1');return}
       var s=abSt.getBoundingClientRect(),run=abSt.offsetHeight-innerHeight;
       var pre=Math.max(0,Math.min(1,1-s.top/(innerHeight*.8)));
       var p=Math.max(0,Math.min(1,-s.top/run)),z=Math.sin(Math.PI*p),z2=z*z*(3-2*z);
-      var maxS=Math.max(1.3,Math.min(2.1,innerWidth/(abDev.offsetWidth||920)*1.15));
+      var maxS=innerWidth<=860?1.6:Math.max(1.3,Math.min(2.1,innerWidth/(abDev.offsetWidth||920)*1.15));
       var sc=.72+.22*pre+(maxS-.94)*z2;if(p>.5)sc-=(.2*Math.max(0,(p-.75)*4))*(1-z2);
       var tl=p<.5?(24-6*pre)*(1-z2):-14*(1-z2)*Math.min(1,(p-.5)*4);
       var op=p>.5?1-.6*Math.max(0,(p-.8)*5):.35+.65*pre;
@@ -370,6 +369,13 @@
     abP.addEventListener('click',function(){abSw.classList.add('watching');abV.loop=false;abV.currentTime=0;abV.muted=false;abV.controls=true;var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})});
     abV.addEventListener('ended',function(){abSw.classList.remove('watching');abV.muted=true;abV.controls=false;abV.loop=true;abV.currentTime=0;abV.play()});
   }
+
+  /* phones: anchor the floating widgets to the device's position */
+  var heroS=document.querySelector('.hero'),heroD=document.getElementById('heroDevice');
+  function fwPlace(){if(!heroS||!heroD)return;if(innerWidth>860){heroS.style.removeProperty('--fwy1');heroS.style.removeProperty('--fwy2');return}
+    var st=document.getElementById('zoomStage'),top=st.offsetTop+innerHeight*.2,h=heroD.offsetHeight;
+    heroS.style.setProperty('--fwy1',(top-58)+'px');heroS.style.setProperty('--fwy2',(top+h-40)+'px')}
+  fwPlace();addEventListener('resize',fwPlace);addEventListener('load',fwPlace);
 
   /* hero widgets: keep the floating cards moving like a live dashboard */
   var fwL=document.getElementById('fwLaunch');
@@ -424,12 +430,12 @@
   if(dev&&!reduce){
     var stage=document.getElementById('zoomStage'),heroEl=dev.closest('.hero');
     function tilt(){
-      if(innerWidth<=860||!stage){var r=dev.getBoundingClientRect(),q=Math.max(0,Math.min(1,1-(r.top-innerHeight*.15)/(innerHeight*.75)));dev.style.setProperty('--tilt',(18*(1-q)).toFixed(2)+'deg');dev.style.setProperty('--sc',(.96+.04*q).toFixed(3));return}
+      if(!stage){var r=dev.getBoundingClientRect(),q=Math.max(0,Math.min(1,1-(r.top-innerHeight*.15)/(innerHeight*.75)));dev.style.setProperty('--tilt',(18*(1-q)).toFixed(2)+'deg');dev.style.setProperty('--sc',(.96+.04*q).toFixed(3));return}
       var s=stage.getBoundingClientRect(),run=stage.offsetHeight-innerHeight;
       var pre=Math.max(0,Math.min(1,1-s.top/(innerHeight*.6)));            /* approach: flatten a little before pinning */
       var p=Math.max(0,Math.min(1,-s.top/run));                            /* 0..1 while pinned */
       var z=Math.sin(Math.PI*p),z2=z*z*(3-2*z);                             /* zoom curve: in, hold, out */
-      var maxS=Math.max(1.35,Math.min(2.1,innerWidth/(dev.offsetWidth||920)*1.15));
+      var maxS=innerWidth<=860?1.6:Math.max(1.35,Math.min(2.1,innerWidth/(dev.offsetWidth||920)*1.15));
       var sc=.94+.04*pre+(maxS-.98)*z2;
       var tl=p<.5?18*(1-pre)*(1-z2):-10*(1-z2)*Math.min(1,(p-.5)*4);
       dev.style.setProperty('--sc',sc.toFixed(3));dev.style.setProperty('--tilt',tl.toFixed(2)+'deg');dev.style.setProperty('--z',z2.toFixed(3));
@@ -551,13 +557,13 @@
   var hz=document.getElementById('aboutRide')||document.getElementById('history');
   if(hz){
     var track=document.getElementById('hzTrack'),bar=document.getElementById('hzBar'),panels=[].slice.call(track.children);
-    function hzSize(){if(innerWidth<=860){hz.style.removeProperty('--hz-h');return}var extra=track.scrollWidth-innerWidth;hz.style.setProperty('--hz-h',(extra+innerHeight)+'px')}
-    function hzMove(){if(innerWidth<=860)return;var r=hz.getBoundingClientRect(),extra=track.scrollWidth-innerWidth,p=Math.max(0,Math.min(1,-r.top/(hz.offsetHeight-innerHeight)));
+    function hzSize(){var extra=track.scrollWidth-innerWidth;hz.style.setProperty('--hz-h',(extra+innerHeight)+'px')}
+    function hzMove(){var r=hz.getBoundingClientRect(),extra=track.scrollWidth-innerWidth,p=Math.max(0,Math.min(1,-r.top/(hz.offsetHeight-innerHeight)));
       var x=-p*extra;track.style.setProperty('--hx',x.toFixed(1)+'px');bar.style.setProperty('--hp',(p*100).toFixed(1)+'%');
-      panels.forEach(function(pn,i){var off=(pn.offsetLeft+x)/innerWidth;var l=pn.querySelector('.hz-left')||pn.querySelector('.hz-in');if(l)l.style.setProperty('--tx',(off*-120).toFixed(1)+'px');
+      panels.forEach(function(pn,i){var off=(pn.offsetLeft+x)/innerWidth;var l=pn.querySelector('.hz-left')||pn.querySelector('.hz-in');if(l)l.style.setProperty('--tx',(off*(innerWidth<=860?-24:-120)).toFixed(1)+'px');
         pn.querySelectorAll('.hz-card').forEach(function(cd){cd.style.setProperty('--cs',(1-Math.min(.12,Math.abs(off)*.12)).toFixed(3))})})}
     var hzScroll=hzMove;hzMove=function(){hzScroll();if(typeof scrub==='function')scrub();if(typeof tlp==='function')tlp()};
-    function hzJump(){var id=location.hash.slice(1),t=id&&document.getElementById(id);if(!t||innerWidth<=860||!track.contains(t))return;var pn=t.closest('.hz-panel');
+    function hzJump(){var id=location.hash.slice(1),t=id&&document.getElementById(id);if(!t||!track.contains(t))return;var pn=t.closest('.hz-panel');
       requestAnimationFrame(function(){scrollTo(0,hz.getBoundingClientRect().top+scrollY+pn.offsetLeft)})}
     addEventListener('hashchange',hzJump);addEventListener('load',hzJump);
     hzSize();hzMove();addEventListener('resize',function(){hzSize();hzMove()});addEventListener('scroll',hzMove,{passive:true});addEventListener('load',function(){hzSize();hzMove()});
