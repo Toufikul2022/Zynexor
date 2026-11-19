@@ -77,6 +77,7 @@
   }
   window.ZX={CASES:CASES,ARTICLES:ARTICLES,W:W,V:V,vid:vid};
 
+  function hdIntro(v){if(v&&innerWidth*(window.devicePixelRatio||1)>=1400&&!/1080/.test(v.getAttribute('src'))){v.setAttribute('src',v.getAttribute('src').replace('zynexor-intro.mp4','zynexor-intro-1080.mp4'))}}
   /* lazy video posters: fetch preview images only when a video gets near the screen */
   var posterIO='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var v=e.target;v.poster=v.getAttribute('data-poster');v.removeAttribute('data-poster');posterIO.unobserve(v)}})},{rootMargin:'800px 0px 800px 0px'}):null;
   function lazyPosters(root){(root||document).querySelectorAll('video[data-poster]').forEach(function(v){if(v._lp)return;v._lp=1;if(posterIO)posterIO.observe(v);else v.poster=v.getAttribute('data-poster')})}
@@ -370,7 +371,7 @@
     }
     addEventListener('scroll',abZoom,{passive:true});addEventListener('resize',abZoom);abZoom();
     abV.muted=true;
-    function abStart(){onScreen(abSw,function(v){if(v&&!reduce){var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})}else abV.pause()});}
+    function abStart(){hdIntro(abV);onScreen(abSw,function(v){if(v&&!reduce){var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})}else abV.pause()});}
     if(document.readyState==='complete')abStart();else addEventListener('load',abStart);
     abP.addEventListener('click',function(){abSw.classList.add('watching');abV.loop=false;abV.currentTime=0;abV.muted=false;abV.controls=true;var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})});
     abV.addEventListener('ended',function(){abSw.classList.remove('watching');abV.muted=true;abV.controls=false;abV.loop=true;abV.currentTime=0;abV.play()});
@@ -429,7 +430,7 @@
     function stopWatch(){watching=false;hsw.classList.remove('watching');intro.muted=true;intro.controls=false;hShow(1);hSched()}
     hPlay.addEventListener('click',function(e){e.stopPropagation();watching=true;clearTimeout(ht);hsw.classList.add('watching');hShow(0);
       intro.currentTime=0;intro.muted=false;intro.controls=true;hp(intro)});
-    function hStart(){onScreen(hsw,function(v){hVis=v;if(v){hp(hItems[hi]);hSched()}else{clearTimeout(ht);hItems[hi].pause()}});hShow(0)}
+    function hStart(){hdIntro(intro);onScreen(hsw,function(v){hVis=v;if(v){hp(hItems[hi]);hSched()}else{clearTimeout(ht);hItems[hi].pause()}});hShow(0)}
     if(document.readyState==='complete')hStart();else addEventListener('load',hStart);
   }
 
