@@ -23,7 +23,7 @@
 <main class="blog-main">
   <h1 class="blog-title rise">Zynexor Blog</h1>
   <div class="filters" id="filters" role="group" aria-label="Filter articles">
-    <button class="on" data-f="All" aria-pressed="true">All</button><button data-f="Branding" aria-pressed="false">Branding</button><button data-f="Design" aria-pressed="false">Design</button><button data-f="Social media" aria-pressed="false">Social media</button><button data-f="Success story" aria-pressed="false">Success story</button>
+    <button class="on" data-f="All" aria-pressed="true">All</button><button data-f="Guides" aria-pressed="false">Guides</button><button data-f="Branding" aria-pressed="false">Branding</button><button data-f="Design" aria-pressed="false">Design</button><button data-f="Social media" aria-pressed="false">Social media</button><button data-f="Success story" aria-pressed="false">Success story</button>
   </div>
   <div class="featured" id="featured"></div>
   <h2 class="more-h">More articles</h2>
@@ -34,8 +34,6 @@
 <script>
 (function(){
   var A=ZX.ARTICLES,W=ZX.W;
-  var ORDER=['brand-system','trust-for-ai','live-shopping-app','website-that-sells','scroll-stopping-posts','one-crm'];
-  A=ORDER.map(function(id){return A.filter(function(a){return a.id===id})[0]}).filter(Boolean);
   function meta(a,sep){return '<span class="meta">'+a.read+' <i>'+sep+'</i> '+a.cat+'</span>'}
   function small(a){return '<a class="bcard-l" href="blog/'+a.id+'"><div class="tx">'+meta(a,'•')+'<h3>'+a.t+'</h3></div><div class="th">'+ZX.vid(a.img)+'</div></a>'}
   function big(a){return '<a class="bcard-big" href="blog/'+a.id+'">'+meta(a,'•')+'<h3>'+a.t+'</h3><div class="frame">'+ZX.vid(a.img)+'</div></a>'}
@@ -45,7 +43,7 @@
     var fe=document.getElementById('featured'),g=document.getElementById('agrid');
     if(list.length>=3){fe.innerHTML='<div class="stack">'+small(list[0])+small(list[1])+'</div>'+big(list[2]);fe.classList.remove('one')}
     else{fe.innerHTML=list.length?big(list[0])+(list[1]?'<div class="stack">'+small(list[1])+'</div>':''):'';fe.classList.toggle('one',list.length===1)}
-    var rest=f==='All'?list.slice(3):[];g.innerHTML=rest.map(tile).join('');
+    var rest=list.slice(list.length>=3?3:list.length);g.innerHTML=rest.map(tile).join('');
     document.querySelector('.more-h').hidden=!rest.length;
   }
   document.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});render(b.getAttribute('data-f'))});

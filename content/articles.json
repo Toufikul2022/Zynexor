@@ -1,0 +1,278 @@
+[
+ {
+  "id": "website-cost-canada",
+  "cat": "Guides",
+  "img": "amc-about",
+  "t": "How much does a website cost in Canada in 2026?",
+  "body": [
+   "If you run a business in Canada and you are planning a new website, the first question is almost always the same: how much will it cost? The honest answer is that it depends on what the website needs to do. This guide explains what drives the price, the rough ranges you will see quoted in Canada, the Canadian rules that can add work, and how to get a quote you can actually compare.",
+   "## The short answer",
+   "Prices quoted by Canadian freelancers and agencies vary widely, but most projects fall into a few broad bands. Treat these as rough market ranges, not fixed prices:",
+   "- **Template or do-it-yourself site:** from a few hundred dollars up to about $3,000 CAD, plus monthly platform fees. Good for testing an idea quickly.\n- **Custom small-business website (5 to 15 pages):** commonly around $5,000 to $15,000 CAD. Custom design, basic search optimisation, contact and booking forms.\n- **Content-rich or lead-generation website:** often $15,000 to $40,000 CAD or more. Many service pages, a blog, integrations with a CRM or booking system, careful conversion design.\n- **E-commerce stores and web applications:** usually priced higher again, because product catalogues, payments, user accounts and dashboards take far more design and development time.",
+   "## What actually drives the price",
+   "Two websites with the same number of pages can have very different prices. These are the factors that matter most:",
+   "- **Custom design versus a template.** A template is faster and cheaper. Custom design costs more but is built around your customers and your brand, which usually converts better.\n- **Content.** Writing clear, search-friendly copy for every page is real work. If you supply the text, the price drops. If the agency writes it, budget for it.\n- **Functionality.** Online booking, payments, client portals, multilingual content, live data tables and CRM integrations each add time.\n- **Number of unique page layouts.** Twenty pages that share three layouts cost less than ten pages that are all different.\n- **Speed, accessibility and SEO.** Doing these properly from the start costs a little more and saves a lot later.",
+   "## Canadian requirements that can add scope",
+   "A few Canadian rules are worth planning for early. This is general information, not legal advice, so check the details for your business with a lawyer.",
+   "- **French content.** If you serve customers in Quebec, Quebec's language laws generally require your commercial website to be available in French. A bilingual site is a bigger project than an English-only one.\n- **Accessibility (AODA).** In Ontario, many organisations with 50 or more employees must make their public websites meet WCAG 2.0 Level AA. Read our [guide to AODA, ADA and WCAG](/blog/website-accessibility-aoda-ada).\n- **Privacy (PIPEDA).** If your site collects personal information through forms or analytics, you need a clear privacy policy and sensible data handling.\n- **Anti-spam (CASL).** If you plan to send marketing emails, your sign-up forms need proper consent.",
+   "## Ongoing costs to budget for",
+   "The build is only part of the picture. Plan for a domain name (usually tens of dollars per year), hosting or a platform subscription, software licences or plugins, and maintenance: updates, backups, security fixes and small content changes. Many businesses also pay for ongoing SEO, content or advertising once the site is live.",
+   "## Fixed price or monthly retainer?",
+   "When the scope is clear, a fixed price gives you certainty. When you want continuous improvement, such as new landing pages, campaigns and content every month, a retainer is usually better value. A good agency will tell you which suits your situation and will write the scope down in plain language.",
+   "## How to get quotes you can compare",
+   "- Describe your goal, not just the deliverable. \"I want more booked consultations\" leads to a better proposal than \"I need a five-page website\".\n- List must-have features, such as booking, payments, French content or a CRM link.\n- Share two or three websites you like and say why.\n- Ask every agency what is included: copywriting, photography, SEO set-up, accessibility, training and post-launch support.\n- Ask who owns the design files and code when the project ends. The answer should be you.",
+   "## How Zynexor approaches website projects",
+   "Zynexor works with businesses across Canada and the USA. We start with a short discovery call, then send a written proposal with scope, timeline and price. A typical small-business website takes six to ten weeks. You can see examples in our [case studies](/cases), including a content-rich website for a Winnipeg immigration law firm.",
+   "## FAQ",
+   "Q: How long does it take to build a website in Canada?\nA: A brand-new small-business website usually takes six to ten weeks from kick-off to launch. Simple template sites can go live faster; larger content or e-commerce sites take longer.",
+   "Q: Do I need a bilingual English and French website?\nA: If you sell to customers in Quebec, Quebec's language rules generally require French content on commercial websites. Outside Quebec it is a business choice. Check your obligations with a lawyer.",
+   "Q: Are website design services taxable in Canada?\nA: Website design is generally a taxable service, so expect GST or HST (and PST where it applies) on top of the quoted price, depending on your province and the supplier's registration."
+  ]
+ },
+ {
+  "id": "choose-web-design-agency-usa",
+  "cat": "Guides",
+  "img": "trustlayer-landing",
+  "t": "How to choose a web design agency in the USA: 12 questions to ask",
+  "body": [
+   "Hiring a web design agency is a big decision. The right partner brings in customers for years. The wrong one leaves you with a site you cannot update, a missed deadline and an invoice you did not expect. These twelve questions help US business owners compare agencies on what matters.",
+   "## Questions about results",
+   "- **1. What business problem will the website solve?** A good agency asks about your customers and goals before it talks about colours and fonts.\n- **2. Can you show similar work?** Look for projects in your industry or with a similar goal, such as lead generation, e-commerce or a SaaS product. Ask what changed for that client after launch.\n- **3. How will we measure success?** Agree on a few clear numbers, such as enquiries, booked calls, sales or sign-ups, and set up analytics to track them from day one.",
+   "## Questions about the process",
+   "- **4. What does your process look like, week by week?** You want a clear sequence: discovery, structure and wireframes, design, development, testing and launch, with review points where your feedback lands early.\n- **5. Who will actually work on my project?** Ask whether the team is in-house, freelance or overseas, and who your day-to-day contact is.\n- **6. How do you handle feedback and changes?** Find out how many design rounds are included and how extra requests are priced.",
+   "## Questions about cost and ownership",
+   "- **7. What exactly is included in the price?** Copywriting, photography, SEO set-up, accessibility work, hosting, training and post-launch support are often not included unless they are written down.\n- **8. Who owns the design files, code and domain?** You should. Make sure the contract transfers ownership on final payment and that the domain is registered in your name.\n- **9. What will it cost to run the site after launch?** Ask about hosting, platform subscriptions, plugin licences and maintenance plans.",
+   "## Questions about quality",
+   "- **10. How do you make sites fast?** Ask how they handle images, video and code, and how they test speed on mobile. Google's PageSpeed Insights is a quick, free check.\n- **11. How do you handle accessibility?** In the US, website accessibility is an ADA risk area. Agencies should design and test against WCAG 2.1 Level AA. Our [accessibility guide](/blog/website-accessibility-aoda-ada) explains the basics.\n- **12. What happens if something breaks after launch?** Look for a warranty period and a clear support option.",
+   "## Local, offshore or distributed teams",
+   "Many US businesses now work with distributed agencies: a point of contact in North America and part of the design or development team in another country. Done well, this gives you senior skills at a fairer price and work that continues around the clock. Done badly, it means slow replies and miscommunication. Ask about overlapping working hours, response times and how progress is reported each week.",
+   "Zynexor is a distributed team with people in the USA, Canada and Bangladesh. You get a North American point of contact, weekly check-ins and a team that keeps your project moving between your working days.",
+   "## Red flags to watch for",
+   "- A fixed price before anyone has asked about your goals.\n- No portfolio pieces with live links or real client names.\n- Vague answers about who owns the work.\n- Promises of guaranteed first-page Google rankings.\n- No written scope or timeline.",
+   "## FAQ",
+   "Q: How much does a web design agency charge in the USA?\nA: Prices vary widely with scope. A custom small-business website often costs several thousand to a few tens of thousands of US dollars, while e-commerce sites and web apps cost more. Always compare written scopes, not just totals.",
+   "Q: Is it safe to hire an agency with an overseas team?\nA: Yes, if the agency has a clear process, a North American point of contact, a written contract that gives you ownership of the work, and regular progress updates."
+  ]
+ },
+ {
+  "id": "immigration-law-firm-website-canada",
+  "cat": "Design",
+  "img": "amc-lawyer",
+  "t": "Website design for immigration law firms in Canada: what turns visitors into consultations",
+  "body": [
+   "People looking for immigration help are often anxious, short on time and comparing several firms at once. Your website has a few seconds to show that you understand their situation and can be trusted. Here is what we have learned designing for immigration practices in Canada, including the website for A&M Canadian Immigration Law Corporation in Winnipeg.",
+   "## Organise the site around pathways, not departments",
+   "Visitors think in terms of their own goal: \"I want to study in Canada\", \"my application was refused\", \"I want to sponsor my spouse\". Build your navigation around those goals:",
+   "- Permanent residence: Express Entry, Provincial Nominee Programs and family sponsorship.\n- Temporary residence: study permits, work permits, LMIA and visitor visas.\n- Urgent matters: refusals, procedural fairness letters, inadmissibility and appeals.\n- Citizenship, and services for US residents moving to Canada.",
+   "Each pathway page should explain who it is for, the main requirements in plain language, typical next steps and how your firm helps, with a clear button to book a consultation.",
+   "## Show credentials early",
+   "Trust is everything in this field. Make credentials easy to find on every page:",
+   "- The lawyer's name, photo, call to the bar and Law Society membership, or the consultant's College of Immigration and Citizenship Consultants licence number.\n- Years of practice, languages spoken and professional associations.\n- Real Google reviews, displayed with permission and linked to the source.",
+   "Keep marketing claims within your regulator's rules. Law societies and the College set rules on advertising, so avoid guarantees about outcomes.",
+   "## Publish content people search for every week",
+   "Immigration rules and draw results change constantly, and people search for updates. A news section with draw results, policy changes and short explainers gives visitors a reason to return and gives search engines fresh pages to index. On the A&M website we designed live Manitoba PNP draw tables and illustrated roadmaps that explain complex pathways at a glance. See the [A&M case study](/cases).",
+   "## Make booking effortless",
+   "- Put a \"Book a consultation\" button in the header and at the end of every page.\n- Let visitors pick a time online, with clear information about consultation fees.\n- Offer a short intake form so you know the case type before the call.\n- Show office location and hours, plus remote consultation options for clients outside your city.",
+   "## Reach clients in their own language",
+   "Many clients are more comfortable reading in their first language. Even a few key pages translated into the languages your team speaks can lift enquiries, and it signals that you understand your community.",
+   "## Technical basics that protect your rankings",
+   "- Fast loading on mobile phones, where most visitors arrive.\n- Clear page titles such as \"Express Entry Lawyer in Winnipeg\".\n- Accessible design that meets WCAG 2.0 Level AA, which also helps with Ontario's AODA rules.\n- Structured data for your firm and FAQs so search engines and AI assistants can understand your services.",
+   "## FAQ",
+   "Q: What pages should an immigration law firm website have?\nA: At minimum: a home page, one page per main pathway (Express Entry, PNP, study and work permits, family sponsorship, refusals and appeals), a lawyer or team page with credentials, a news section, reviews, and a contact and booking page.",
+   "Q: Can an immigration website give legal advice?\nA: Websites should share general information and invite visitors to book a consultation. Personal advice belongs in a consultation, and marketing must follow your regulator's rules."
+  ]
+ },
+ {
+  "id": "website-accessibility-aoda-ada",
+  "cat": "Guides",
+  "img": "amc-services",
+  "t": "Website accessibility in Canada and the USA: AODA, ADA and WCAG explained",
+  "body": [
+   "Accessible websites work for everyone, including people who use screen readers, keyboards instead of a mouse, or zoomed-in text. In Canada and the USA, accessibility is also a legal topic. This guide explains the rules in plain language for business owners. It is general information, not legal advice.",
+   "## WCAG: the technical standard behind the laws",
+   "The Web Content Accessibility Guidelines (WCAG) are published by the World Wide Web Consortium (W3C). They describe how to make content perceivable, operable, understandable and robust. Each guideline has three levels: A, AA and AAA. Level AA is the target most laws and policies point to. The main versions are WCAG 2.0 (2008), 2.1 (2018) and 2.2 (2023); newer versions add requirements and stay compatible with older ones.",
+   "## Canada: AODA and the Accessible Canada Act",
+   "- **Ontario (AODA).** Under the Accessibility for Ontarians with Disabilities Act, public sector organisations and private or non-profit organisations with 50 or more employees in Ontario must make their public websites and web content conform to WCAG 2.0 Level AA, with limited exceptions such as live captions and pre-recorded audio description.\n- **Federally regulated organisations.** The Accessible Canada Act applies to the federal government and federally regulated sectors such as banking, telecommunications and transportation, with requirements set through regulations and standards.\n- **Other provinces** such as Manitoba and Nova Scotia have their own accessibility laws with standards being phased in.",
+   "## USA: the ADA and Section 508",
+   "- **ADA Title III** covers businesses that are \"places of public accommodation\". The Department of Justice has said that businesses' websites should be accessible, and website accessibility lawsuits against private businesses are common. WCAG 2.1 Level AA is the benchmark usually referenced.\n- **ADA Title II** covers state and local governments. A 2024 DOJ rule adopted WCAG 2.1 Level AA as the technical standard for their websites and apps, with compliance deadlines phased in by size.\n- **Section 508** applies to federal agencies and the technology they buy.",
+   "## A practical checklist for your website",
+   "- Give every image a meaningful alternative text, or an empty one if it is decorative.\n- Make sure text has enough colour contrast against its background.\n- Everything must work with a keyboard, with a visible focus outline.\n- Use real headings in order, so screen-reader users can navigate.\n- Label every form field and explain errors clearly.\n- Add captions to videos with speech, and avoid content that flashes.\n- Let people pause or stop animations and respect the \"reduce motion\" setting.\n- Test with an automated checker, then with a keyboard and a screen reader.",
+   "## Why accessibility is good business",
+   "Accessible sites are easier for everyone to use, load cleanly on more devices and are easier for search engines to understand. They also reduce legal risk and show customers that you care about them.",
+   "At Zynexor we design and build against WCAG 2.1 Level AA from the start, which is far cheaper than fixing a finished website. [Book a call](/services) if you want us to review your current site.",
+   "## FAQ",
+   "Q: Does my small business website need to be accessible?\nA: In Ontario, organisations with 50 or more employees have specific AODA website requirements. In the US, businesses open to the public face ADA risk if their website is inaccessible. Even where no rule applies, accessibility helps customers and SEO.",
+   "Q: Which WCAG level should I aim for?\nA: Aim for WCAG 2.1 Level AA, or 2.2 Level AA for new projects. It meets the commonly referenced standards in both countries.",
+   "Q: Will an accessibility plugin or overlay make my site compliant?\nA: Overlays alone rarely fix underlying problems such as missing labels, poor structure or keyboard traps. Fixing the site itself is the reliable approach."
+  ]
+ },
+ {
+  "id": "small-business-branding-guide",
+  "cat": "Branding",
+  "img": "socialboost-landing",
+  "t": "Branding for small businesses in Canada and the USA: a step-by-step guide",
+  "body": [
+   "A strong brand helps a small business look established from day one, charge fair prices and be remembered. It is more than a logo: it is a clear promise, expressed consistently everywhere your customers meet you. Here is the process we follow with small businesses and startups in Canada and the USA.",
+   "## Step 1: Understand your customers",
+   "Start with research, not design. Talk to five to ten customers or prospects. Ask what problem they were trying to solve, what almost stopped them from buying and how they describe you to a friend. Their words become your messaging.",
+   "## Step 2: Define your positioning",
+   "Write one sentence that answers: who do you serve, what do you help them achieve and why are you different from the alternatives? For example: \"We help Winnipeg families navigate Canadian immigration with clear guidance and fast responses.\" Every later decision should support this sentence.",
+   "## Step 3: Choose a name and check it",
+   "If you are naming a new business or product, check that the name is available before you fall in love with it:",
+   "- Search the Canadian Intellectual Property Office (CIPO) trademark database in Canada and the USPTO database in the USA.\n- Check that the domain name and social media handles are available.\n- Say it out loud, spell it over the phone and make sure it works in the languages your customers speak.",
+   "## Step 4: Build the visual identity",
+   "The visual identity includes your logo, colour palette, typography, imagery style and icons. Good identities are simple, work at small sizes, look good in black and white, and stay consistent across your website, social media, signage and documents.",
+   "## Step 5: Find your voice",
+   "Decide how your brand sounds. Is it calm and expert, friendly and playful, or bold and direct? Write a few do and don't examples so everyone who writes for the brand sounds the same.",
+   "## Step 6: Write simple brand guidelines",
+   "A short brand guide, often 10 to 20 pages, keeps everything consistent as your team grows. It should cover logo use, colours with exact codes, fonts, image style, tone of voice and a few layout examples.",
+   "## Step 7: Roll it out everywhere",
+   "Update your website, Google Business Profile, social profiles, email signatures, proposals, invoices and signage together. A consistent launch makes the new brand feel real. Social media templates help your team publish on-brand posts quickly. See how we did this for [SocialBoost AI and Funpark](/cases).",
+   "## How much does branding cost?",
+   "Costs range from a simple logo package to a full brand strategy and identity system. The biggest factors are how much research and strategy you need, how many brand assets you want and whether naming is included. Ask for a written scope that lists every deliverable.",
+   "## FAQ",
+   "Q: How long does a branding project take?\nA: A focused small-business branding project usually takes three to six weeks, from research to final brand guidelines.",
+   "Q: Do I need to register a trademark?\nA: It is wise to search trademark databases before choosing a name and to consider registering your name and logo with CIPO in Canada or the USPTO in the USA. A trademark lawyer or agent can advise you.",
+   "Q: Can I rebrand without losing customers?\nA: Yes. Explain the change to existing customers, keep familiar elements where they still work, and redirect old website addresses to new ones so you keep your search rankings."
+  ]
+ },
+ {
+  "id": "wordpress-vs-webflow-vs-custom",
+  "cat": "Guides",
+  "img": "sabbir-home",
+  "t": "WordPress vs Webflow vs custom code: which is right for your business website?",
+  "body": [
+   "Choosing the platform for your website affects its cost, speed, security and how easily your team can update it. Most small and mid-sized businesses in Canada and the USA end up choosing between WordPress, Webflow and a custom-coded site. Here is how they compare.",
+   "## WordPress",
+   "WordPress is the most widely used website platform in the world. It is open source, so you can host it anywhere.",
+   "- **Best for:** content-heavy sites, blogs, businesses that want full ownership and a huge choice of plugins.\n- **Strengths:** flexible, large community, many developers available, strong SEO plugins.\n- **Watch out for:** plugin overload, security updates and slower speeds if it is not built carefully. Budget for regular maintenance.",
+   "## Webflow",
+   "Webflow is a hosted visual website builder that produces clean code and is popular with design-led teams.",
+   "- **Best for:** marketing websites and landing pages where design quality and easy editing matter most.\n- **Strengths:** polished designs and animations, hosting and security handled for you, an easy editor for marketing teams.\n- **Watch out for:** ongoing subscription fees, less flexibility for complex functionality, and content that stays on Webflow's platform. Check current plan pricing on Webflow's site.",
+   "## Custom code",
+   "A custom-coded website, for example a static site or a React-based site, is built specifically for your needs.",
+   "- **Best for:** high-performance marketing sites, web applications, dashboards, client portals and products with unique features.\n- **Strengths:** maximum speed and flexibility, no unused plugins, easy to scale into a full web app.\n- **Watch out for:** you need developers for most changes unless a content management system is connected.",
+   "## How to decide",
+   "- **Your team edits content every week:** WordPress or Webflow.\n- **Design and animation are the priority:** Webflow or custom code.\n- **You need user accounts, dashboards or complex integrations:** custom code.\n- **You want the lowest ongoing platform fees:** WordPress or a custom static site with low-cost hosting.\n- **Speed scores matter a lot:** custom code or a carefully built Webflow or WordPress site.",
+   "## Our recommendation",
+   "There is no single right answer. We choose the platform after discovery, based on who will update the site, how it needs to grow and your budget. Zynexor builds on WordPress, Webflow and custom code, so we recommend what suits you, not what suits us. See examples in our [case studies](/cases).",
+   "## FAQ",
+   "Q: Is Webflow better than WordPress for SEO?\nA: Both can rank very well. SEO depends far more on content, speed, structure and links than on the platform itself.",
+   "Q: Can I move from Webflow or WordPress to custom code later?\nA: Yes. Plan URL redirects carefully so you keep your search rankings during the move."
+  ]
+ },
+ {
+  "id": "mobile-app-cost-usa-canada",
+  "cat": "Guides",
+  "img": "styleb-home",
+  "t": "How much does it cost to build a mobile app in the USA and Canada?",
+  "body": [
+   "\"How much will my app cost?\" is one of the most common questions we hear from founders and business owners in the USA and Canada. The answer depends on features, platforms and how polished the first version needs to be. This guide explains the main cost drivers and the rough ranges you are likely to see.",
+   "## Rough market ranges",
+   "Quotes vary widely between freelancers, agencies and regions. As a broad guide:",
+   "- **Simple app or MVP:** often in the tens of thousands of US dollars. A few core screens, basic user accounts and a simple back end.\n- **Mid-complexity app:** commonly from several tens of thousands to well over US$100,000. Payments, chat, notifications, an admin panel and integrations.\n- **Complex app:** live video, marketplaces, real-time features, heavy security or compliance can push budgets much higher.",
+   "## What drives the cost",
+   "- **Number and complexity of features.** Each feature needs design, front-end work, back-end logic and testing.\n- **Platforms.** iOS only, Android only, or both. Cross-platform frameworks such as React Native or Flutter can reduce the cost of building for both.\n- **Design quality.** A polished, tested user experience takes more design time but improves retention.\n- **Back end and integrations.** Payments, maps, CRMs, video streaming and third-party APIs all add work.\n- **Security and compliance.** Health, finance and children's apps need extra care.",
+   "## Ongoing costs after launch",
+   "- **App store accounts:** Apple's Developer Program costs US$99 per year, and Google Play charges a one-time US$25 registration fee.\n- **Hosting and services:** servers, databases, push notifications, email and analytics.\n- **Maintenance:** updates for new iOS and Android versions, bug fixes and security patches. A common rule of thumb is to budget a meaningful share of the original build cost each year.",
+   "## How to reduce cost without cutting quality",
+   "- **Start with an MVP.** Launch the smallest version that delivers real value, then grow it based on user feedback.\n- **Prototype first.** A clickable design prototype lets you test with users before paying for development.\n- **Choose cross-platform when it fits.** One codebase for iOS and Android often saves time.\n- **Reuse proven services.** Use established payment, login and messaging services instead of building them from scratch.",
+   "## Example: Style.Bd",
+   "For Style.Bd, a fashion marketplace app with live shopping, we designed the full experience from discovery to checkout: home feed, live shopping, trending items, verified sellers and in-app messaging. Designing every flow before development made the build faster and more predictable. See the [Style.Bd case study](/cases).",
+   "## FAQ",
+   "Q: How long does it take to build an app?\nA: A focused MVP often takes around three to six months from design to launch. Larger apps take longer and are usually released in phases.",
+   "Q: Should I build for iOS or Android first?\nA: In the USA and Canada, iOS often has a strong share of paying users, but it depends on your audience. Cross-platform development lets you launch on both together.",
+   "Q: Do I own the app code?\nA: You should. Make sure your contract transfers full ownership of the code, designs and app store accounts to your company."
+  ]
+ },
+ {
+  "id": "brand-system",
+  "cat": "Branding",
+  "t": "Why your brand needs a system, not just a logo",
+  "img": "socialboost-landing",
+  "body": [
+   "A logo is a signature. A brand system is the handwriting: colour, type, spacing, imagery and tone that make everything you publish feel like you.",
+   "## Consistency builds recognition",
+   "When SocialBoost AI launched, the same purple gradients, rounded type and confident headlines ran across the landing page, the app and every social post. People recognise the product before they read its name.",
+   "## Systems save time",
+   "With clear rules, your team can produce new pages and posts quickly without a designer checking every detail.",
+   "## Start small",
+   "A good starter system needs only a logo, two typefaces, a short colour palette and a few layout examples. You can grow it as the business grows."
+  ]
+ },
+ {
+  "id": "trust-for-ai",
+  "cat": "Design",
+  "t": "Designing trust into AI products",
+  "img": "trustlayer-landing",
+  "body": [
+   "AI tools ask people to hand over data and decisions. That only works when the product earns trust at every step.",
+   "## Show what the system knows",
+   "For TrustLayer AI we built a tool registry that lists every AI tool a team uses, with its risk level and data handling. Making the invisible visible is the first step toward trust.",
+   "## Turn policy into a guided flow",
+   "Policies are usually long documents nobody reads. A step-by-step policy generator turns them into short choices that teams can finish in minutes.",
+   "## Let customers see it too",
+   "A public trust portal lets a company prove its AI practices to clients. Good design here is calm, factual and easy to scan."
+  ]
+ },
+ {
+  "id": "live-shopping-app",
+  "cat": "Success story",
+  "t": "Designing a live shopping app for mobile-first buyers",
+  "img": "styleb-feed",
+  "body": [
+   "Style.Bd brings fashion sellers and buyers together in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.",
+   "## Shopping as entertainment",
+   "The trending feed and live shopping tabs borrow the patterns people already know from social apps. Buyers can like, comment and buy without leaving the stream.",
+   "## Trust signals everywhere",
+   "Verified seller badges, clear order status and in-app messaging reduce the worry of buying from someone new.",
+   "## Small screens, big thumbs",
+   "Every action sits within thumb reach, and the bottom bar keeps the five key areas one tap away."
+  ]
+ },
+ {
+  "id": "website-that-sells",
+  "cat": "Design",
+  "t": "How a clear website turns visitors into clients",
+  "img": "amc-services",
+  "body": [
+   "Most service websites fail for the same reason: they describe the business instead of answering the visitor. A person who lands on a law firm, clinic or agency site arrives with one question. Can you help me, and what happens next?",
+   "## Start with the question",
+   "When we designed the A&M Canadian Immigration Law website, every page began with a real client question. Which stream fits me? What are the latest draw results? Who will handle my file? The services directory, lawyer profile and live draw tables each answer one of those questions directly.",
+   "## Make the next step obvious",
+   "Each page ends with a single action, such as booking an appointment or reading the next guide. Visitors should never have to hunt for it. A clear next step does more for conversions than any visual flourish.",
+   "## Keep it fresh",
+   "Search engines and people both reward sites that stay current. A simple news and case-law library gives the firm a reason to publish regularly and gives clients a reason to come back."
+  ]
+ },
+ {
+  "id": "scroll-stopping-posts",
+  "cat": "Social media",
+  "t": "What makes a social post stop the scroll",
+  "img": "funpark-bounce",
+  "body": [
+   "People decide in under a second whether to stop on a post. Three things decide it: one big idea, real faces and a reason to act now.",
+   "## One idea per post",
+   "Our Funpark posts each carry a single message, such as \"Bounce Mode\" or \"Everything 50% off\". Big type and strong photography do the work. Small print stays small.",
+   "## Use the real place",
+   "Real kids, real trampolines and real staff beat stock imagery every time. They show the experience instead of describing it.",
+   "## Build a rhythm",
+   "A recurring offer like Discount Tuesday trains followers to expect and share your posts. Seasonal posts for Christmas and New Year keep the feed warm between offers."
+  ]
+ },
+ {
+  "id": "one-crm",
+  "cat": "Success story",
+  "t": "From spreadsheets to one CRM",
+  "img": "crm-meetings",
+  "body": [
+   "Growing service businesses often run on spreadsheets, inboxes and memory. It works until a lead slips through the cracks.",
+   "## Map the real workflow",
+   "For an immigration consultancy we followed a client from first enquiry to final file and designed a CRM around it: leads, deals, clients, projects, tasks, meetings and reports.",
+   "## Calendars people actually use",
+   "Meetings live in a clear monthly view with upcoming appointments on the side, so the whole team sees the day at a glance.",
+   "## Reports that answer questions",
+   "Revenue by month, lead sources and conversion by stage turn daily work into decisions."
+  ]
+ }
+]

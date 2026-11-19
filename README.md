@@ -38,7 +38,7 @@ The site deploys to Vercel as-is: import this repository in Vercel, keep the fra
 
 ## Blog articles and SEO
 
-Articles are written in `site.js` (the `ARTICLES` list). After adding or editing one, run:
+Articles are written in `content/articles.json` (one entry per article; paragraphs, `
 
 ```bash
 node scripts/build-seo.js

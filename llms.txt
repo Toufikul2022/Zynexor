@@ -26,9 +26,16 @@ Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://cale
 - Pricing: fixed price for clear scopes; monthly retainer or time and material for ongoing work
 
 ## Blog
-- [How a clear website turns visitors into clients](https://www.zynexor.com/blog/website-that-sells): Most service websites fail for the same reason: they describe the business instead of answering the visitor.
-- [Designing trust into AI products](https://www.zynexor.com/blog/trust-for-ai): AI tools ask people to hand over data and decisions.
-- [What makes a social post stop the scroll](https://www.zynexor.com/blog/scroll-stopping-posts): People decide in under a second whether to stop on a post.
-- [Designing a live shopping app for mobile-first buyers](https://www.zynexor.com/blog/live-shopping-app): Style.Bd brings fashion sellers and buyers together in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.
+- [How much does a website cost in Canada in 2026?](https://www.zynexor.com/blog/website-cost-canada): If you run a business in Canada and you are planning a new website, the first question is almost always the same: how much will it cost?
+- [How to choose a web design agency in the USA: 12 questions to ask](https://www.zynexor.com/blog/choose-web-design-agency-usa): Hiring a web design agency is a big decision.
+- [Website design for immigration law firms in Canada: what turns visitors into consultations](https://www.zynexor.com/blog/immigration-law-firm-website-canada): People looking for immigration help are often anxious, short on time and comparing several firms at once.
+- [Website accessibility in Canada and the USA: AODA, ADA and WCAG explained](https://www.zynexor.com/blog/website-accessibility-aoda-ada): Accessible websites work for everyone, including people who use screen readers, keyboards instead of a mouse, or zoomed-in text.
+- [Branding for small businesses in Canada and the USA: a step-by-step guide](https://www.zynexor.com/blog/small-business-branding-guide): A strong brand helps a small business look established from day one, charge fair prices and be remembered.
+- [WordPress vs Webflow vs custom code: which is right for your business website?](https://www.zynexor.com/blog/wordpress-vs-webflow-vs-custom): Choosing the platform for your website affects its cost, speed, security and how easily your team can update it.
+- [How much does it cost to build a mobile app in the USA and Canada?](https://www.zynexor.com/blog/mobile-app-cost-usa-canada): "How much will my app cost?" is one of the most common questions we hear from founders and business owners in the USA and Canada.
 - [Why your brand needs a system, not just a logo](https://www.zynexor.com/blog/brand-system): A logo is a signature.
+- [Designing trust into AI products](https://www.zynexor.com/blog/trust-for-ai): AI tools ask people to hand over data and decisions.
+- [Designing a live shopping app for mobile-first buyers](https://www.zynexor.com/blog/live-shopping-app): Style.Bd brings fashion sellers and buyers together in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.
+- [How a clear website turns visitors into clients](https://www.zynexor.com/blog/website-that-sells): Most service websites fail for the same reason: they describe the business instead of answering the visitor.
+- [What makes a social post stop the scroll](https://www.zynexor.com/blog/scroll-stopping-posts): People decide in under a second whether to stop on a post.
 - [From spreadsheets to one CRM](https://www.zynexor.com/blog/one-crm): Growing service businesses often run on spreadsheets, inboxes and memory.

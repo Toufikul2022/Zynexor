@@ -1157,3 +1157,7 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
 .more-reads ul{margin:0;padding-left:18px;display:grid;gap:10px;font-size:17px}
 .more-reads a{text-decoration:underline;text-underline-offset:3px}
 .more-reads a:hover{color:#4f6b00}
+.article .body ul{margin:0 0 22px;padding-left:22px;display:grid;gap:10px;font-size:18px;line-height:1.6;color:#262626}
+.article .body a{text-decoration:underline;text-underline-offset:3px;color:#4f6b00}
+.article .body h3{font-size:21px;margin:30px 0 10px;letter-spacing:-.01em}
+.article .body strong{font-weight:700;color:var(--ink)}
