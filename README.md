@@ -1,5 +1,7 @@
 # Zynexor
 
+Live at https://zynexor.com (deployed on Vercel).
+
 Website for Zynexor, a digital brand and product design agency.
 
 A static site (plain HTML, CSS and JavaScript, no build step):
