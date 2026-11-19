@@ -1150,3 +1150,10 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
 /* reserve space for the JS-rendered blog cards so the page does not jump */
 #featured:empty{min-height:clamp(560px,40vw,760px)}
 @media (max-width:900px){#featured:empty{min-height:1100px}}
+
+/* static article pages */
+.more-reads{margin-top:70px;border-top:1px solid #e5e5e5;padding-top:30px}
+.more-reads h2{font-size:22px;margin:0 0 14px}
+.more-reads ul{margin:0;padding-left:18px;display:grid;gap:10px;font-size:17px}
+.more-reads a{text-decoration:underline;text-underline-offset:3px}
+.more-reads a:hover{color:#4f6b00}

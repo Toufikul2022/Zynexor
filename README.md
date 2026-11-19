@@ -35,3 +35,13 @@ npx serve .
 ## Deploy
 
 The site deploys to Vercel as-is: import this repository in Vercel, keep the framework preset as **Other**, and leave the build command and output directory empty. `vercel.json` enables clean URLs (`/services` instead of `/services.html`) and long-term caching for `assets/`.
+
+## Blog articles and SEO
+
+Articles are written in `site.js` (the `ARTICLES` list). After adding or editing one, run:
+
+```bash
+node scripts/build-seo.js
+```
+
+This regenerates a static, indexable page for each article at `blog/<id>.html` (served as `/blog/<id>`) and updates `sitemap.xml`. Also add the new article to the Blog list in `llms.txt`.

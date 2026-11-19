@@ -1,0 +1,34 @@
+# Zynexor
+
+> Zynexor is a digital agency that designs and builds brands, websites, web apps, mobile apps and social media campaigns for growing businesses. Founded in 2023, the team of designers, developers and marketers works across Canada, the USA and Bangladesh.
+
+Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://calendly.com/zynexor/30min
+
+## Services
+- [Branding](https://www.zynexor.com/services#branding): brand strategy, naming, positioning, logo design, brand guidelines
+- [Digital design](https://www.zynexor.com/services#design): UX/UI for websites, SaaS platforms, dashboards, CRMs and mobile apps
+- [Development](https://www.zynexor.com/services#development): front-end, back-end, WordPress, Webflow, React, APIs, hosting and maintenance
+- [Marketing assets](https://www.zynexor.com/services#assets): social media campaigns, post and reel design, infographics
+
+## Selected work
+- [A&M Canadian Immigration Law](https://www.zynexor.com/cases): content-rich law firm website with Manitoba PNP draw tables and illustrated guides
+- [TrustLayer AI](https://www.zynexor.com/cases): AI governance SaaS platform (tool registry, policy generator, trust portal)
+- [SocialBoost AI](https://www.zynexor.com/cases): brand, landing page and AI social post generator
+- [Style.Bd](https://www.zynexor.com/cases): fashion marketplace mobile app with live shopping
+- [Sabbir LIVE](https://www.zynexor.com/cases): creator website for YouTube Shorts, Reels and TikTok
+- [Funpark Indoor Amusement Center](https://www.zynexor.com/cases): ongoing social media campaign
+- [Immigration consultancy CRM](https://www.zynexor.com/cases): leads, clients, meetings and reports in one tool
+
+## Company
+- [About Zynexor](https://www.zynexor.com/about): story (2023–2026), values, team in Canada, the USA and Bangladesh
+- How we work: discover (week 1), design (weeks 2–4), build (weeks 4–8), launch and grow (ongoing)
+- Typical timelines: brand and landing page 3–6 weeks; full website 6–10 weeks; app or dashboard release 8–16 weeks
+- Pricing: fixed price for clear scopes; monthly retainer or time and material for ongoing work
+
+## Blog
+- [How a clear website turns visitors into clients](https://www.zynexor.com/blog/website-that-sells): Most service websites fail for the same reason: they describe the business instead of answering the visitor.
+- [Designing trust into AI products](https://www.zynexor.com/blog/trust-for-ai): AI tools ask people to hand over data and decisions.
+- [What makes a social post stop the scroll](https://www.zynexor.com/blog/scroll-stopping-posts): People decide in under a second whether to stop on a post.
+- [Designing a live shopping app for mobile-first buyers](https://www.zynexor.com/blog/live-shopping-app): Style.Bd brings fashion sellers and buyers together in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.
+- [Why your brand needs a system, not just a logo](https://www.zynexor.com/blog/brand-system): A logo is a signature.
+- [From spreadsheets to one CRM](https://www.zynexor.com/blog/one-crm): Growing service businesses often run on spreadsheets, inboxes and memory.
