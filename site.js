@@ -77,6 +77,15 @@
   }
   window.ZX={CASES:CASES,ARTICLES:ARTICLES,W:W,V:V,vid:vid};
 
+  /* media start gate: desktop starts videos/posters just after load; phones wait for the first touch/scroll
+     (or 3.5s after load) so the first screen gets the whole connection */
+  function afterLoad(fn){
+    var done=false,isPhone=innerWidth<=860;
+    function go(){if(done)return;done=true;['scroll','touchstart','pointerdown','keydown','wheel'].forEach(function(ev){removeEventListener(ev,go)});fn()}
+    function arm(){if(!isPhone){setTimeout(go,300);return}
+      ['scroll','touchstart','pointerdown','keydown','wheel'].forEach(function(ev){addEventListener(ev,go,{passive:true,once:true})});setTimeout(go,3500)}
+    if(document.readyState==='complete')arm();else addEventListener('load',arm);
+  }
   function hdIntro(v){if(v&&innerWidth*(window.devicePixelRatio||1)>=1400&&!/1080/.test(v.getAttribute('src'))){v.setAttribute('src',v.getAttribute('src').replace('zynexor-intro.mp4','zynexor-intro-1080.mp4'))}}
   /* lazy video posters: fetch preview images only when a video gets near the screen */
   var posterIO='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var v=e.target;v.poster=v.getAttribute('data-poster');v.removeAttribute('data-poster');posterIO.unobserve(v)}})},{rootMargin:'800px 0px 800px 0px'}):null;
@@ -239,7 +248,7 @@
       if(dots)dots.forEach(function(d,k){d.classList.toggle('on',k===i)});
       items[(i+1)%items.length].preload='auto';
     }
-    onScreen(box,function(vis){if(vis&&!timer){if(!reduce){play(items[i]);timer=setInterval(step,ms)}}else if(!vis&&timer){clearInterval(timer);timer=null;items[i].pause()}});
+    afterLoad(function(){onScreen(box,function(vis){if(vis&&!timer){if(!reduce){play(items[i]);timer=setInterval(step,ms)}}else if(!vis&&timer){clearInterval(timer);timer=null;items[i].pause()}});});
   });
 
   var tilesBox=document.getElementById('bxTiles');
@@ -350,9 +359,9 @@
   var vio='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){
     var v=e.target;if(e.isIntersecting){if(reduce)return;var p=v.play();if(p&&p.catch)p.catch(function(){})}else if(!v.paused)v.pause()})},{rootMargin:'200px 0px'}):null;
   function watch(root){(root.querySelectorAll?root:document).querySelectorAll('video[data-auto]').forEach(function(v){if(v._zx)return;v._zx=1;playable(v);if(vio)vio.observe(v);else if(!reduce)v.play()})}
-  function startMedia(){watch(document);lazyPosters(document)}
-  if(document.readyState==='complete')setTimeout(startMedia,300);else addEventListener('load',function(){setTimeout(startMedia,300)});
-  if('MutationObserver' in window)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){if(n.matches&&n.matches('video[data-auto]'))watch(n.parentNode);else watch(n);if(document.readyState==='complete')lazyPosters(n.parentNode||document)}})})}).observe(document.body,{childList:true,subtree:true});
+  var mediaOn=false;function startMedia(){mediaOn=true;watch(document);lazyPosters(document)}
+  afterLoad(startMedia);
+  if('MutationObserver' in window)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1&&mediaOn){if(n.matches&&n.matches('video[data-auto]'))watch(n.parentNode);else watch(n);lazyPosters(n.parentNode||document)}})})}).observe(document.body,{childList:true,subtree:true});
 
   /* about intro: device opens tilted, zooms in to fill the screen, then zooms out and closes */
   var abDev=document.getElementById('abDevice'),abSt=document.getElementById('abZoom');
@@ -372,7 +381,7 @@
     addEventListener('scroll',abZoom,{passive:true});addEventListener('resize',abZoom);abZoom();
     abV.muted=true;
     function abStart(){hdIntro(abV);onScreen(abSw,function(v){if(v&&!reduce){var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})}else abV.pause()});}
-    if(document.readyState==='complete')abStart();else addEventListener('load',abStart);
+    afterLoad(abStart);
     abP.addEventListener('click',function(){abSw.classList.add('watching');abV.loop=false;abV.currentTime=0;abV.muted=false;abV.controls=true;var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})});
     abV.addEventListener('ended',function(){abSw.classList.remove('watching');abV.muted=true;abV.controls=false;abV.loop=true;abV.currentTime=0;abV.play()});
   }
@@ -431,7 +440,7 @@
     hPlay.addEventListener('click',function(e){e.stopPropagation();watching=true;clearTimeout(ht);hsw.classList.add('watching');hShow(0);
       intro.currentTime=0;intro.muted=false;intro.controls=true;hp(intro)});
     function hStart(){hdIntro(intro);onScreen(hsw,function(v){hVis=v;if(v){hp(hItems[hi]);hSched()}else{clearTimeout(ht);hItems[hi].pause()}});hShow(0)}
-    if(document.readyState==='complete')hStart();else addEventListener('load',hStart);
+    afterLoad(hStart);
   }
 
   /* hero: device flattens as you scroll; widgets drift with the mouse */
@@ -490,8 +499,8 @@
     function pick(i){cur=i;pills.forEach(function(p,k){p.classList.toggle('on',k===i);p.setAttribute('aria-selected',k===i)});
       stageV.forEach(function(v,k){if(k===i){v.preload='auto';v.muted=true;var pp=v.play();if(pp&&pp.catch)pp.catch(function(){});v.classList.add('on')}else{v.classList.remove('on');v.pause()}});type(DATA[i].code)}
     pills.forEach(function(p,k){p.addEventListener('click',function(){pick(k);clearInterval(auto);auto=null})});
-    onScreen(code.parentNode,function(v){if(v&&!auto&&!reduce){pick(cur);auto=setInterval(function(){pick((cur+1)%pills.length)},3600)}else if(!v&&auto){clearInterval(auto);auto=null}});
-    pick(0);
+    afterLoad(function(){onScreen(code.parentNode,function(v){if(v&&!auto&&!reduce){pick(cur);auto=setInterval(function(){pick((cur+1)%pills.length)},3600)}else if(!v&&auto){clearInterval(auto);auto=null}});});
+    afterLoad(function(){pick(0)});
   }
 
   /* marketing assets: a fanned deck that deals the next card to the front */
@@ -501,10 +510,10 @@
     function layout(){var n=cards.length;cards.forEach(function(c,k){var pos=(k-front+n)%n,v=c.querySelector('video');
       var visible=pos<3;c.style.setProperty('--x',[100,52,0,0,0,0][pos]);c.style.setProperty('--ry',['-8deg','-18deg','-24deg','-24deg','-24deg','-24deg'][pos]);
       c.style.setProperty('--s',[1,.86,.74,.7,.7,.7][pos]);c.style.setProperty('--z',10-pos);c.style.setProperty('--o',visible?1:0);c.style.setProperty('--b',[1,.75,.55,.5,.5,.5][pos]);
-      if(v){v.muted=true;if(pos===0){v.preload='auto';var pp=v.play();if(pp&&pp.catch)pp.catch(function(){})}else v.pause()}})}
-    layout();
+      if(v){v.muted=true;if(pos===0){if(deckLive){v.preload='auto';var pp=v.play();if(pp&&pp.catch)pp.catch(function(){})}}else v.pause()}})}
+    var deckLive=false;layout();afterLoad(function(){deckLive=true;layout()});
     deckEl.addEventListener('click',function(){front=(front+1)%cards.length;layout()});
-    onScreen(deckEl,function(v){if(v&&!dt&&!reduce)dt=setInterval(function(){front=(front+1)%cards.length;layout()},2400);else if(!v&&dt){clearInterval(dt);dt=null}});
+    afterLoad(function(){onScreen(deckEl,function(v){if(v&&!dt&&!reduce)dt=setInterval(function(){front=(front+1)%cards.length;layout()},2400);else if(!v&&dt){clearInterval(dt);dt=null}});});
   }
 
   /* approach cards: each stacked card shrinks and dims as the next one slides over it */
