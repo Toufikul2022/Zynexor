@@ -84,7 +84,7 @@
   /* ---------- chrome ---------- */
   var links=[['cases.html','Cases','cases'],['services.html','Service','services'],['blog.html','Blog','blog'],['about.html','About us','about']];
   var navHTML='<nav class="pill-nav" id="pillNav" aria-label="Main">'+
-    '<a class="logo" href="index.html" aria-label="Zynexor home"><img src="assets/brand/zynexor-icon.png" alt="Zynexor"></a>'+
+    '<a class="logo" href="index.html" aria-label="Zynexor home"><img src="assets/brand/zynexor-icon-128.png" alt="Zynexor"></a>'+
     '<div class="pill-links">'+links.map(function(l){return '<a href="'+l[0]+'"'+(page===l[2]?' aria-current="page"':'')+'>'+l[1]+'</a>'}).join('')+'</div>'+
     '<button class="p-book" data-book>Book a call</button>'+
     '<button class="p-contact" data-contact>Contact</button>'+
@@ -349,8 +349,9 @@
   var vio='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){
     var v=e.target;if(e.isIntersecting){if(reduce)return;var p=v.play();if(p&&p.catch)p.catch(function(){})}else if(!v.paused)v.pause()})},{rootMargin:'200px 0px'}):null;
   function watch(root){(root.querySelectorAll?root:document).querySelectorAll('video[data-auto]').forEach(function(v){if(v._zx)return;v._zx=1;playable(v);if(vio)vio.observe(v);else if(!reduce)v.play()})}
-  watch(document);lazyPosters(document);
-  if('MutationObserver' in window)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){if(n.matches&&n.matches('video[data-auto]'))watch(n.parentNode);else watch(n);lazyPosters(n.parentNode||document)}})})}).observe(document.body,{childList:true,subtree:true});
+  function startMedia(){watch(document);lazyPosters(document)}
+  if(document.readyState==='complete')setTimeout(startMedia,300);else addEventListener('load',function(){setTimeout(startMedia,300)});
+  if('MutationObserver' in window)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){if(n.matches&&n.matches('video[data-auto]'))watch(n.parentNode);else watch(n);if(document.readyState==='complete')lazyPosters(n.parentNode||document)}})})}).observe(document.body,{childList:true,subtree:true});
 
   /* about intro: device opens tilted, zooms in to fill the screen, then zooms out and closes */
   var abDev=document.getElementById('abDevice'),abSt=document.getElementById('abZoom');
@@ -369,7 +370,8 @@
     }
     addEventListener('scroll',abZoom,{passive:true});addEventListener('resize',abZoom);abZoom();
     abV.muted=true;
-    onScreen(abSw,function(v){if(v&&!reduce){var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})}else abV.pause()});
+    function abStart(){onScreen(abSw,function(v){if(v&&!reduce){var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})}else abV.pause()});}
+    if(document.readyState==='complete')abStart();else addEventListener('load',abStart);
     abP.addEventListener('click',function(){abSw.classList.add('watching');abV.loop=false;abV.currentTime=0;abV.muted=false;abV.controls=true;var pp=abV.play();if(pp&&pp.catch)pp.catch(function(){})});
     abV.addEventListener('ended',function(){abSw.classList.remove('watching');abV.muted=true;abV.controls=false;abV.loop=true;abV.currentTime=0;abV.play()});
   }
@@ -427,8 +429,8 @@
     function stopWatch(){watching=false;hsw.classList.remove('watching');intro.muted=true;intro.controls=false;hShow(1);hSched()}
     hPlay.addEventListener('click',function(e){e.stopPropagation();watching=true;clearTimeout(ht);hsw.classList.add('watching');hShow(0);
       intro.currentTime=0;intro.muted=false;intro.controls=true;hp(intro)});
-    onScreen(hsw,function(v){hVis=v;if(v){hp(hItems[hi]);hSched()}else{clearTimeout(ht);hItems[hi].pause()}});
-    hShow(0);
+    function hStart(){onScreen(hsw,function(v){hVis=v;if(v){hp(hItems[hi]);hSched()}else{clearTimeout(ht);hItems[hi].pause()}});hShow(0)}
+    if(document.readyState==='complete')hStart();else addEventListener('load',hStart);
   }
 
   /* hero: device flattens as you scroll; widgets drift with the mouse */
