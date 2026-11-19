@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zynexor.com/sitemap.xml
+Sitemap: https://www.zynexor.com/sitemap.xml

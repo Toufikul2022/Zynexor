@@ -1145,3 +1145,7 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
   .hz-ghost,.hz-media::after{display:block}
   .hz-progress{display:block;left:16px;right:16px;bottom:14px}
 }
+
+/* reserve space for the JS-rendered blog cards so the page does not jump */
+#featured:empty{min-height:clamp(560px,40vw,760px)}
+@media (max-width:900px){#featured:empty{min-height:1100px}}

@@ -1,6 +1,6 @@
 # Zynexor
 
-Live at https://zynexor.com (deployed on Vercel).
+Live at https://www.zynexor.com (deployed on Vercel).
 
 Website for Zynexor, a digital brand and product design agency.
 
