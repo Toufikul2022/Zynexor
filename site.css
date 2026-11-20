@@ -1161,3 +1161,17 @@ dialog.cal-modal{max-width:min(1000px,calc(100vw - 32px))}
 .article .body a{text-decoration:underline;text-underline-offset:3px;color:#4f6b00}
 .article .body h3{font-size:21px;margin:30px 0 10px;letter-spacing:-.01em}
 .article .body strong{font-weight:700;color:var(--ink)}
+
+/* crawlable footer (replaced by the designed footer when JavaScript runs) */
+.seo-foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;padding-block:60px;font-size:14px}
+.seo-foot h2{font-size:15px;margin:0 0 10px}.seo-foot ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+/* service and case study pages */
+.case-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:26px 0 0;padding:18px 20px;border:1px solid #e5e5e5;border-radius:16px;background:#fff}
+.case-facts dt{font-size:12px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.08em}.case-facts dd{margin:4px 0 0;font-weight:600;font-size:15px}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid #cfcfcf}.btn-ghost:hover{border-color:var(--ink)}
+.sv-more{align-self:flex-start;margin-top:-28px;background:transparent;color:#fff;border:1.5px solid #3a3a3a;border-radius:8px;padding:16px 26px;font-weight:600}
+.sv-more:hover{border-color:var(--accent);color:var(--accent)}
+.cv-btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:clamp(44px,4.4vw,80px)}
+.cv-btns .btn-white{margin-top:0}
+.cv-read{border:1.5px solid #3a3a3a;color:#fff;border-radius:6px;padding:15px 24px;font-size:clamp(14px,.9vw,16px);font-weight:500}.cv-read:hover{border-color:var(--accent);color:var(--accent)}

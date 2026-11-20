@@ -1,0 +1,212 @@
+[
+ {
+  "id": "am-immigration-law",
+  "key": "amc",
+  "client": "A&M Canadian Immigration Law Corporation",
+  "industry": "Legal / immigration",
+  "location": "Winnipeg, Manitoba, Canada",
+  "img": "amc-about",
+  "services": [
+   "Web design",
+   "Content design",
+   "Infographics",
+   "SEO"
+  ],
+  "gallery": [
+   "amc-about",
+   "amc-lawyer",
+   "amc-services",
+   "amc-pnp-roadmap",
+   "amc-news",
+   "amc-pathways"
+  ],
+  "t": "A&M Canadian Immigration Law: a law firm website that makes immigration pathways clear",
+  "body": [
+   "A&M Canadian Immigration Law Corporation is an immigration law firm in Winnipeg, Manitoba, helping individuals, families and businesses with permanent residence, temporary residence, citizenship, refusals and appeals.",
+   "## The challenge",
+   "Immigration clients arrive anxious and confused by complex rules. The firm needed a website that explains its services clearly, shows its credentials and keeps clients up to date with fast-changing programs such as the Manitoba Provincial Nominee Program.",
+   "## What we built",
+   "- **A services directory organised by client goals:** urgent cases, permanent residence, temporary residence and US immigration.\n- **A lawyer profile:** credentials, experience and memberships, presented to build trust.\n- **Live Manitoba PNP draw tables:** draw dates, numbers and scores for each stream.\n- **A news and case-law library:** regular updates that give visitors a reason to return and give search engines fresh content.\n- **Illustrated guides:** roadmaps and mind maps that explain pathways at a glance.\n- **Google reviews integration:** real client reviews on the website.",
+   "## Why it works",
+   "Every page starts from a real client question and ends with a clear next step: booking a consultation. Read more in [Website design for immigration law firms in Canada](/blog/immigration-law-firm-website-canada) and [How a clear website turns visitors into clients](/blog/website-that-sells)."
+  ]
+ },
+ {
+  "id": "trustlayer-ai",
+  "key": "trustlayer",
+  "client": "TrustLayer AI",
+  "industry": "AI governance / SaaS",
+  "location": "",
+  "img": "trustlayer-dashboard",
+  "services": [
+   "Product design",
+   "UX/UI design",
+   "Dashboard design",
+   "Design system"
+  ],
+  "gallery": [
+   "trustlayer-landing",
+   "trustlayer-dashboard",
+   "trustlayer-analytics"
+  ],
+  "t": "TrustLayer AI: designing a platform that makes responsible AI simple",
+  "body": [
+   "TrustLayer AI helps companies document, comply with and communicate how they use artificial intelligence.",
+   "## The challenge",
+   "AI governance is unfamiliar territory for most teams. The product had to turn policies and compliance work into simple, guided tasks, and help companies show customers that they use AI responsibly.",
+   "## What we designed",
+   "- **AI tool registry:** every AI tool a team uses, with risk levels and data handling.\n- **Policy generator:** a step-by-step flow that turns policy writing into short choices.\n- **Incident tracking:** a clear way to log and resolve AI-related issues.\n- **Trust portal:** a public page where companies share their AI practices with clients.\n- **Dashboard and analytics:** status at a glance, with details on demand.\n- **Landing page:** explaining the product to buyers in plain language.",
+   "## Approach",
+   "We designed for calm, factual clarity: summary first, consistent status labels, and accessible components. Read [Designing trust into AI products](/blog/trust-for-ai) and [SaaS dashboard design best practices](/blog/saas-dashboard-ux-best-practices)."
+  ]
+ },
+ {
+  "id": "socialboost-ai",
+  "key": "socialboost",
+  "client": "SocialBoost AI",
+  "industry": "AI / marketing technology",
+  "location": "",
+  "img": "socialboost-landing",
+  "services": [
+   "Branding",
+   "Landing page",
+   "Web app UX/UI",
+   "Art direction"
+  ],
+  "gallery": [
+   "socialboost-landing",
+   "socialboost-generator",
+   "socialboost-mobile"
+  ],
+  "t": "SocialBoost AI: brand and launch website for an AI social post generator",
+  "body": [
+   "SocialBoost AI is an AI tool that writes scroll-stopping social media posts in seconds for Instagram, Facebook, LinkedIn, X and TikTok.",
+   "## The challenge",
+   "The product needed to launch with a brand that felt modern and trustworthy, a landing page that converted visitors into sign-ups, and a generator interface simple enough to use in seconds.",
+   "## What we delivered",
+   "- **Brand identity:** a confident visual system with purple gradients, rounded type and bold headlines.\n- **Conversion-focused landing page:** a clear promise, a free start and proof points near every call to action.\n- **Post generator UX/UI:** platform selection, post types and tone options in one clean screen.\n- **Mobile experience:** the same flow designed for phones.",
+   "## Why it works",
+   "A consistent brand across the website, app and social posts means people recognise the product before they read its name. Read [Why your brand needs a system, not just a logo](/blog/brand-system)."
+  ]
+ },
+ {
+  "id": "style-bd",
+  "key": "styleb",
+  "client": "Style.Bd",
+  "industry": "Retail / e-commerce",
+  "location": "Bangladesh",
+  "img": "styleb-feed",
+  "services": [
+   "Mobile app design",
+   "UX/UI design",
+   "E-commerce flows",
+   "Prototyping"
+  ],
+  "gallery": [
+   "styleb-home",
+   "styleb-feed",
+   "styleb-trending",
+   "styleb-shop",
+   "styleb-profile",
+   "styleb-messages"
+  ],
+  "t": "Style.Bd: a mobile marketplace where live shopping meets verified sellers",
+  "body": [
+   "Style.Bd is a fashion marketplace app for buyers in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.",
+   "## The challenge",
+   "Buyers needed to discover products, trust new sellers and buy without leaving the app, while sellers needed a way to showcase products live.",
+   "## What we designed",
+   "- **Home and trending feeds:** discovery built around patterns people know from social apps.\n- **Live shopping:** buyers can watch, comment and buy in one place.\n- **Verified sellers:** badges and profiles that reduce the worry of buying from someone new.\n- **Shop and category browsing:** fast paths to the right products.\n- **In-app messaging:** buyers and sellers can talk without switching apps.",
+   "## Why it works",
+   "Every action sits within thumb reach, and the bottom navigation keeps the key areas one tap away. Read [Designing a live shopping app for mobile-first buyers](/blog/live-shopping-app) and [How much does it cost to build a mobile app?](/blog/mobile-app-cost-usa-canada)."
+  ]
+ },
+ {
+  "id": "sabbir-live",
+  "key": "sabbir",
+  "client": "Sabbir LIVE",
+  "industry": "Media / creator",
+  "location": "",
+  "img": "sabbir-home",
+  "services": [
+   "Web design",
+   "Branding",
+   "Development"
+  ],
+  "gallery": [
+   "sabbir-home",
+   "sabbir-tiktok",
+   "sabbir-shorts",
+   "sabbir-reels",
+   "sabbir-contact"
+  ],
+  "t": "Sabbir LIVE: a creator website that turns visitors into followers",
+  "body": [
+   "Sabbir LIVE is a content creator publishing YouTube Shorts, Facebook Reels and TikTok videos.",
+   "## The challenge",
+   "Videos were spread across several platforms. The creator needed one home that shows the newest content first and turns visitors into followers everywhere.",
+   "## What we built",
+   "- **A bold, dark brand presence** that matches the energy of the videos.\n- **Platform sections** for YouTube Shorts, Facebook Reels and TikTok.\n- **Follow and subscribe calls to action** close to every video.\n- **A contact page** for collaborations and sponsorships.",
+   "## Why it works",
+   "Newest content comes first, so returning fans always find something new, and every section leads to a follow button. Read [How to get more leads from your website](/blog/get-more-leads-from-website)."
+  ]
+ },
+ {
+  "id": "funpark",
+  "key": "funpark",
+  "client": "Funpark Indoor Amusement Center",
+  "industry": "Leisure / family entertainment",
+  "location": "",
+  "img": "funpark-allinone",
+  "services": [
+   "Social media design",
+   "Campaign concepts",
+   "Art direction"
+  ],
+  "gallery": [
+   "funpark-tuesday",
+   "funpark-allinone",
+   "funpark-bounce",
+   "funpark-discount",
+   "funpark-christmas",
+   "funpark-newyear"
+  ],
+  "t": "Funpark: a social media campaign that keeps a family fun park top of mind",
+  "body": [
+   "Funpark Indoor Amusement Center is a family entertainment venue with trampolines, slides and play areas.",
+   "## The challenge",
+   "Funpark needed to stay visible every week, fill quieter days and promote seasonal moments without its feed looking repetitive.",
+   "## What we created",
+   "- **Discount Tuesday:** a recurring weekly offer that followers learn to expect and share.\n- **Brand moments:** \"Bounce Mode\", \"All in One Place\" and \"Everything\" posts that show the fun of the venue.\n- **Seasonal campaigns:** Christmas and New Year posts that keep the feed warm between offers.\n- **Consistent art direction:** big, readable type and real photography of kids and families.",
+   "## Why it works",
+   "One clear idea per post, real people and a reason to act now. Read [What makes a social post stop the scroll](/blog/scroll-stopping-posts) and our [social media marketing guide](/blog/social-media-marketing-small-business)."
+  ]
+ },
+ {
+  "id": "immigration-crm",
+  "key": "crm",
+  "client": "Immigration consultancy CRM",
+  "industry": "Legal / professional services",
+  "location": "",
+  "img": "crm-reports",
+  "services": [
+   "Web app UX/UI",
+   "Dashboard design",
+   "Development"
+  ],
+  "gallery": [
+   "crm-reports",
+   "crm-meetings"
+  ],
+  "t": "Immigration consultancy CRM: leads, clients and meetings in one place",
+  "body": [
+   "An immigration consultancy needed one tool to replace scattered spreadsheets, inboxes and calendars.",
+   "## The challenge",
+   "Leads were slipping through the cracks and the team had no single view of clients, deals, tasks and revenue.",
+   "## What we built",
+   "- **Leads and deals:** a pipeline that follows each enquiry from first contact to signed client.\n- **Clients and projects:** every file, task and document in one place.\n- **Meetings calendar:** a monthly view with upcoming appointments.\n- **Reports:** revenue by month, lead sources and conversion by stage.",
+   "## Why it works",
+   "We designed around the team's real workflow, so the CRM matches how people already work. Read [From spreadsheets to one CRM](/blog/one-crm) and [SaaS dashboard design best practices](/blog/saas-dashboard-ux-best-practices)."
+  ]
+ }
+]

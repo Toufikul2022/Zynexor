@@ -71,13 +71,8 @@ for(const a of ARTICLES){
 `;
   fs.writeFileSync(path.join(ROOT,'blog',a.id+'.html'),html);
 }
-const pages=[['/','1.0'],['/services','0.9'],['/cases','0.9'],['/about','0.8'],['/blog','0.8']];
-const urls=pages.map(([p,pr])=>`  <url><loc>${SITE}${p}</loc><lastmod>${TODAY}</lastmod><priority>${pr}</priority></url>`)
-  .concat(ARTICLES.map(a=>`  <url><loc>${SITE}/blog/${a.id}</loc><lastmod>${meta[a.id]}</lastmod><priority>0.7</priority></url>`));
-fs.writeFileSync(path.join(ROOT,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
 const siteJs=path.join(ROOT,'site.js');let sj=fs.readFileSync(siteJs,'utf8');
 const list='  var ARTICLES=[\n'+ARTICLES.map(a=>'    '+JSON.stringify({id:a.id,cat:a.cat,t:a.t,img:a.img,read:a.read})).join(',\n')+'\n  ];';
 sj=sj.replace(/  var ARTICLES=\[[\s\S]*?\n  \];/,()=>list);fs.writeFileSync(siteJs,sj);
-const llms=path.join(ROOT,'llms.txt');let lt=fs.readFileSync(llms,'utf8');
-lt=lt.replace(/## Blog[\s\S]*$/,'## Blog\n'+ARTICLES.map(a=>`- [${a.t}](${SITE}/blog/${a.id}): ${firstPara(a).split(/(?<=[.?!])\s/)[0]}`).join('\n')+'\n');fs.writeFileSync(llms,lt);
+require('./build-pages.js')({ROOT,SITE,TODAY,ARTICLES,esc,inline,plain,isList,isFaq,faqs,render,meta,firstPara,desc});
 console.log('built',ARTICLES.length,'article pages + sitemap');

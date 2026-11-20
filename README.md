@@ -45,3 +45,11 @@ node scripts/build-seo.js
 ```
 
 This regenerates a static, indexable page for each article at `blog/<id>.html` (served as `/blog/<id>`) and updates `sitemap.xml`. Also add the new article to the Blog list in `llms.txt`.
+
+## Service and case study pages
+
+Service pages (`/services/<id>`) are written in `content/services.json` and case studies (`/cases/<id>`) in `content/cases.json`, using the same format as articles. `node scripts/build-seo.js` builds them along with a crawlable footer on every page, `rss.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt`.
+
+## IndexNow
+
+`.github/workflows/indexnow.yml` notifies Bing (which powers ChatGPT search) and other IndexNow search engines about every URL in the sitemap after each push to `main`. The key file is the 32-character `.txt` file in the site root; keep it in place.

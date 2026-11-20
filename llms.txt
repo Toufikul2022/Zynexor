@@ -1,29 +1,35 @@
 # Zynexor
 
-> Zynexor is a digital agency that designs and builds brands, websites, web apps, mobile apps and social media campaigns for growing businesses. Founded in 2023, the team of designers, developers and marketers works across Canada, the USA and Bangladesh.
+> Zynexor is a digital agency that designs and builds brands, websites, web apps, mobile apps and social media campaigns for growing businesses. Founded in 2023, the team of designers, developers and marketers works across Canada, the USA and Bangladesh, serving clients in Canada and the USA.
 
-Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://calendly.com/zynexor/30min
+Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://calendly.com/zynexor/30min · Website: https://www.zynexor.com
+
+## Key facts
+- Services: branding, website design and development, mobile app design and development, UI/UX for SaaS and dashboards, social media marketing
+- Team locations: Canada, USA, Bangladesh; works remotely with clients across Canada and the USA
+- Process: discover (week 1), design (weeks 2–4), build (weeks 4–8), launch and grow (ongoing)
+- Typical timelines: brand 3–6 weeks; small-business website 6–10 weeks; app MVP about 3–6 months
+- Pricing: fixed price for clear scopes after a free discovery call; monthly retainers for ongoing work
+- Clients own all final files, code and accounts
 
 ## Services
-- [Branding](https://www.zynexor.com/services#branding): brand strategy, naming, positioning, logo design, brand guidelines
-- [Digital design](https://www.zynexor.com/services#design): UX/UI for websites, SaaS platforms, dashboards, CRMs and mobile apps
-- [Development](https://www.zynexor.com/services#development): front-end, back-end, WordPress, Webflow, React, APIs, hosting and maintenance
-- [Marketing assets](https://www.zynexor.com/services#assets): social media campaigns, post and reel design, infographics
+- [Branding](https://www.zynexor.com/services/branding): Zynexor builds brands that help small businesses, startups and professional firms in Canada and the USA look established, stand out from competitors and charge what they are worth.
+- [Website design and development](https://www.zynexor.com/services/web-design): Zynexor designs and builds websites that bring in enquiries, not just compliments.
+- [Mobile app design and development](https://www.zynexor.com/services/app-development): Zynexor designs and builds mobile apps that people open again tomorrow.
+- [UI/UX design for SaaS and web apps](https://www.zynexor.com/services/ui-ux-design): Zynexor designs SaaS platforms, dashboards, CRMs and internal tools that are easy to learn and fast to use.
+- [Social media marketing](https://www.zynexor.com/services/social-media-marketing): Zynexor plans and designs social media campaigns that keep local businesses and brands visible and bring customers through the door.
 
-## Selected work
-- [A&M Canadian Immigration Law](https://www.zynexor.com/cases): content-rich law firm website with Manitoba PNP draw tables and illustrated guides
-- [TrustLayer AI](https://www.zynexor.com/cases): AI governance SaaS platform (tool registry, policy generator, trust portal)
-- [SocialBoost AI](https://www.zynexor.com/cases): brand, landing page and AI social post generator
-- [Style.Bd](https://www.zynexor.com/cases): fashion marketplace mobile app with live shopping
-- [Sabbir LIVE](https://www.zynexor.com/cases): creator website for YouTube Shorts, Reels and TikTok
-- [Funpark Indoor Amusement Center](https://www.zynexor.com/cases): ongoing social media campaign
-- [Immigration consultancy CRM](https://www.zynexor.com/cases): leads, clients, meetings and reports in one tool
+## Case studies
+- [A&M Canadian Immigration Law Corporation](https://www.zynexor.com/cases/am-immigration-law): a law firm website that makes immigration pathways clear
+- [TrustLayer AI](https://www.zynexor.com/cases/trustlayer-ai): designing a platform that makes responsible AI simple
+- [SocialBoost AI](https://www.zynexor.com/cases/socialboost-ai): brand and launch website for an AI social post generator
+- [Style.Bd](https://www.zynexor.com/cases/style-bd): a mobile marketplace where live shopping meets verified sellers
+- [Sabbir LIVE](https://www.zynexor.com/cases/sabbir-live): a creator website that turns visitors into followers
+- [Funpark Indoor Amusement Center](https://www.zynexor.com/cases/funpark): a social media campaign that keeps a family fun park top of mind
+- [Immigration consultancy CRM](https://www.zynexor.com/cases/immigration-crm): leads, clients and meetings in one place
 
 ## Company
 - [About Zynexor](https://www.zynexor.com/about): story (2023–2026), values, team in Canada, the USA and Bangladesh
-- How we work: discover (week 1), design (weeks 2–4), build (weeks 4–8), launch and grow (ongoing)
-- Typical timelines: brand and landing page 3–6 weeks; full website 6–10 weeks; app or dashboard release 8–16 weeks
-- Pricing: fixed price for clear scopes; monthly retainer or time and material for ongoing work
 
 ## Blog
 - [Local SEO for small businesses in Canada and the USA: a practical guide](https://www.zynexor.com/blog/local-seo-small-business-canada-usa): When someone searches "accountant near me", "immigration lawyer Winnipeg" or "web designer Toronto", Google shows a map with three businesses at the top.
@@ -44,3 +50,6 @@ Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://cale
 - [How a clear website turns visitors into clients](https://www.zynexor.com/blog/website-that-sells): Most service websites fail for the same reason: they describe the business instead of answering the visitor.
 - [What makes a social post stop the scroll](https://www.zynexor.com/blog/scroll-stopping-posts): People decide in under a second whether to stop on a post.
 - [From spreadsheets to one CRM](https://www.zynexor.com/blog/one-crm): Growing service businesses often run on spreadsheets, inboxes and memory.
+
+## Optional
+- [Full text of all services, case studies and articles](https://www.zynexor.com/llms-full.txt)

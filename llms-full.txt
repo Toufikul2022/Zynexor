@@ -1,0 +1,1514 @@
+# Zynexor
+
+> Zynexor is a digital agency that designs and builds brands, websites, web apps, mobile apps and social media campaigns for growing businesses. Founded in 2023, the team of designers, developers and marketers works across Canada, the USA and Bangladesh, serving clients in Canada and the USA.
+
+Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://calendly.com/zynexor/30min · Website: https://www.zynexor.com
+
+## Key facts
+- Services: branding, website design and development, mobile app design and development, UI/UX for SaaS and dashboards, social media marketing
+- Team locations: Canada, USA, Bangladesh; works remotely with clients across Canada and the USA
+- Process: discover (week 1), design (weeks 2–4), build (weeks 4–8), launch and grow (ongoing)
+- Typical timelines: brand 3–6 weeks; small-business website 6–10 weeks; app MVP about 3–6 months
+- Pricing: fixed price for clear scopes after a free discovery call; monthly retainers for ongoing work
+- Clients own all final files, code and accounts
+
+
+---
+
+# Branding agency for growing businesses in Canada and the USA
+URL: https://www.zynexor.com/services/branding
+
+Zynexor builds brands that help small businesses, startups and professional firms in Canada and the USA look established, stand out from competitors and charge what they are worth. We combine brand strategy with visual identity design, so your brand is both clear and memorable.
+
+
+## What our branding service includes
+
+
+- Brand strategy: customer research, positioning, value proposition, messaging and tone of voice.
+- Naming: name ideas with domain and trademark database checks (CIPO in Canada, USPTO in the USA).
+- Visual identity: logo, colour palette, typography, iconography and imagery style.
+- Brand guidelines: a practical guide your team and suppliers can follow.
+- Brand assets: business cards, presentation and proposal templates, social media templates and signage.
+- Website and launch support: applying the new brand to your website and social profiles.
+
+
+## Who it is for
+
+
+- New businesses and startups that need to look credible from day one.
+- Established businesses whose brand no longer matches the quality of their work.
+- Professional firms, such as law, consulting and healthcare practices, that need to build trust quickly.
+
+
+## Our branding process
+
+
+- Discover (week 1): we interview you and your customers and review your competitors.
+- Define (weeks 1–2): we agree positioning and messaging in plain language.
+- Design (weeks 2–4): we present visual directions, refine one and test it on real applications.
+- Deliver (weeks 4–6): final files, brand guidelines and templates, ready to use.
+
+A focused branding project usually takes three to six weeks.
+
+
+## Recent branding work
+
+
+We created the brand and launch website for SocialBoost AI, built a consistent social media look for Funpark Indoor Amusement Center, and designed the brand experience for the Style.Bd marketplace app. See our case studies and read our small business branding guide.
+
+
+## FAQ
+
+
+Q: How much does branding cost?
+A: It depends on the scope: a logo refresh costs far less than a full strategy, naming and identity system. We send a written proposal with a fixed price after a free discovery call.
+
+Q: Do you work with businesses outside your cities?
+A: Yes. We work remotely with clients across Canada and the USA, with video calls and weekly check-ins.
+
+Q: Will I own the logo and brand files?
+A: Yes. On final payment you receive full ownership of all final brand files.
+
+---
+
+# Web design and development agency for businesses in Canada and the USA
+URL: https://www.zynexor.com/services/web-design
+
+Zynexor designs and builds websites that bring in enquiries, not just compliments. We work with service businesses, professional firms, startups and creators across Canada and the USA, and we handle everything from strategy and copy structure to design, development, SEO set-up and launch.
+
+
+## What our web design service includes
+
+
+- Strategy and structure: goals, audience, sitemap and the pages your customers need.
+- UX and visual design: wireframes and custom designs for desktop and mobile.
+- Development: WordPress, Webflow or custom code, chosen to fit how you will update the site. Read WordPress vs Webflow vs custom code.
+- Conversion features: online booking, contact forms, CRM integrations and live data.
+- SEO foundations: fast loading, clean structure, page titles, structured data and sitemaps.
+- Accessibility: designed and tested against WCAG 2.1 Level AA, which supports AODA and ADA obligations.
+- Launch and care: redirects from your old site, analytics, training and maintenance plans.
+
+
+## Websites that perform
+
+
+Speed and clarity matter. The Zynexor website itself scores 100 for performance on desktop in Google PageSpeed Insights, and we apply the same techniques to client sites: compressed media, lazy loading and lean code.
+
+
+## Our process
+
+
+- Discover (week 1): a call, a short brief and research into your market.
+- Design (weeks 2–4): structure, wireframes and visual design, reviewed with you weekly.
+- Build (weeks 4–8): development, content entry and testing on real devices.
+- Launch and grow: go live, measure results and keep improving.
+
+Most small-business websites take six to ten weeks.
+
+
+## Recent website projects
+
+
+A content-rich website for A&M Canadian Immigration Law in Winnipeg, a creator hub for Sabbir LIVE and a launch website for SocialBoost AI. See our case studies.
+
+
+## FAQ
+
+
+Q: How much does a website cost?
+A: Prices depend on pages, content and features. Read How much does a website cost in Canada?, then book a call for a fixed-price proposal.
+
+Q: Can you redesign my site without losing Google rankings?
+A: Yes. We map every old URL and set up redirects. See our website redesign checklist.
+
+Q: Do you build bilingual English and French websites?
+A: Yes, we can design and build multilingual websites, including English and French for Canadian businesses.
+
+---
+
+# Mobile app design and development for startups and businesses
+URL: https://www.zynexor.com/services/app-development
+
+Zynexor designs and builds mobile apps that people open again tomorrow. We help founders and businesses in Canada and the USA turn an idea into a tested product, from first prototype to App Store and Google Play launch.
+
+
+## What our app service includes
+
+
+- Product discovery: goals, users, core features and an MVP scope that fits your budget.
+- UX design: user flows, wireframes and clickable prototypes tested with real users.
+- UI design: polished visual design for iOS and Android, with a reusable design system.
+- Development: cross-platform or native apps, back ends, admin panels and integrations such as payments and notifications.
+- Launch: App Store and Google Play submission, analytics and crash reporting.
+- Growth: updates, new features and maintenance after launch.
+
+
+## Start with an MVP
+
+
+We recommend launching the smallest version that delivers real value, then improving it with user feedback. It is faster, cheaper and less risky than building everything at once. Read How much does it cost to build a mobile app?.
+
+
+## Recent app work
+
+
+For Style.Bd we designed a fashion marketplace app with live shopping, a trending feed, verified sellers and in-app messaging. We also designed the mobile experience for SocialBoost AI. See our case studies.
+
+
+## FAQ
+
+
+Q: Do you build for iOS and Android?
+A: Yes. We often recommend a cross-platform approach so you can launch on both with one codebase.
+
+Q: How long does it take to build an app?
+A: A focused MVP usually takes about three to six months from design to launch, depending on features.
+
+Q: Will I own the code?
+A: Yes. You own the code, designs and app store accounts.
+
+---
+
+# UI/UX design for SaaS products, dashboards and web apps
+URL: https://www.zynexor.com/services/ui-ux-design
+
+Zynexor designs SaaS platforms, dashboards, CRMs and internal tools that are easy to learn and fast to use. We work with startups and established companies in Canada and the USA to reduce churn, cut support requests and make complex workflows feel simple.
+
+
+## What our UI/UX service includes
+
+
+- UX audit: a review of your current product with prioritised fixes.
+- User research: interviews, task analysis and usability testing.
+- Information architecture and user flows: how users move through the product.
+- Wireframes and prototypes: tested before development starts.
+- Visual design and design systems: consistent components, ready for developers.
+- Accessibility: WCAG 2.1 Level AA, increasingly required in enterprise procurement.
+- Developer handoff: specs, assets and support during the build.
+
+
+## What we design
+
+
+- B2B SaaS platforms and admin panels.
+- Analytics dashboards and reporting tools. Read our dashboard UX best practices.
+- CRMs and internal tools that replace spreadsheets.
+- AI products where trust and clarity matter most. Read Designing trust into AI products.
+
+
+## Recent product work
+
+
+The TrustLayer AI governance platform, with its AI tool registry, policy generator and trust portal, and a CRM for an immigration consultancy covering leads, clients, meetings and reports. See our case studies.
+
+
+## FAQ
+
+
+Q: Can you work with our in-house developers?
+A: Yes. We deliver design systems and specs your developers can build from, and we join stand-ups during the build if helpful.
+
+Q: How long does a UX project take?
+A: An audit takes one to two weeks. Designing a new product or major feature typically takes several weeks, depending on the number of screens and user roles.
+
+---
+
+# Social media marketing and content design for small businesses
+URL: https://www.zynexor.com/services/social-media-marketing
+
+Zynexor plans and designs social media campaigns that keep local businesses and brands visible and bring customers through the door. We work with businesses in Canada and the USA on Instagram, Facebook, LinkedIn, TikTok and YouTube Shorts.
+
+
+## What our social media service includes
+
+
+- Strategy: platform choice, content pillars, posting schedule and goals.
+- Campaign concepts: recurring offers, seasonal campaigns and launches.
+- Content design: post, carousel, story and reel designs that match your brand.
+- Templates: on-brand templates your team can use for quick updates.
+- Monthly content calendars: planned around holidays in Canada and the USA and your own key dates.
+- Paid promotion support: ad creatives for boosting your best posts.
+
+
+## How we work
+
+
+We start with a strategy session, then deliver a monthly content plan and designs for your approval. Many clients post day-to-day updates themselves and use our templates and campaign designs for the big moments. Read our guide to social media marketing for small businesses.
+
+
+## Recent social media work
+
+
+An ongoing campaign for Funpark Indoor Amusement Center, including the "Discount Tuesday" offer, "Bounce Mode" and Christmas and New Year posts. See our case studies and read What makes a social post stop the scroll.
+
+
+## FAQ
+
+
+Q: Do you post for us?
+A: We can schedule posts for you, or hand over finished designs and captions for your team to publish.
+
+Q: Do you offer monthly packages?
+A: Yes. Social media work usually runs on a monthly retainer with a set number of designs and campaigns.
+---
+
+# A&M Canadian Immigration Law: a law firm website that makes immigration pathways clear
+URL: https://www.zynexor.com/cases/am-immigration-law
+Client: A&M Canadian Immigration Law Corporation · Industry: Legal / immigration · Location: Winnipeg, Manitoba, Canada · Services: Web design, Content design, Infographics, SEO
+
+A&M Canadian Immigration Law Corporation is an immigration law firm in Winnipeg, Manitoba, helping individuals, families and businesses with permanent residence, temporary residence, citizenship, refusals and appeals.
+
+
+## The challenge
+
+
+Immigration clients arrive anxious and confused by complex rules. The firm needed a website that explains its services clearly, shows its credentials and keeps clients up to date with fast-changing programs such as the Manitoba Provincial Nominee Program.
+
+
+## What we built
+
+
+- A services directory organised by client goals: urgent cases, permanent residence, temporary residence and US immigration.
+- A lawyer profile: credentials, experience and memberships, presented to build trust.
+- Live Manitoba PNP draw tables: draw dates, numbers and scores for each stream.
+- A news and case-law library: regular updates that give visitors a reason to return and give search engines fresh content.
+- Illustrated guides: roadmaps and mind maps that explain pathways at a glance.
+- Google reviews integration: real client reviews on the website.
+
+
+## Why it works
+
+
+Every page starts from a real client question and ends with a clear next step: booking a consultation. Read more in Website design for immigration law firms in Canada and How a clear website turns visitors into clients.
+
+---
+
+# TrustLayer AI: designing a platform that makes responsible AI simple
+URL: https://www.zynexor.com/cases/trustlayer-ai
+Client: TrustLayer AI · Industry: AI governance / SaaS · Services: Product design, UX/UI design, Dashboard design, Design system
+
+TrustLayer AI helps companies document, comply with and communicate how they use artificial intelligence.
+
+
+## The challenge
+
+
+AI governance is unfamiliar territory for most teams. The product had to turn policies and compliance work into simple, guided tasks, and help companies show customers that they use AI responsibly.
+
+
+## What we designed
+
+
+- AI tool registry: every AI tool a team uses, with risk levels and data handling.
+- Policy generator: a step-by-step flow that turns policy writing into short choices.
+- Incident tracking: a clear way to log and resolve AI-related issues.
+- Trust portal: a public page where companies share their AI practices with clients.
+- Dashboard and analytics: status at a glance, with details on demand.
+- Landing page: explaining the product to buyers in plain language.
+
+
+## Approach
+
+
+We designed for calm, factual clarity: summary first, consistent status labels, and accessible components. Read Designing trust into AI products and SaaS dashboard design best practices.
+
+---
+
+# SocialBoost AI: brand and launch website for an AI social post generator
+URL: https://www.zynexor.com/cases/socialboost-ai
+Client: SocialBoost AI · Industry: AI / marketing technology · Services: Branding, Landing page, Web app UX/UI, Art direction
+
+SocialBoost AI is an AI tool that writes scroll-stopping social media posts in seconds for Instagram, Facebook, LinkedIn, X and TikTok.
+
+
+## The challenge
+
+
+The product needed to launch with a brand that felt modern and trustworthy, a landing page that converted visitors into sign-ups, and a generator interface simple enough to use in seconds.
+
+
+## What we delivered
+
+
+- Brand identity: a confident visual system with purple gradients, rounded type and bold headlines.
+- Conversion-focused landing page: a clear promise, a free start and proof points near every call to action.
+- Post generator UX/UI: platform selection, post types and tone options in one clean screen.
+- Mobile experience: the same flow designed for phones.
+
+
+## Why it works
+
+
+A consistent brand across the website, app and social posts means people recognise the product before they read its name. Read Why your brand needs a system, not just a logo.
+
+---
+
+# Style.Bd: a mobile marketplace where live shopping meets verified sellers
+URL: https://www.zynexor.com/cases/style-bd
+Client: Style.Bd · Industry: Retail / e-commerce · Location: Bangladesh · Services: Mobile app design, UX/UI design, E-commerce flows, Prototyping
+
+Style.Bd is a fashion marketplace app for buyers in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.
+
+
+## The challenge
+
+
+Buyers needed to discover products, trust new sellers and buy without leaving the app, while sellers needed a way to showcase products live.
+
+
+## What we designed
+
+
+- Home and trending feeds: discovery built around patterns people know from social apps.
+- Live shopping: buyers can watch, comment and buy in one place.
+- Verified sellers: badges and profiles that reduce the worry of buying from someone new.
+- Shop and category browsing: fast paths to the right products.
+- In-app messaging: buyers and sellers can talk without switching apps.
+
+
+## Why it works
+
+
+Every action sits within thumb reach, and the bottom navigation keeps the key areas one tap away. Read Designing a live shopping app for mobile-first buyers and How much does it cost to build a mobile app?.
+
+---
+
+# Sabbir LIVE: a creator website that turns visitors into followers
+URL: https://www.zynexor.com/cases/sabbir-live
+Client: Sabbir LIVE · Industry: Media / creator · Services: Web design, Branding, Development
+
+Sabbir LIVE is a content creator publishing YouTube Shorts, Facebook Reels and TikTok videos.
+
+
+## The challenge
+
+
+Videos were spread across several platforms. The creator needed one home that shows the newest content first and turns visitors into followers everywhere.
+
+
+## What we built
+
+
+- A bold, dark brand presence that matches the energy of the videos.
+- Platform sections for YouTube Shorts, Facebook Reels and TikTok.
+- Follow and subscribe calls to action close to every video.
+- A contact page for collaborations and sponsorships.
+
+
+## Why it works
+
+
+Newest content comes first, so returning fans always find something new, and every section leads to a follow button. Read How to get more leads from your website.
+
+---
+
+# Funpark: a social media campaign that keeps a family fun park top of mind
+URL: https://www.zynexor.com/cases/funpark
+Client: Funpark Indoor Amusement Center · Industry: Leisure / family entertainment · Services: Social media design, Campaign concepts, Art direction
+
+Funpark Indoor Amusement Center is a family entertainment venue with trampolines, slides and play areas.
+
+
+## The challenge
+
+
+Funpark needed to stay visible every week, fill quieter days and promote seasonal moments without its feed looking repetitive.
+
+
+## What we created
+
+
+- Discount Tuesday: a recurring weekly offer that followers learn to expect and share.
+- Brand moments: "Bounce Mode", "All in One Place" and "Everything" posts that show the fun of the venue.
+- Seasonal campaigns: Christmas and New Year posts that keep the feed warm between offers.
+- Consistent art direction: big, readable type and real photography of kids and families.
+
+
+## Why it works
+
+
+One clear idea per post, real people and a reason to act now. Read What makes a social post stop the scroll and our social media marketing guide.
+
+---
+
+# Immigration consultancy CRM: leads, clients and meetings in one place
+URL: https://www.zynexor.com/cases/immigration-crm
+Client: Immigration consultancy CRM · Industry: Legal / professional services · Services: Web app UX/UI, Dashboard design, Development
+
+An immigration consultancy needed one tool to replace scattered spreadsheets, inboxes and calendars.
+
+
+## The challenge
+
+
+Leads were slipping through the cracks and the team had no single view of clients, deals, tasks and revenue.
+
+
+## What we built
+
+
+- Leads and deals: a pipeline that follows each enquiry from first contact to signed client.
+- Clients and projects: every file, task and document in one place.
+- Meetings calendar: a monthly view with upcoming appointments.
+- Reports: revenue by month, lead sources and conversion by stage.
+
+
+## Why it works
+
+
+We designed around the team's real workflow, so the CRM matches how people already work. Read From spreadsheets to one CRM and SaaS dashboard design best practices.
+---
+
+# Local SEO for small businesses in Canada and the USA: a practical guide
+URL: https://www.zynexor.com/blog/local-seo-small-business-canada-usa
+
+When someone searches "accountant near me", "immigration lawyer Winnipeg" or "web designer Toronto", Google shows a map with three businesses at the top. Getting into that list is called local SEO, and for most small businesses in Canada and the USA it is the fastest way to win customers from search. This guide covers the steps that matter most.
+
+
+## How Google ranks local results
+
+
+Google says local results are based mainly on three things:
+
+- Relevance: how well your business profile and website match what the person searched for.
+- Distance: how close your business is to the searcher or the location in their search.
+- Prominence: how well known your business is, based on reviews, links, mentions and your overall web presence.
+
+You cannot change distance, but you can work hard on relevance and prominence.
+
+
+## Step 1: Claim and complete your Google Business Profile
+
+
+Your Google Business Profile is free and is the single most important local SEO asset.
+
+- Choose the most accurate primary category, such as "Immigration attorney" or "Website designer", then add secondary categories.
+- If you serve clients at their location and do not have a storefront, set it up as a service-area business and list the cities you serve.
+- Add your hours, phone number, website, services, products and a clear description.
+- Upload real photos of your team, office and work, and add new ones regularly.
+- Post updates and offers. They show that the business is active.
+
+
+## Step 2: Keep your name, address and phone number consistent
+
+
+Your business name, address and phone number (often called NAP) should be exactly the same on your website, Google, Bing Places, Apple Business Connect, Facebook, Yelp and industry directories. Inconsistent details confuse search engines and customers.
+
+
+## Step 3: Build local pages on your website
+
+
+- Put your city and region in page titles and headings where it is natural, for example "Branding Agency in Calgary".
+- If you serve several cities, create a genuinely useful page for each, with local examples, not copies with the city name swapped.
+- Add your address and a map to your contact page, and use structured data so search engines understand your business details.
+
+
+## Step 4: Earn reviews the right way
+
+
+Reviews influence both rankings and decisions. Ask every happy client for an honest review, make it easy with a direct link, and reply to every review, good or bad.
+
+Do not buy reviews, write fake ones or offer rewards for positive reviews. Google's policies prohibit it, the US Federal Trade Commission has rules against fake reviews, and Canada's Competition Bureau has acted against misleading reviews.
+
+
+## Step 5: Get mentioned locally
+
+
+Links and mentions from local sources build prominence. Join your chamber of commerce, sponsor community events, partner with complementary businesses, and get listed in reputable directories for your industry.
+
+
+## Step 6: Make your website fast and mobile-friendly
+
+
+Most local searches happen on phones. A slow or confusing mobile site loses customers even if you rank well. Put your phone number as a tap-to-call link, show your service area clearly and make booking simple.
+
+
+## Track what matters
+
+
+Google Business Profile shows how many people called you, asked for directions or visited your website. Combine that with Google Search Console and analytics to see which pages and searches bring enquiries.
+
+Once people find you, your website has to turn them into enquiries. Read How to get more leads from your website, or see how we built a search-friendly site for a Winnipeg law firm in our case studies.
+
+
+## FAQ
+
+
+Q: How long does local SEO take to work?
+A: Completing your Google Business Profile can make a difference within weeks. Building reviews, local pages and links is ongoing work that usually shows steady gains over several months.
+
+Q: Can I rank in a city where I do not have an office?
+A: Distance matters, so it is harder. A service-area profile, strong local pages and real local work and reviews give you the best chance.
+
+Q: Do I need both Google and Bing listings?
+A: Yes. Bing powers several search and AI assistant experiences, and setting up Bing Places takes only a few minutes.
+
+---
+
+# Social media marketing for small businesses in Canada and the USA: what to post and how often
+URL: https://www.zynexor.com/blog/social-media-marketing-small-business
+
+Most small business owners know they should be on social media, but not what to post, where, or how often. This guide gives you a simple system that works for local businesses and service companies in Canada and the USA, based on the campaigns we run for clients such as Funpark Indoor Amusement Center.
+
+
+## Pick the right platforms
+
+
+You do not need to be everywhere. Choose one or two platforms where your customers already spend time:
+
+- Instagram and Facebook: strong for local businesses, family activities, restaurants, retail and events.
+- LinkedIn: best for B2B services, professional firms and recruiting.
+- TikTok and YouTube Shorts: strong for products, entertainment and businesses that can show something visual quickly.
+- Google Business Profile posts: often overlooked, but seen by people already searching for you.
+
+
+## Use content pillars
+
+
+Content pillars are three to five recurring themes that make planning easy. For example:
+
+- Offers: a weekly deal or seasonal promotion, like Funpark's "Discount Tuesday".
+- Proof: reviews, results, before-and-after work and case studies.
+- Behind the scenes: your team, your process and how things are made.
+- Education: quick tips and answers to common customer questions.
+- Moments: holidays, local events and seasonal posts.
+
+
+## How often should you post?
+
+
+Consistency matters more than volume. A realistic starting point for most small businesses is three to five feed posts per week on your main platform, plus short stories or reels when you have something worth showing. Pick a schedule your team can keep for months, then increase it if results justify it.
+
+
+## What makes a post work
+
+
+- One clear idea per post. Big, readable text and a single message.
+- Real people and places. Your own photos and videos beat stock images.
+- A reason to act. Book now, visit this week, comment, share or save.
+- Native formats. Vertical video for reels and shorts, square or portrait images for feeds.
+- Brand consistency. The same colours, fonts and tone, so people recognise you before they read your name.
+
+Read more in What makes a social post stop the scroll.
+
+
+## Plan a month at a time
+
+
+Build a simple calendar with your pillars, key dates such as Canada Day, July 4th, Thanksgiving in both countries, Halloween and the winter holidays, and any launches or offers. Create posts in batches and schedule them, so social media takes a few hours a month instead of a few hours a day.
+
+
+## Add a small paid budget
+
+
+Organic reach on most platforms is limited. Boosting your best posts or running small, targeted ads to people in your area can multiply results. Start small, test two or three versions, and keep what works.
+
+
+## Measure what matters
+
+
+Likes are nice, but focus on actions: messages, calls, bookings, website visits and sales. Use tracked links and ask new customers how they found you.
+
+
+## Know the rules
+
+
+In Canada, CASL rules apply to commercial electronic messages, so get consent before sending marketing emails or similar direct messages. In the USA, paid partnerships with influencers must be clearly disclosed under FTC guidelines.
+
+
+## FAQ
+
+
+Q: Should I hire an agency or post myself?
+A: Many small businesses post day-to-day updates themselves and use an agency for strategy, templates, campaign design and video. A good template system lets your team publish on-brand posts quickly.
+
+Q: How long until social media brings customers?
+A: Expect a few months of consistent posting to build an audience. Paid promotion can bring faster results while your organic presence grows.
+
+---
+
+# Website redesign checklist: how to redesign without losing your Google rankings
+URL: https://www.zynexor.com/blog/website-redesign-without-losing-seo
+
+A new website should bring more customers, not fewer. Yet many businesses in Canada and the USA see their search traffic drop after a redesign because old pages disappear, addresses change or important content is removed. This checklist helps you keep the rankings you have earned while you upgrade.
+
+
+## Before the redesign
+
+
+- Record your baseline. Export your top pages, search queries and traffic from Google Search Console and your analytics tool, so you can compare after launch.
+- Crawl your current site. Use a crawler to list every live URL, page title, meta description and heading.
+- Find your most valuable pages. Identify the pages that bring the most traffic, links and enquiries. They need the most care.
+- Decide what stays, merges or goes. Keep pages that perform well, combine thin or duplicate pages, and only remove pages that have no value.
+
+
+## Plan your URLs and redirects
+
+
+This is the step that protects your rankings.
+
+- Keep the same URLs wherever possible.
+- When an address must change, map every old URL to the most relevant new URL.
+- Set up permanent 301 redirects for every changed or removed page. Avoid sending everything to the home page.
+- Avoid redirect chains, where one redirect leads to another.
+
+
+## Protect your content
+
+
+- Keep the substance of pages that rank well. Improving them is fine, but deleting key sections often costs rankings.
+- Keep or improve page titles, headings and meta descriptions.
+- Keep internal links between related pages, and update them to the new addresses.
+- Keep structured data, such as business details, FAQs and article markup.
+
+
+## Build and test on a staging site
+
+
+- Block search engines from the staging site with a noindex tag or password, so it is not indexed by mistake.
+- Test every redirect from your URL map.
+- Check speed on mobile with Google PageSpeed Insights.
+- Check accessibility, forms, booking, tracking and analytics.
+
+
+## Launch day
+
+
+- Remove the noindex tag or password from the new site. This is the most common and most damaging launch mistake.
+- Make sure the robots.txt file allows search engines to crawl the site.
+- Submit your new XML sitemap in Google Search Console and Bing Webmaster Tools.
+- Test the top 20 old URLs to confirm they redirect correctly.
+
+
+## After launch
+
+
+- Watch Search Console daily for the first two weeks for crawl errors and 404 pages, and fix them with redirects.
+- Compare traffic and rankings with your baseline. Small dips for a few weeks are normal; large lasting drops point to missing pages or redirects.
+- Keep your old redirects in place for the long term.
+
+
+## Changing domain at the same time
+
+
+If you are also moving to a new domain, redirect every old page to its matching new page, keep the old domain registered, and use the change of address tool in Google Search Console.
+
+When we rebuild a website at Zynexor, URL mapping and redirects are part of the plan from day one. See our case studies for examples.
+
+
+## FAQ
+
+
+Q: Will my rankings drop after a redesign?
+A: A short, small fluctuation is common. With careful redirects, preserved content and a clean launch, most sites recover quickly and often improve.
+
+Q: What is a 301 redirect?
+A: A permanent redirect that sends visitors and search engines from an old URL to a new one, and passes most of the old page's ranking value to the new page.
+
+Q: How long should I keep redirects?
+A: Keep them for at least a year, and ideally permanently, especially for pages with backlinks.
+
+---
+
+# How to get more leads from your website: 10 fixes for service businesses
+URL: https://www.zynexor.com/blog/get-more-leads-from-website
+
+Many service businesses in Canada and the USA get decent website traffic but too few enquiries. The problem is rarely the number of visitors. It is what happens after they arrive. These ten fixes are the changes we make most often when a client asks us to turn their website into a lead generator.
+
+
+## 1. Say what you do in the first screen
+
+
+Visitors decide in seconds whether they are in the right place. Your first screen should state who you help, what you do and where, in plain words, with one clear button. "Immigration lawyers helping families move to Canada" beats "Excellence in legal solutions".
+
+
+## 2. Use one main call to action
+
+
+Choose the action that matters most, such as "Book a free consultation", and repeat it in the header, after key sections and at the end of every page. Too many competing buttons reduce clicks on all of them.
+
+
+## 3. Let people book a time online
+
+
+Many people would rather pick a time than wait for a reply. An embedded booking calendar, like the one we use with Calendly, removes back-and-forth emails and captures leads outside office hours.
+
+
+## 4. Shorten your forms
+
+
+Ask only what you need to start the conversation: name, email, phone if necessary, and a short message. Every extra field loses some people. Collect details later.
+
+
+## 5. Show proof everywhere
+
+
+Add reviews, client logos, case studies, certifications and numbers near your calls to action. Real names, photos and results build far more trust than general claims. See how we present work in our case studies.
+
+
+## 6. Answer objections before they are asked
+
+
+Price, timeline, process and "is this right for me?" are the usual hesitations. A clear process section and an FAQ near the bottom of key pages answer them and keep visitors moving.
+
+
+## 7. Make the site fast on phones
+
+
+Slow pages lose visitors before they see anything. Compress images and video, load only what is needed, and test with Google PageSpeed Insights. Most local searches happen on mobile.
+
+
+## 8. Build a page for each service
+
+
+A visitor looking for "website redesign" should land on a page about website redesign, not a general services list. Dedicated service pages convert better and rank for more searches.
+
+
+## 9. Add tap-to-call and click-to-email
+
+
+On mobile, your phone number and email should be one tap away. Make sure they work correctly and are tracked as conversions.
+
+
+## 10. Track every lead
+
+
+Set up analytics events for form submissions, bookings, calls and email clicks. Then you can see which pages and channels bring real enquiries and improve them over time.
+
+
+## A quick self-check
+
+
+Open your website on your phone and ask: within five seconds, would a stranger know what you do, who it is for and what to do next? If not, start with fixes 1 and 2.
+
+
+## FAQ
+
+
+Q: How quickly will these changes increase leads?
+A: Clearer messaging, booking and shorter forms can improve enquiries soon after launch. SEO-driven changes, such as new service pages, take longer to bring extra traffic.
+
+Q: Should I add live chat?
+A: It can help if someone can reply quickly during business hours. An unanswered chat box does more harm than good.
+
+Q: Do I need a full redesign?
+A: Not always. Many of these fixes can be made on your existing site. A redesign makes sense when the structure, platform or brand no longer fits your business.
+
+---
+
+# SaaS dashboard design: UX best practices for B2B products
+URL: https://www.zynexor.com/blog/saas-dashboard-ux-best-practices
+
+For B2B software, the dashboard is often the screen customers see every day. A clear dashboard helps users get value quickly and keeps them subscribed. A confusing one drives support tickets and churn. These are the practices we follow when designing dashboards for SaaS companies in Canada and the USA, including the TrustLayer AI governance platform.
+
+
+## Start with the questions users need answered
+
+
+Before choosing charts, list the questions each type of user asks when they log in. "Do I have anything urgent?", "Are we on track this month?" and "What changed since yesterday?" are common. Every element on the dashboard should answer one of these questions.
+
+
+## Put the summary first
+
+
+Show the most important numbers and alerts at the top, with details below. A few key metrics, each with a comparison to a previous period, are more useful than a wall of charts.
+
+
+## Design for different roles
+
+
+An administrator, a manager and an individual contributor need different views. Use role-based dashboards or let users customise which widgets they see, rather than showing everyone everything.
+
+
+## Show status at a glance
+
+
+Use colour, labels and icons consistently to show status: on track, needs attention, critical. Do not rely on colour alone, because some users cannot distinguish certain colours. Pair colour with text or icons.
+
+
+## Choose the right chart for the data
+
+
+- Line charts for trends over time.
+- Bar charts for comparing categories.
+- Tables for detailed records that users need to scan, sort and filter.
+- Single numbers with a trend indicator for headline metrics.
+
+Avoid decorative 3D charts and pie charts with many slices. Label axes clearly and show exact values on hover.
+
+
+## Make tables work hard
+
+
+Most B2B work happens in tables. Support sorting, filtering, search, saved views, bulk actions and export. Keep row actions visible and predictable, and make important columns sticky on small screens.
+
+
+## Design empty, loading and error states
+
+
+New users see empty dashboards. Turn empty states into onboarding with a clear next step, such as "Add your first tool" or "Import your contacts". Show skeleton loaders while data loads, and write error messages that explain what happened and how to fix it.
+
+
+## Keep it fast
+
+
+Load the summary first and fetch heavier data afterwards. Paginate long lists and cache common queries. A dashboard that takes several seconds to appear feels broken, however good it looks.
+
+
+## Make it accessible
+
+
+Enterprise customers in Canada and the USA increasingly ask for accessibility in procurement. Design to WCAG 2.1 Level AA: keyboard navigation, sufficient contrast, labelled controls and screen-reader friendly tables. See our accessibility guide.
+
+
+## Test with real users
+
+
+Prototype the dashboard and watch five real users complete common tasks before development. You will find the confusing parts quickly and cheaply. Then measure feature usage after launch and keep improving.
+
+Read how we approached trust and clarity in Designing trust into AI products, or see the TrustLayer AI project in our case studies.
+
+
+## FAQ
+
+
+Q: How many metrics should a dashboard show?
+A: Usually three to six headline metrics, with details available on demand. If everything is highlighted, nothing stands out.
+
+Q: Should dashboards be customisable?
+A: Offer sensible role-based defaults first. Customisation helps power users, but most users never change the defaults, so they must be good.
+
+Q: How long does it take to design a SaaS dashboard?
+A: A focused dashboard design, including research, wireframes, visual design and a tested prototype, often takes several weeks, depending on the number of roles and screens.
+
+---
+
+# How much does a website cost in Canada in 2026?
+URL: https://www.zynexor.com/blog/website-cost-canada
+
+If you run a business in Canada and you are planning a new website, the first question is almost always the same: how much will it cost? The honest answer is that it depends on what the website needs to do. This guide explains what drives the price, the rough ranges you will see quoted in Canada, the Canadian rules that can add work, and how to get a quote you can actually compare.
+
+
+## The short answer
+
+
+Prices quoted by Canadian freelancers and agencies vary widely, but most projects fall into a few broad bands. Treat these as rough market ranges, not fixed prices:
+
+- Template or do-it-yourself site: from a few hundred dollars up to about $3,000 CAD, plus monthly platform fees. Good for testing an idea quickly.
+- Custom small-business website (5 to 15 pages): commonly around $5,000 to $15,000 CAD. Custom design, basic search optimisation, contact and booking forms.
+- Content-rich or lead-generation website: often $15,000 to $40,000 CAD or more. Many service pages, a blog, integrations with a CRM or booking system, careful conversion design.
+- E-commerce stores and web applications: usually priced higher again, because product catalogues, payments, user accounts and dashboards take far more design and development time.
+
+
+## What actually drives the price
+
+
+Two websites with the same number of pages can have very different prices. These are the factors that matter most:
+
+- Custom design versus a template. A template is faster and cheaper. Custom design costs more but is built around your customers and your brand, which usually converts better.
+- Content. Writing clear, search-friendly copy for every page is real work. If you supply the text, the price drops. If the agency writes it, budget for it.
+- Functionality. Online booking, payments, client portals, multilingual content, live data tables and CRM integrations each add time.
+- Number of unique page layouts. Twenty pages that share three layouts cost less than ten pages that are all different.
+- Speed, accessibility and SEO. Doing these properly from the start costs a little more and saves a lot later.
+
+
+## Canadian requirements that can add scope
+
+
+A few Canadian rules are worth planning for early. This is general information, not legal advice, so check the details for your business with a lawyer.
+
+- French content. If you serve customers in Quebec, Quebec's language laws generally require your commercial website to be available in French. A bilingual site is a bigger project than an English-only one.
+- Accessibility (AODA). In Ontario, many organisations with 50 or more employees must make their public websites meet WCAG 2.0 Level AA. Read our guide to AODA, ADA and WCAG.
+- Privacy (PIPEDA). If your site collects personal information through forms or analytics, you need a clear privacy policy and sensible data handling.
+- Anti-spam (CASL). If you plan to send marketing emails, your sign-up forms need proper consent.
+
+
+## Ongoing costs to budget for
+
+
+The build is only part of the picture. Plan for a domain name (usually tens of dollars per year), hosting or a platform subscription, software licences or plugins, and maintenance: updates, backups, security fixes and small content changes. Many businesses also pay for ongoing SEO, content or advertising once the site is live.
+
+
+## Fixed price or monthly retainer?
+
+
+When the scope is clear, a fixed price gives you certainty. When you want continuous improvement, such as new landing pages, campaigns and content every month, a retainer is usually better value. A good agency will tell you which suits your situation and will write the scope down in plain language.
+
+
+## How to get quotes you can compare
+
+
+- Describe your goal, not just the deliverable. "I want more booked consultations" leads to a better proposal than "I need a five-page website".
+- List must-have features, such as booking, payments, French content or a CRM link.
+- Share two or three websites you like and say why.
+- Ask every agency what is included: copywriting, photography, SEO set-up, accessibility, training and post-launch support.
+- Ask who owns the design files and code when the project ends. The answer should be you.
+
+
+## How Zynexor approaches website projects
+
+
+Zynexor works with businesses across Canada and the USA. We start with a short discovery call, then send a written proposal with scope, timeline and price. A typical small-business website takes six to ten weeks. You can see examples in our case studies, including a content-rich website for a Winnipeg immigration law firm.
+
+
+## FAQ
+
+
+Q: How long does it take to build a website in Canada?
+A: A brand-new small-business website usually takes six to ten weeks from kick-off to launch. Simple template sites can go live faster; larger content or e-commerce sites take longer.
+
+Q: Do I need a bilingual English and French website?
+A: If you sell to customers in Quebec, Quebec's language rules generally require French content on commercial websites. Outside Quebec it is a business choice. Check your obligations with a lawyer.
+
+Q: Are website design services taxable in Canada?
+A: Website design is generally a taxable service, so expect GST or HST (and PST where it applies) on top of the quoted price, depending on your province and the supplier's registration.
+
+---
+
+# How to choose a web design agency in the USA: 12 questions to ask
+URL: https://www.zynexor.com/blog/choose-web-design-agency-usa
+
+Hiring a web design agency is a big decision. The right partner brings in customers for years. The wrong one leaves you with a site you cannot update, a missed deadline and an invoice you did not expect. These twelve questions help US business owners compare agencies on what matters.
+
+
+## Questions about results
+
+
+- 1. What business problem will the website solve? A good agency asks about your customers and goals before it talks about colours and fonts.
+- 2. Can you show similar work? Look for projects in your industry or with a similar goal, such as lead generation, e-commerce or a SaaS product. Ask what changed for that client after launch.
+- 3. How will we measure success? Agree on a few clear numbers, such as enquiries, booked calls, sales or sign-ups, and set up analytics to track them from day one.
+
+
+## Questions about the process
+
+
+- 4. What does your process look like, week by week? You want a clear sequence: discovery, structure and wireframes, design, development, testing and launch, with review points where your feedback lands early.
+- 5. Who will actually work on my project? Ask whether the team is in-house, freelance or overseas, and who your day-to-day contact is.
+- 6. How do you handle feedback and changes? Find out how many design rounds are included and how extra requests are priced.
+
+
+## Questions about cost and ownership
+
+
+- 7. What exactly is included in the price? Copywriting, photography, SEO set-up, accessibility work, hosting, training and post-launch support are often not included unless they are written down.
+- 8. Who owns the design files, code and domain? You should. Make sure the contract transfers ownership on final payment and that the domain is registered in your name.
+- 9. What will it cost to run the site after launch? Ask about hosting, platform subscriptions, plugin licences and maintenance plans.
+
+
+## Questions about quality
+
+
+- 10. How do you make sites fast? Ask how they handle images, video and code, and how they test speed on mobile. Google's PageSpeed Insights is a quick, free check.
+- 11. How do you handle accessibility? In the US, website accessibility is an ADA risk area. Agencies should design and test against WCAG 2.1 Level AA. Our accessibility guide explains the basics.
+- 12. What happens if something breaks after launch? Look for a warranty period and a clear support option.
+
+
+## Local, offshore or distributed teams
+
+
+Many US businesses now work with distributed agencies: a point of contact in North America and part of the design or development team in another country. Done well, this gives you senior skills at a fairer price and work that continues around the clock. Done badly, it means slow replies and miscommunication. Ask about overlapping working hours, response times and how progress is reported each week.
+
+Zynexor is a distributed team with people in the USA, Canada and Bangladesh. You get a North American point of contact, weekly check-ins and a team that keeps your project moving between your working days.
+
+
+## Red flags to watch for
+
+
+- A fixed price before anyone has asked about your goals.
+- No portfolio pieces with live links or real client names.
+- Vague answers about who owns the work.
+- Promises of guaranteed first-page Google rankings.
+- No written scope or timeline.
+
+
+## FAQ
+
+
+Q: How much does a web design agency charge in the USA?
+A: Prices vary widely with scope. A custom small-business website often costs several thousand to a few tens of thousands of US dollars, while e-commerce sites and web apps cost more. Always compare written scopes, not just totals.
+
+Q: Is it safe to hire an agency with an overseas team?
+A: Yes, if the agency has a clear process, a North American point of contact, a written contract that gives you ownership of the work, and regular progress updates.
+
+---
+
+# Website design for immigration law firms in Canada: what turns visitors into consultations
+URL: https://www.zynexor.com/blog/immigration-law-firm-website-canada
+
+People looking for immigration help are often anxious, short on time and comparing several firms at once. Your website has a few seconds to show that you understand their situation and can be trusted. Here is what we have learned designing for immigration practices in Canada, including the website for A&M Canadian Immigration Law Corporation in Winnipeg.
+
+
+## Organise the site around pathways, not departments
+
+
+Visitors think in terms of their own goal: "I want to study in Canada", "my application was refused", "I want to sponsor my spouse". Build your navigation around those goals:
+
+- Permanent residence: Express Entry, Provincial Nominee Programs and family sponsorship.
+- Temporary residence: study permits, work permits, LMIA and visitor visas.
+- Urgent matters: refusals, procedural fairness letters, inadmissibility and appeals.
+- Citizenship, and services for US residents moving to Canada.
+
+Each pathway page should explain who it is for, the main requirements in plain language, typical next steps and how your firm helps, with a clear button to book a consultation.
+
+
+## Show credentials early
+
+
+Trust is everything in this field. Make credentials easy to find on every page:
+
+- The lawyer's name, photo, call to the bar and Law Society membership, or the consultant's College of Immigration and Citizenship Consultants licence number.
+- Years of practice, languages spoken and professional associations.
+- Real Google reviews, displayed with permission and linked to the source.
+
+Keep marketing claims within your regulator's rules. Law societies and the College set rules on advertising, so avoid guarantees about outcomes.
+
+
+## Publish content people search for every week
+
+
+Immigration rules and draw results change constantly, and people search for updates. A news section with draw results, policy changes and short explainers gives visitors a reason to return and gives search engines fresh pages to index. On the A&M website we designed live Manitoba PNP draw tables and illustrated roadmaps that explain complex pathways at a glance. See the A&M case study.
+
+
+## Make booking effortless
+
+
+- Put a "Book a consultation" button in the header and at the end of every page.
+- Let visitors pick a time online, with clear information about consultation fees.
+- Offer a short intake form so you know the case type before the call.
+- Show office location and hours, plus remote consultation options for clients outside your city.
+
+
+## Reach clients in their own language
+
+
+Many clients are more comfortable reading in their first language. Even a few key pages translated into the languages your team speaks can lift enquiries, and it signals that you understand your community.
+
+
+## Technical basics that protect your rankings
+
+
+- Fast loading on mobile phones, where most visitors arrive.
+- Clear page titles such as "Express Entry Lawyer in Winnipeg".
+- Accessible design that meets WCAG 2.0 Level AA, which also helps with Ontario's AODA rules.
+- Structured data for your firm and FAQs so search engines and AI assistants can understand your services.
+
+
+## FAQ
+
+
+Q: What pages should an immigration law firm website have?
+A: At minimum: a home page, one page per main pathway (Express Entry, PNP, study and work permits, family sponsorship, refusals and appeals), a lawyer or team page with credentials, a news section, reviews, and a contact and booking page.
+
+Q: Can an immigration website give legal advice?
+A: Websites should share general information and invite visitors to book a consultation. Personal advice belongs in a consultation, and marketing must follow your regulator's rules.
+
+---
+
+# Website accessibility in Canada and the USA: AODA, ADA and WCAG explained
+URL: https://www.zynexor.com/blog/website-accessibility-aoda-ada
+
+Accessible websites work for everyone, including people who use screen readers, keyboards instead of a mouse, or zoomed-in text. In Canada and the USA, accessibility is also a legal topic. This guide explains the rules in plain language for business owners. It is general information, not legal advice.
+
+
+## WCAG: the technical standard behind the laws
+
+
+The Web Content Accessibility Guidelines (WCAG) are published by the World Wide Web Consortium (W3C). They describe how to make content perceivable, operable, understandable and robust. Each guideline has three levels: A, AA and AAA. Level AA is the target most laws and policies point to. The main versions are WCAG 2.0 (2008), 2.1 (2018) and 2.2 (2023); newer versions add requirements and stay compatible with older ones.
+
+
+## Canada: AODA and the Accessible Canada Act
+
+
+- Ontario (AODA). Under the Accessibility for Ontarians with Disabilities Act, public sector organisations and private or non-profit organisations with 50 or more employees in Ontario must make their public websites and web content conform to WCAG 2.0 Level AA, with limited exceptions such as live captions and pre-recorded audio description.
+- Federally regulated organisations. The Accessible Canada Act applies to the federal government and federally regulated sectors such as banking, telecommunications and transportation, with requirements set through regulations and standards.
+- Other provinces such as Manitoba and Nova Scotia have their own accessibility laws with standards being phased in.
+
+
+## USA: the ADA and Section 508
+
+
+- ADA Title III covers businesses that are "places of public accommodation". The Department of Justice has said that businesses' websites should be accessible, and website accessibility lawsuits against private businesses are common. WCAG 2.1 Level AA is the benchmark usually referenced.
+- ADA Title II covers state and local governments. A 2024 DOJ rule adopted WCAG 2.1 Level AA as the technical standard for their websites and apps, with compliance deadlines phased in by size.
+- Section 508 applies to federal agencies and the technology they buy.
+
+
+## A practical checklist for your website
+
+
+- Give every image a meaningful alternative text, or an empty one if it is decorative.
+- Make sure text has enough colour contrast against its background.
+- Everything must work with a keyboard, with a visible focus outline.
+- Use real headings in order, so screen-reader users can navigate.
+- Label every form field and explain errors clearly.
+- Add captions to videos with speech, and avoid content that flashes.
+- Let people pause or stop animations and respect the "reduce motion" setting.
+- Test with an automated checker, then with a keyboard and a screen reader.
+
+
+## Why accessibility is good business
+
+
+Accessible sites are easier for everyone to use, load cleanly on more devices and are easier for search engines to understand. They also reduce legal risk and show customers that you care about them.
+
+At Zynexor we design and build against WCAG 2.1 Level AA from the start, which is far cheaper than fixing a finished website. Book a call if you want us to review your current site.
+
+
+## FAQ
+
+
+Q: Does my small business website need to be accessible?
+A: In Ontario, organisations with 50 or more employees have specific AODA website requirements. In the US, businesses open to the public face ADA risk if their website is inaccessible. Even where no rule applies, accessibility helps customers and SEO.
+
+Q: Which WCAG level should I aim for?
+A: Aim for WCAG 2.1 Level AA, or 2.2 Level AA for new projects. It meets the commonly referenced standards in both countries.
+
+Q: Will an accessibility plugin or overlay make my site compliant?
+A: Overlays alone rarely fix underlying problems such as missing labels, poor structure or keyboard traps. Fixing the site itself is the reliable approach.
+
+---
+
+# Branding for small businesses in Canada and the USA: a step-by-step guide
+URL: https://www.zynexor.com/blog/small-business-branding-guide
+
+A strong brand helps a small business look established from day one, charge fair prices and be remembered. It is more than a logo: it is a clear promise, expressed consistently everywhere your customers meet you. Here is the process we follow with small businesses and startups in Canada and the USA.
+
+
+## Step 1: Understand your customers
+
+
+Start with research, not design. Talk to five to ten customers or prospects. Ask what problem they were trying to solve, what almost stopped them from buying and how they describe you to a friend. Their words become your messaging.
+
+
+## Step 2: Define your positioning
+
+
+Write one sentence that answers: who do you serve, what do you help them achieve and why are you different from the alternatives? For example: "We help Winnipeg families navigate Canadian immigration with clear guidance and fast responses." Every later decision should support this sentence.
+
+
+## Step 3: Choose a name and check it
+
+
+If you are naming a new business or product, check that the name is available before you fall in love with it:
+
+- Search the Canadian Intellectual Property Office (CIPO) trademark database in Canada and the USPTO database in the USA.
+- Check that the domain name and social media handles are available.
+- Say it out loud, spell it over the phone and make sure it works in the languages your customers speak.
+
+
+## Step 4: Build the visual identity
+
+
+The visual identity includes your logo, colour palette, typography, imagery style and icons. Good identities are simple, work at small sizes, look good in black and white, and stay consistent across your website, social media, signage and documents.
+
+
+## Step 5: Find your voice
+
+
+Decide how your brand sounds. Is it calm and expert, friendly and playful, or bold and direct? Write a few do and don't examples so everyone who writes for the brand sounds the same.
+
+
+## Step 6: Write simple brand guidelines
+
+
+A short brand guide, often 10 to 20 pages, keeps everything consistent as your team grows. It should cover logo use, colours with exact codes, fonts, image style, tone of voice and a few layout examples.
+
+
+## Step 7: Roll it out everywhere
+
+
+Update your website, Google Business Profile, social profiles, email signatures, proposals, invoices and signage together. A consistent launch makes the new brand feel real. Social media templates help your team publish on-brand posts quickly. See how we did this for SocialBoost AI and Funpark.
+
+
+## How much does branding cost?
+
+
+Costs range from a simple logo package to a full brand strategy and identity system. The biggest factors are how much research and strategy you need, how many brand assets you want and whether naming is included. Ask for a written scope that lists every deliverable.
+
+
+## FAQ
+
+
+Q: How long does a branding project take?
+A: A focused small-business branding project usually takes three to six weeks, from research to final brand guidelines.
+
+Q: Do I need to register a trademark?
+A: It is wise to search trademark databases before choosing a name and to consider registering your name and logo with CIPO in Canada or the USPTO in the USA. A trademark lawyer or agent can advise you.
+
+Q: Can I rebrand without losing customers?
+A: Yes. Explain the change to existing customers, keep familiar elements where they still work, and redirect old website addresses to new ones so you keep your search rankings.
+
+---
+
+# WordPress vs Webflow vs custom code: which is right for your business website?
+URL: https://www.zynexor.com/blog/wordpress-vs-webflow-vs-custom
+
+Choosing the platform for your website affects its cost, speed, security and how easily your team can update it. Most small and mid-sized businesses in Canada and the USA end up choosing between WordPress, Webflow and a custom-coded site. Here is how they compare.
+
+
+## WordPress
+
+
+WordPress is the most widely used website platform in the world. It is open source, so you can host it anywhere.
+
+- Best for: content-heavy sites, blogs, businesses that want full ownership and a huge choice of plugins.
+- Strengths: flexible, large community, many developers available, strong SEO plugins.
+- Watch out for: plugin overload, security updates and slower speeds if it is not built carefully. Budget for regular maintenance.
+
+
+## Webflow
+
+
+Webflow is a hosted visual website builder that produces clean code and is popular with design-led teams.
+
+- Best for: marketing websites and landing pages where design quality and easy editing matter most.
+- Strengths: polished designs and animations, hosting and security handled for you, an easy editor for marketing teams.
+- Watch out for: ongoing subscription fees, less flexibility for complex functionality, and content that stays on Webflow's platform. Check current plan pricing on Webflow's site.
+
+
+## Custom code
+
+
+A custom-coded website, for example a static site or a React-based site, is built specifically for your needs.
+
+- Best for: high-performance marketing sites, web applications, dashboards, client portals and products with unique features.
+- Strengths: maximum speed and flexibility, no unused plugins, easy to scale into a full web app.
+- Watch out for: you need developers for most changes unless a content management system is connected.
+
+
+## How to decide
+
+
+- Your team edits content every week: WordPress or Webflow.
+- Design and animation are the priority: Webflow or custom code.
+- You need user accounts, dashboards or complex integrations: custom code.
+- You want the lowest ongoing platform fees: WordPress or a custom static site with low-cost hosting.
+- Speed scores matter a lot: custom code or a carefully built Webflow or WordPress site.
+
+
+## Our recommendation
+
+
+There is no single right answer. We choose the platform after discovery, based on who will update the site, how it needs to grow and your budget. Zynexor builds on WordPress, Webflow and custom code, so we recommend what suits you, not what suits us. See examples in our case studies.
+
+
+## FAQ
+
+
+Q: Is Webflow better than WordPress for SEO?
+A: Both can rank very well. SEO depends far more on content, speed, structure and links than on the platform itself.
+
+Q: Can I move from Webflow or WordPress to custom code later?
+A: Yes. Plan URL redirects carefully so you keep your search rankings during the move.
+
+---
+
+# How much does it cost to build a mobile app in the USA and Canada?
+URL: https://www.zynexor.com/blog/mobile-app-cost-usa-canada
+
+"How much will my app cost?" is one of the most common questions we hear from founders and business owners in the USA and Canada. The answer depends on features, platforms and how polished the first version needs to be. This guide explains the main cost drivers and the rough ranges you are likely to see.
+
+
+## Rough market ranges
+
+
+Quotes vary widely between freelancers, agencies and regions. As a broad guide:
+
+- Simple app or MVP: often in the tens of thousands of US dollars. A few core screens, basic user accounts and a simple back end.
+- Mid-complexity app: commonly from several tens of thousands to well over US$100,000. Payments, chat, notifications, an admin panel and integrations.
+- Complex app: live video, marketplaces, real-time features, heavy security or compliance can push budgets much higher.
+
+
+## What drives the cost
+
+
+- Number and complexity of features. Each feature needs design, front-end work, back-end logic and testing.
+- Platforms. iOS only, Android only, or both. Cross-platform frameworks such as React Native or Flutter can reduce the cost of building for both.
+- Design quality. A polished, tested user experience takes more design time but improves retention.
+- Back end and integrations. Payments, maps, CRMs, video streaming and third-party APIs all add work.
+- Security and compliance. Health, finance and children's apps need extra care.
+
+
+## Ongoing costs after launch
+
+
+- App store accounts: Apple's Developer Program costs US$99 per year, and Google Play charges a one-time US$25 registration fee.
+- Hosting and services: servers, databases, push notifications, email and analytics.
+- Maintenance: updates for new iOS and Android versions, bug fixes and security patches. A common rule of thumb is to budget a meaningful share of the original build cost each year.
+
+
+## How to reduce cost without cutting quality
+
+
+- Start with an MVP. Launch the smallest version that delivers real value, then grow it based on user feedback.
+- Prototype first. A clickable design prototype lets you test with users before paying for development.
+- Choose cross-platform when it fits. One codebase for iOS and Android often saves time.
+- Reuse proven services. Use established payment, login and messaging services instead of building them from scratch.
+
+
+## Example: Style.Bd
+
+
+For Style.Bd, a fashion marketplace app with live shopping, we designed the full experience from discovery to checkout: home feed, live shopping, trending items, verified sellers and in-app messaging. Designing every flow before development made the build faster and more predictable. See the Style.Bd case study.
+
+
+## FAQ
+
+
+Q: How long does it take to build an app?
+A: A focused MVP often takes around three to six months from design to launch. Larger apps take longer and are usually released in phases.
+
+Q: Should I build for iOS or Android first?
+A: In the USA and Canada, iOS often has a strong share of paying users, but it depends on your audience. Cross-platform development lets you launch on both together.
+
+Q: Do I own the app code?
+A: You should. Make sure your contract transfers full ownership of the code, designs and app store accounts to your company.
+
+---
+
+# Why your brand needs a system, not just a logo
+URL: https://www.zynexor.com/blog/brand-system
+
+A logo is a signature. A brand system is the handwriting: colour, type, spacing, imagery and tone that make everything you publish feel like you.
+
+
+## Consistency builds recognition
+
+
+When SocialBoost AI launched, the same purple gradients, rounded type and confident headlines ran across the landing page, the app and every social post. People recognise the product before they read its name.
+
+
+## Systems save time
+
+
+With clear rules, your team can produce new pages and posts quickly without a designer checking every detail.
+
+
+## Start small
+
+
+A good starter system needs only a logo, two typefaces, a short colour palette and a few layout examples. You can grow it as the business grows.
+
+---
+
+# Designing trust into AI products
+URL: https://www.zynexor.com/blog/trust-for-ai
+
+AI tools ask people to hand over data and decisions. That only works when the product earns trust at every step.
+
+
+## Show what the system knows
+
+
+For TrustLayer AI we built a tool registry that lists every AI tool a team uses, with its risk level and data handling. Making the invisible visible is the first step toward trust.
+
+
+## Turn policy into a guided flow
+
+
+Policies are usually long documents nobody reads. A step-by-step policy generator turns them into short choices that teams can finish in minutes.
+
+
+## Let customers see it too
+
+
+A public trust portal lets a company prove its AI practices to clients. Good design here is calm, factual and easy to scan.
+
+---
+
+# Designing a live shopping app for mobile-first buyers
+URL: https://www.zynexor.com/blog/live-shopping-app
+
+Style.Bd brings fashion sellers and buyers together in Bangladesh, where most shopping starts on a phone and many purchases begin in a live video.
+
+
+## Shopping as entertainment
+
+
+The trending feed and live shopping tabs borrow the patterns people already know from social apps. Buyers can like, comment and buy without leaving the stream.
+
+
+## Trust signals everywhere
+
+
+Verified seller badges, clear order status and in-app messaging reduce the worry of buying from someone new.
+
+
+## Small screens, big thumbs
+
+
+Every action sits within thumb reach, and the bottom bar keeps the five key areas one tap away.
+
+---
+
+# How a clear website turns visitors into clients
+URL: https://www.zynexor.com/blog/website-that-sells
+
+Most service websites fail for the same reason: they describe the business instead of answering the visitor. A person who lands on a law firm, clinic or agency site arrives with one question. Can you help me, and what happens next?
+
+
+## Start with the question
+
+
+When we designed the A&M Canadian Immigration Law website, every page began with a real client question. Which stream fits me? What are the latest draw results? Who will handle my file? The services directory, lawyer profile and live draw tables each answer one of those questions directly.
+
+
+## Make the next step obvious
+
+
+Each page ends with a single action, such as booking an appointment or reading the next guide. Visitors should never have to hunt for it. A clear next step does more for conversions than any visual flourish.
+
+
+## Keep it fresh
+
+
+Search engines and people both reward sites that stay current. A simple news and case-law library gives the firm a reason to publish regularly and gives clients a reason to come back.
+
+---
+
+# What makes a social post stop the scroll
+URL: https://www.zynexor.com/blog/scroll-stopping-posts
+
+People decide in under a second whether to stop on a post. Three things decide it: one big idea, real faces and a reason to act now.
+
+
+## One idea per post
+
+
+Our Funpark posts each carry a single message, such as "Bounce Mode" or "Everything 50% off". Big type and strong photography do the work. Small print stays small.
+
+
+## Use the real place
+
+
+Real kids, real trampolines and real staff beat stock imagery every time. They show the experience instead of describing it.
+
+
+## Build a rhythm
+
+
+A recurring offer like Discount Tuesday trains followers to expect and share your posts. Seasonal posts for Christmas and New Year keep the feed warm between offers.
+
+---
+
+# From spreadsheets to one CRM
+URL: https://www.zynexor.com/blog/one-crm
+
+Growing service businesses often run on spreadsheets, inboxes and memory. It works until a lead slips through the cracks.
+
+
+## Map the real workflow
+
+
+For an immigration consultancy we followed a client from first enquiry to final file and designed a CRM around it: leads, deals, clients, projects, tasks, meetings and reports.
+
+
+## Calendars people actually use
+
+
+Meetings live in a clear monthly view with upcoming appointments on the side, so the whole team sees the day at a glance.
+
+
+## Reports that answer questions
+
+
+Revenue by month, lead sources and conversion by stage turn daily work into decisions.

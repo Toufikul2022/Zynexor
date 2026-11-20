@@ -1,0 +1,131 @@
+[
+ {
+  "id": "branding",
+  "name": "Branding",
+  "img": "socialboost-landing",
+  "cases": [
+   "socialboost",
+   "funpark",
+   "styleb"
+  ],
+  "title": "Branding Agency for Businesses in Canada & the USA | Zynexor",
+  "t": "Branding agency for growing businesses in Canada and the USA",
+  "body": [
+   "Zynexor builds brands that help small businesses, startups and professional firms in Canada and the USA look established, stand out from competitors and charge what they are worth. We combine brand strategy with visual identity design, so your brand is both clear and memorable.",
+   "## What our branding service includes",
+   "- **Brand strategy:** customer research, positioning, value proposition, messaging and tone of voice.\n- **Naming:** name ideas with domain and trademark database checks (CIPO in Canada, USPTO in the USA).\n- **Visual identity:** logo, colour palette, typography, iconography and imagery style.\n- **Brand guidelines:** a practical guide your team and suppliers can follow.\n- **Brand assets:** business cards, presentation and proposal templates, social media templates and signage.\n- **Website and launch support:** applying the new brand to your website and social profiles.",
+   "## Who it is for",
+   "- New businesses and startups that need to look credible from day one.\n- Established businesses whose brand no longer matches the quality of their work.\n- Professional firms, such as law, consulting and healthcare practices, that need to build trust quickly.",
+   "## Our branding process",
+   "- **Discover (week 1):** we interview you and your customers and review your competitors.\n- **Define (weeks 1–2):** we agree positioning and messaging in plain language.\n- **Design (weeks 2–4):** we present visual directions, refine one and test it on real applications.\n- **Deliver (weeks 4–6):** final files, brand guidelines and templates, ready to use.",
+   "A focused branding project usually takes three to six weeks.",
+   "## Recent branding work",
+   "We created the brand and launch website for SocialBoost AI, built a consistent social media look for Funpark Indoor Amusement Center, and designed the brand experience for the Style.Bd marketplace app. See our [case studies](/cases) and read our [small business branding guide](/blog/small-business-branding-guide).",
+   "## FAQ",
+   "Q: How much does branding cost?\nA: It depends on the scope: a logo refresh costs far less than a full strategy, naming and identity system. We send a written proposal with a fixed price after a free discovery call.",
+   "Q: Do you work with businesses outside your cities?\nA: Yes. We work remotely with clients across Canada and the USA, with video calls and weekly check-ins.",
+   "Q: Will I own the logo and brand files?\nA: Yes. On final payment you receive full ownership of all final brand files."
+  ]
+ },
+ {
+  "id": "web-design",
+  "name": "Website design and development",
+  "img": "amc-about",
+  "cases": [
+   "amc",
+   "sabbir",
+   "socialboost"
+  ],
+  "title": "Web Design & Development Agency in Canada & the USA | Zynexor",
+  "t": "Web design and development agency for businesses in Canada and the USA",
+  "body": [
+   "Zynexor designs and builds websites that bring in enquiries, not just compliments. We work with service businesses, professional firms, startups and creators across Canada and the USA, and we handle everything from strategy and copy structure to design, development, SEO set-up and launch.",
+   "## What our web design service includes",
+   "- **Strategy and structure:** goals, audience, sitemap and the pages your customers need.\n- **UX and visual design:** wireframes and custom designs for desktop and mobile.\n- **Development:** WordPress, Webflow or custom code, chosen to fit how you will update the site. Read [WordPress vs Webflow vs custom code](/blog/wordpress-vs-webflow-vs-custom).\n- **Conversion features:** online booking, contact forms, CRM integrations and live data.\n- **SEO foundations:** fast loading, clean structure, page titles, structured data and sitemaps.\n- **Accessibility:** designed and tested against WCAG 2.1 Level AA, which supports AODA and ADA obligations.\n- **Launch and care:** redirects from your old site, analytics, training and maintenance plans.",
+   "## Websites that perform",
+   "Speed and clarity matter. The Zynexor website itself scores 100 for performance on desktop in Google PageSpeed Insights, and we apply the same techniques to client sites: compressed media, lazy loading and lean code.",
+   "## Our process",
+   "- **Discover (week 1):** a call, a short brief and research into your market.\n- **Design (weeks 2–4):** structure, wireframes and visual design, reviewed with you weekly.\n- **Build (weeks 4–8):** development, content entry and testing on real devices.\n- **Launch and grow:** go live, measure results and keep improving.",
+   "Most small-business websites take six to ten weeks.",
+   "## Recent website projects",
+   "A content-rich website for A&M Canadian Immigration Law in Winnipeg, a creator hub for Sabbir LIVE and a launch website for SocialBoost AI. See our [case studies](/cases).",
+   "## FAQ",
+   "Q: How much does a website cost?\nA: Prices depend on pages, content and features. Read [How much does a website cost in Canada?](/blog/website-cost-canada), then book a call for a fixed-price proposal.",
+   "Q: Can you redesign my site without losing Google rankings?\nA: Yes. We map every old URL and set up redirects. See our [website redesign checklist](/blog/website-redesign-without-losing-seo).",
+   "Q: Do you build bilingual English and French websites?\nA: Yes, we can design and build multilingual websites, including English and French for Canadian businesses."
+  ]
+ },
+ {
+  "id": "app-development",
+  "name": "Mobile app design and development",
+  "img": "styleb-home",
+  "cases": [
+   "styleb",
+   "socialboost",
+   "sabbir"
+  ],
+  "title": "Mobile App Design & Development Agency in Canada & the USA | Zynexor",
+  "t": "Mobile app design and development for startups and businesses",
+  "body": [
+   "Zynexor designs and builds mobile apps that people open again tomorrow. We help founders and businesses in Canada and the USA turn an idea into a tested product, from first prototype to App Store and Google Play launch.",
+   "## What our app service includes",
+   "- **Product discovery:** goals, users, core features and an MVP scope that fits your budget.\n- **UX design:** user flows, wireframes and clickable prototypes tested with real users.\n- **UI design:** polished visual design for iOS and Android, with a reusable design system.\n- **Development:** cross-platform or native apps, back ends, admin panels and integrations such as payments and notifications.\n- **Launch:** App Store and Google Play submission, analytics and crash reporting.\n- **Growth:** updates, new features and maintenance after launch.",
+   "## Start with an MVP",
+   "We recommend launching the smallest version that delivers real value, then improving it with user feedback. It is faster, cheaper and less risky than building everything at once. Read [How much does it cost to build a mobile app?](/blog/mobile-app-cost-usa-canada).",
+   "## Recent app work",
+   "For Style.Bd we designed a fashion marketplace app with live shopping, a trending feed, verified sellers and in-app messaging. We also designed the mobile experience for SocialBoost AI. See our [case studies](/cases).",
+   "## FAQ",
+   "Q: Do you build for iOS and Android?\nA: Yes. We often recommend a cross-platform approach so you can launch on both with one codebase.",
+   "Q: How long does it take to build an app?\nA: A focused MVP usually takes about three to six months from design to launch, depending on features.",
+   "Q: Will I own the code?\nA: Yes. You own the code, designs and app store accounts."
+  ]
+ },
+ {
+  "id": "ui-ux-design",
+  "name": "UI/UX design for SaaS and web apps",
+  "img": "trustlayer-dashboard",
+  "cases": [
+   "trustlayer",
+   "crm",
+   "socialboost"
+  ],
+  "title": "UI/UX Design Agency for SaaS, Dashboards & Web Apps | Zynexor",
+  "t": "UI/UX design for SaaS products, dashboards and web apps",
+  "body": [
+   "Zynexor designs SaaS platforms, dashboards, CRMs and internal tools that are easy to learn and fast to use. We work with startups and established companies in Canada and the USA to reduce churn, cut support requests and make complex workflows feel simple.",
+   "## What our UI/UX service includes",
+   "- **UX audit:** a review of your current product with prioritised fixes.\n- **User research:** interviews, task analysis and usability testing.\n- **Information architecture and user flows:** how users move through the product.\n- **Wireframes and prototypes:** tested before development starts.\n- **Visual design and design systems:** consistent components, ready for developers.\n- **Accessibility:** WCAG 2.1 Level AA, increasingly required in enterprise procurement.\n- **Developer handoff:** specs, assets and support during the build.",
+   "## What we design",
+   "- B2B SaaS platforms and admin panels.\n- Analytics dashboards and reporting tools. Read our [dashboard UX best practices](/blog/saas-dashboard-ux-best-practices).\n- CRMs and internal tools that replace spreadsheets.\n- AI products where trust and clarity matter most. Read [Designing trust into AI products](/blog/trust-for-ai).",
+   "## Recent product work",
+   "The TrustLayer AI governance platform, with its AI tool registry, policy generator and trust portal, and a CRM for an immigration consultancy covering leads, clients, meetings and reports. See our [case studies](/cases).",
+   "## FAQ",
+   "Q: Can you work with our in-house developers?\nA: Yes. We deliver design systems and specs your developers can build from, and we join stand-ups during the build if helpful.",
+   "Q: How long does a UX project take?\nA: An audit takes one to two weeks. Designing a new product or major feature typically takes several weeks, depending on the number of screens and user roles."
+  ]
+ },
+ {
+  "id": "social-media-marketing",
+  "name": "Social media marketing",
+  "img": "funpark-tuesday",
+  "cases": [
+   "funpark",
+   "sabbir",
+   "socialboost"
+  ],
+  "title": "Social Media Marketing Agency for Small Businesses | Zynexor",
+  "t": "Social media marketing and content design for small businesses",
+  "body": [
+   "Zynexor plans and designs social media campaigns that keep local businesses and brands visible and bring customers through the door. We work with businesses in Canada and the USA on Instagram, Facebook, LinkedIn, TikTok and YouTube Shorts.",
+   "## What our social media service includes",
+   "- **Strategy:** platform choice, content pillars, posting schedule and goals.\n- **Campaign concepts:** recurring offers, seasonal campaigns and launches.\n- **Content design:** post, carousel, story and reel designs that match your brand.\n- **Templates:** on-brand templates your team can use for quick updates.\n- **Monthly content calendars:** planned around holidays in Canada and the USA and your own key dates.\n- **Paid promotion support:** ad creatives for boosting your best posts.",
+   "## How we work",
+   "We start with a strategy session, then deliver a monthly content plan and designs for your approval. Many clients post day-to-day updates themselves and use our templates and campaign designs for the big moments. Read our guide to [social media marketing for small businesses](/blog/social-media-marketing-small-business).",
+   "## Recent social media work",
+   "An ongoing campaign for Funpark Indoor Amusement Center, including the \"Discount Tuesday\" offer, \"Bounce Mode\" and Christmas and New Year posts. See our [case studies](/cases) and read [What makes a social post stop the scroll](/blog/scroll-stopping-posts).",
+   "## FAQ",
+   "Q: Do you post for us?\nA: We can schedule posts for you, or hand over finished designs and captions for your team to publish.",
+   "Q: Do you offer monthly packages?\nA: Yes. Social media work usually runs on a monthly retainer with a set number of designs and campaigns."
+  ]
+ }
+]
