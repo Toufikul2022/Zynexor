@@ -21,6 +21,11 @@
     crm:{t:'Immigration Consultancy CRM',i:['crm-reports','crm-meetings']}
   };
   var ARTICLES=[
+    {"id":"local-seo-small-business-canada-usa","cat":"Guides","t":"Local SEO for small businesses in Canada and the USA: a practical guide","img":"amc-news","read":"3 min read"},
+    {"id":"social-media-marketing-small-business","cat":"Social media","t":"Social media marketing for small businesses in Canada and the USA: what to post and how often","img":"funpark-allinone","read":"3 min read"},
+    {"id":"website-redesign-without-losing-seo","cat":"Guides","t":"Website redesign checklist: how to redesign without losing your Google rankings","img":"sabbir-contact","read":"3 min read"},
+    {"id":"get-more-leads-from-website","cat":"Design","t":"How to get more leads from your website: 10 fixes for service businesses","img":"socialboost-generator","read":"3 min read"},
+    {"id":"saas-dashboard-ux-best-practices","cat":"Design","t":"SaaS dashboard design: UX best practices for B2B products","img":"trustlayer-analytics","read":"3 min read"},
     {"id":"website-cost-canada","cat":"Guides","t":"How much does a website cost in Canada in 2026?","img":"amc-about","read":"4 min read"},
     {"id":"choose-web-design-agency-usa","cat":"Guides","t":"How to choose a web design agency in the USA: 12 questions to ask","img":"trustlayer-landing","read":"3 min read"},
     {"id":"immigration-law-firm-website-canada","cat":"Design","t":"Website design for immigration law firms in Canada: what turns visitors into consultations","img":"amc-lawyer","read":"3 min read"},
