@@ -3,7 +3,8 @@ const fs=require('fs'),path=require('path');
 module.exports=function({ROOT,SITE,TODAY,ARTICLES,esc,inline,plain,isList,isFaq,faqs,render,meta,firstPara,desc}){
 const SERV=JSON.parse(fs.readFileSync(path.join(ROOT,'content/services.json'),'utf8'));
 const CASES=JSON.parse(fs.readFileSync(path.join(ROOT,'content/cases.json'),'utf8'));
-const ORG={"@type":"Organization","@id":SITE+"/#org","name":"Zynexor","url":SITE+"/"};
+const SOCIAL=["https://www.instagram.com/zy_nexor/","https://www.linkedin.com/company/zynexor/","https://www.facebook.com/profile.php?id=61585743480669"];
+const ORG={"@type":"Organization","@id":SITE+"/#org","name":"Zynexor","url":SITE+"/","sameAs":SOCIAL};
 const byKey=k=>CASES.find(c=>c.key===k);
 const W=(...p)=>fs.writeFileSync(path.join(ROOT,...p.slice(0,-1)),p[p.length-1]);
 for(const d of ['services','cases'])fs.mkdirSync(path.join(ROOT,d),{recursive:true});
@@ -15,7 +16,7 @@ const FOOT=`<footer class="seo-foot wrap" aria-label="Site links">
 <nav><h2>Case studies</h2><ul>${CASES.map(c=>li('cases/'+c.id,c.client)).join('')}</ul></nav>
 <nav><h2>Latest articles</h2><ul>${ARTICLES.slice(0,6).map(a=>li('blog/'+a.id,a.t)).join('')}</ul></nav>
 <nav><h2>Zynexor</h2><ul>${li('./','Home')}${li('about','About us')}${li('cases','All case studies')}${li('blog','Blog')}</ul>
-<p>Digital agency for branding, websites, apps and social media in Canada, the USA and Bangladesh. Email <a href="mailto:infozynexor@gmail.com">infozynexor@gmail.com</a> or <a href="https://calendly.com/zynexor/30min">book a free 30-minute call</a>.</p></nav>
+<p>Digital agency for branding, websites, apps and social media in Canada, the USA and Bangladesh. Email <a href="mailto:infozynexor@gmail.com">infozynexor@gmail.com</a> or <a href="https://calendly.com/zynexor/30min">book a free 30-minute call</a>.</p><ul>${li(SOCIAL[0],"Instagram")}${li(SOCIAL[1],"LinkedIn")}${li(SOCIAL[2],"Facebook")}</ul></nav>
 </footer>`;
 
 // ---------- shared page template ----------
@@ -116,6 +117,7 @@ const head=`# Zynexor
 > Zynexor is a digital agency that designs and builds brands, websites, web apps, mobile apps and social media campaigns for growing businesses. Founded in 2023, the team of designers, developers and marketers works across Canada, the USA and Bangladesh, serving clients in Canada and the USA.
 
 Contact: infozynexor@gmail.com · Book a free 30-minute intro call: https://calendly.com/zynexor/30min · Website: ${SITE}
+Social: Instagram ${SOCIAL[0]} · LinkedIn ${SOCIAL[1]} · Facebook ${SOCIAL[2]}
 
 ## Key facts
 - Services: branding, website design and development, mobile app design and development, UI/UX for SaaS and dashboards, social media marketing
